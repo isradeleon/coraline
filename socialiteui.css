@@ -164,9 +164,9 @@ body{
         width: 100%;
         padding: 0%;
     }
-    .staggered.three > .staggered-item > * {
+    /* .staggered.three > .staggered-item > * {
         margin-top: 0px;
-    }
+    } */
 }
 
 /* .staggered{
