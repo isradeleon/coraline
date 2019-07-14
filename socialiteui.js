@@ -53,6 +53,7 @@
     }, 2000);
 
     setTimeout(() => {
+        for (let index = 0; index < 10; index++)
         document.querySelector('.staggered').insertAdjacentHTML(
             'beforeend', 
             `<div class="staggered-item">
@@ -112,28 +113,17 @@
                     console.log(imgLoaded(img))
                     if(imgLoaded(img))
                         calculateNegativeMargin(element, refElement)
-                    else
+                    else{
                         img.addEventListener('load',function () {
                             console.log('loaded'+j)
                             setUpStaggered()
                         })
+                        //return;
+                    }
                 }
             }else{
                 calculateNegativeMargin(element, refElement)
             }
-            /*var fixedHeight = refElement.offsetHeight;
-            var referenceHeight = refElement.firstElementChild.offsetHeight;
-            
-            var distance = fixedHeight - referenceHeight;
-            if(refElement.firstElementChild.staggered){
-                distance+=refElement.firstElementChild.staggered;
-            }
-            distance -= 20;
-            
-            element.firstElementChild.style.marginTop = '-'+distance+'px';
-            element.firstElementChild.staggered = distance*/
-    
-            //console.log(element.firstElementChild)
         }
     }
 
