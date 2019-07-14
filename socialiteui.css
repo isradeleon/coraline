@@ -10,9 +10,10 @@ body{
 * {
     font-weight: normal;
     color: #212121;
+    font-weight: 300;
 }
 
-/* POST */
+/* POSTS */
 .post{
     border: 1px solid #e0e0e0;
     width: 100%;
@@ -32,6 +33,7 @@ body{
 }
 
 .post-data > p{
+    font-weight: 400;
     margin-top: 0.1rem; margin-bottom: 0.2rem;
     font-size: 0.9rem;
 }
@@ -50,6 +52,9 @@ body{
     padding: 0.1rem 0.8rem 0.8rem 0.8rem;
     margin: 0;
 }
+.post-content.relevant {
+    font-size: 1.2rem;
+}
 
 .user-img{
     border-radius: 100%;
@@ -59,22 +64,28 @@ body{
     height: 45px;
 }
 
-.post-actions{
+.social-actions{
     padding: 0 0.8rem 0.4rem 0.8rem;
     display: flex;
     align-items: center;
 }
-.post-actions.right{
+.social-actions.end{
     justify-content: flex-end;
 }
-.post-actions.center{
+.social-actions.center{
     justify-content: center;
 }
-.post-actions.evenly{
+.social-actions.evenly{
     justify-content: space-evenly;
 }
-.post-actions.equal{
+.social-actions.equal{
     justify-content: space-around;
+}
+.social-actions > .left{
+    margin-right: auto;
+}
+.social-actions > .right{
+    margin-left: auto;
 }
 .post-btn{
     background: transparent;
@@ -94,14 +105,6 @@ body{
     background-color: #fafafa;
 }
 
-.post-actions > .left{
-    margin-right: auto;
-}
-
-.post-actions > .right{
-    margin-left: auto;
-}
-
 /* COMMENTS */
 .comment{
     display: flex;
@@ -110,7 +113,8 @@ body{
     margin: 0;
 }
 .comment-data > p{
-    margin-top: 0.1rem; margin-bottom: 0.2rem;
+    font-weight: 400;
+    margin-top: 0.1rem; margin-bottom: 0;
     font-size: 0.9rem;
 }
 .comment-data small{
@@ -121,7 +125,7 @@ body{
     width: 27px; height: 27px;
 }
 .comment-data > span{
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
     display: block;
     font-size: 0.9rem;
 }
@@ -135,4 +139,7 @@ body{
 }
 .post > .comment:last-child{
     margin-bottom: 0.5rem;
+}
+.comment-data > .social-actions{
+    padding-top: 0.4rem;
 }
