@@ -13,6 +13,39 @@ body{
     font-weight: 300;
 }
 
+.user-img{
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+}
+
+/* social actions */
+.social-actions{
+    padding: 0.4rem 0.8rem;
+    display: flex;
+    align-items: center;
+}
+.social-actions.end{
+    justify-content: flex-end;
+}
+.social-actions.center{
+    justify-content: center;
+}
+.social-actions.evenly{
+    justify-content: space-evenly;
+}
+.social-actions.equal{
+    justify-content: space-around;
+}
+.social-actions > .left{
+    margin-right: auto;
+}
+.social-actions > .right{
+    margin-left: auto;
+}
+
 /* POSTS */
 .post{
     border: 1px solid #e0e0e0;
@@ -55,37 +88,8 @@ body{
 .post-content.relevant {
     font-size: 1.2rem;
 }
-
-.user-img{
-    border-radius: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 45px;
-    height: 45px;
-}
-
-.social-actions{
-    padding: 0 0.8rem 0.4rem 0.8rem;
-    display: flex;
-    align-items: center;
-}
-.social-actions.end{
-    justify-content: flex-end;
-}
-.social-actions.center{
-    justify-content: center;
-}
-.social-actions.evenly{
-    justify-content: space-evenly;
-}
-.social-actions.equal{
-    justify-content: space-around;
-}
-.social-actions > .left{
-    margin-right: auto;
-}
-.social-actions > .right{
-    margin-left: auto;
+.post > .social-actions{
+    padding-top: 0;
 }
 .post-btn{
     background: transparent;
@@ -139,7 +143,4 @@ body{
 }
 .post > .comment:last-child{
     margin-bottom: 0.5rem;
-}
-.comment-data > .social-actions{
-    padding-top: 0.4rem;
 }
