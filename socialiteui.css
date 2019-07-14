@@ -144,3 +144,53 @@ body{
 .post > .comment:last-child{
     margin-bottom: 0.5rem;
 }
+
+/* STAGGERED */
+.staggered{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    flex-flow: row wrap;
+}
+.staggered.three > .staggered-item {
+    width: calc(calc(100%/3) - 1%);
+    padding: 0.5%;
+}
+@media screen and (max-width: 767px){
+    .staggered.three > .staggered-item {
+        width: 100%;
+        padding: 0%;
+    }
+    .staggered.three > .staggered-item > * {
+        margin-top: 0px;
+    }
+}
+
+/* .staggered{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: block;
+}
+.staggered.three > * {
+    display: inline-block;
+    width: 32%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 767px){
+    .staggered.three > * {
+        width: 100%;
+        padding: 0%;
+    }
+} */
+
+.flex-row-multicolum{ 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    flex-flow: row wrap;
+ }
+ .flex-row-multicolum .flex-col{ width: 50%; /*flex: 1;*/ }
