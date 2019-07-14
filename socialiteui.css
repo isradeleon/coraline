@@ -9,6 +9,7 @@ body{
 }
 * {
     font-weight: normal;
+    color: #212121;
 }
 
 /* POST */
@@ -31,15 +32,17 @@ body{
 }
 
 .post-data > p{
-    margin-top: 0.1rem; margin-bottom: 0.1rem;
+    margin-top: 0.1rem; margin-bottom: 0.2rem;
     font-size: 0.9rem;
 }
 .post-data > small{
     margin: 0;
+    display: block;
     font-size: 0.8rem;
 }
 .post-data{
     padding: 0 0.5rem;
+    flex: 1;
 }
 
 .post-content {
@@ -52,8 +55,8 @@ body{
     border-radius: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
 }
 
 .post-actions{
@@ -83,9 +86,53 @@ body{
 }
 .post-btn:active{
     color: #212121;
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+    -moz-transition: all .3s ease; /* Firefox */
+    -ms-transition: all .3s ease; /* IE 9 */
+    -o-transition: all .3s ease; /* Opera */
+    transition: all .3s ease;
     background-color: #fafafa;
 }
 
+.post-actions > .left{
+    margin-right: auto;
+}
 
+.post-actions > .right{
+    margin-left: auto;
+}
 
 /* COMMENTS */
+.comment{
+    display: flex;
+    padding: 0.5rem 0.8rem;
+    align-items: right;
+    margin: 0;
+}
+.comment-data > p{
+    margin-top: 0.1rem; margin-bottom: 0.2rem;
+    font-size: 0.9rem;
+}
+.comment-data small{
+    font-size: 0.8rem;
+    color: gray;
+}
+.post > .comment > .user-img{
+    width: 27px; height: 27px;
+}
+.comment-data > span{
+    margin-top: 0.5rem;
+    display: block;
+    font-size: 0.9rem;
+}
+.comment-data{
+    padding: 0 0.5rem;
+    flex: 1;
+}
+.post > .comment{
+    margin-left: 1rem;
+    border-left: 1px solid lightgray;
+}
+.post > .comment:last-child{
+    margin-bottom: 0.5rem;
+}
