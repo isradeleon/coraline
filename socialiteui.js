@@ -93,8 +93,23 @@
         var items = staggered.querySelectorAll('.staggered-item')
     
         var cols = 3;
+        //var shouldCalculate = true;
         fakeMargin = 20
         for (let i = 0; i < items.length; i++) {
+            
+            //console.log(element)
+
+            /* if(i == 0){
+                continue;
+            }else if(shouldCalculate){
+                var temp = items[i-1];
+                if(element.offsetTop > temp.offsetTop){
+                    shouldCalculate = false;
+                }else{
+                    continue;
+                }
+            } */
+
             if(i < 3){
                 var element = items[i];
                 element.firstElementChild.style.marginBottom = fakeMargin+'px';
@@ -109,16 +124,17 @@
             if(images.length > 0){
                 for (let j = 0; j < images.length; j++) {
                     var img = images[j];
-                    console.log(img)
-                    console.log(imgLoaded(img))
+                    /* console.log(img)
+                    console.log(imgLoaded(img)) */
                     if(imgLoaded(img))
                         calculateNegativeMargin(element, refElement)
                     else{
                         img.addEventListener('load',function () {
-                            console.log('loaded'+j)
+                            /* console.log('loaded'+j) */
                             setUpStaggered()
                         })
-                        //return;
+                        /* podria ahorrarse algunas vueltas */
+                        return;
                     }
                 }
             }else{
