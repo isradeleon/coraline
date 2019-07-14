@@ -1,0 +1,91 @@
+.feed{
+    max-width: 700px;
+    /* max-width: 1128px; */
+    margin: 0 auto;
+}
+
+body{
+    font-family: sans-serif;
+}
+* {
+    font-weight: normal;
+}
+
+/* POST */
+.post{
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    box-shadow: 1px 1px 2px rgba(200, 200, 200, 0.5);
+    margin-bottom: 3rem;
+}
+
+.post>img{
+    width: 100%;
+    margin-bottom: 0.1rem;
+}
+.post-header{
+    display: flex;
+    padding: 0.8rem;
+    align-items: center;
+    margin: 0;
+}
+
+.post-data > p{
+    margin-top: 0.1rem; margin-bottom: 0.1rem;
+    font-size: 0.9rem;
+}
+.post-data > small{
+    margin: 0;
+    font-size: 0.8rem;
+}
+.post-data{
+    padding: 0 0.5rem;
+}
+
+.post-content {
+    font-size: 0.9rem;
+    padding: 0.1rem 0.8rem 0.8rem 0.8rem;
+    margin: 0;
+}
+
+.user-img{
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.post-actions{
+    padding: 0 0.8rem 0.4rem 0.8rem;
+    display: flex;
+    align-items: center;
+}
+.post-actions.right{
+    justify-content: flex-end;
+}
+.post-actions.center{
+    justify-content: center;
+}
+.post-actions.evenly{
+    justify-content: space-evenly;
+}
+.post-actions.equal{
+    justify-content: space-around;
+}
+.post-btn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.2rem 0.4rem;
+    font-size: 1.5rem;
+    border-radius: 10%;
+}
+.post-btn:active{
+    color: #212121;
+    background-color: #fafafa;
+}
+
+
+
+/* COMMENTS */
