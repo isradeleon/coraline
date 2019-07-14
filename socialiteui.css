@@ -155,11 +155,19 @@ body{
     flex-wrap: wrap; 
     flex-flow: row wrap;
 }
+.staggered > .staggered-item > * {
+    display: block;
+}
 .staggered.three > .staggered-item {
     width: calc(calc(100%/3) - 1%);
     padding: 0.5%;
 }
-@media screen and (max-width: 767px){
+/* tablets */
+@media only screen and (max-width: 991px) {
+
+}
+/* moibile */
+@media only screen and (max-width: 767px){
     .staggered.three > .staggered-item {
         width: 100%;
         padding: 0%;

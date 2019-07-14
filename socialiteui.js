@@ -5,16 +5,13 @@
     window.addEventListener('resize', (e)=>{
         console.log('resize')
         //console.log(e)
-        setUpStaggered();
+        setUpAllStaggered();
     })
 
     document.addEventListener('DOMNodeInserted', function(e){
-        console.log('INSERTEEEED')
-        console.log(e)
         var parent = e.relatedNode
         if(parent.className.includes('staggered')){
-            console.log('mmm deberia')
-            setUpStaggered();
+            setUpStaggered(parent);
         }
     })
 
@@ -87,17 +84,28 @@
         );
     }, 4000);
 
-    var fakeMargin = 20;
-    function setUpStaggered(){
-        var staggered = document.querySelector('.staggered')
-        var items = staggered.querySelectorAll('.staggered-item')
+    //var fakeMargin = 20;
+    function setUpAllStaggered(){
+        var staggered = document.querySelectorAll('.staggered')
+        for (let i = 0; i < staggered.length; i++) {
+            const s = staggered[i];
+            s.lastStaggeredItem = 0;
+            setUpStaggered(s)
+        }
+    }
+
+    function setUpStaggered(staggered){
+        //var staggered = document.querySelector('.staggered')
+        var items = staggered.querySelectorAll('.staggered > .staggered-item')
+        console.log(items)
     
         var cols = 3;
+        var fakeMargin = 20;
+
         //var shouldCalculate = true;
-        fakeMargin = 20
-        for (let i = 0; i < items.length; i++) {
-            
-            //console.log(element)
+        var i = staggered.lastStaggeredItem
+        for (i; i < items.length; i++) {
+            console.log('ITEEEEEM'+staggered.lastStaggeredItem+" "+i)
 
             /* if(i == 0){
                 continue;
@@ -110,7 +118,7 @@
                 }
             } */
 
-            if(i < 3){
+            if(i < cols){
                 var element = items[i];
                 element.firstElementChild.style.marginBottom = fakeMargin+'px';
                 continue;
@@ -127,42 +135,48 @@
                     /* console.log(img)
                     console.log(imgLoaded(img)) */
                     if(imgLoaded(img))
-                        calculateNegativeMargin(element, refElement)
+                        calculateNegativeMargin(element, refElement, fakeMargin)
                     else{
                         img.addEventListener('load',function () {
                             /* console.log('loaded'+j) */
-                            setUpStaggered()
+                            setUpStaggered(staggered)
                         })
                         /* podria ahorrarse algunas vueltas */
                         return;
                     }
                 }
             }else{
-                calculateNegativeMargin(element, refElement)
+                calculateNegativeMargin(element, refElement, fakeMargin)
             }
         }
     }
 
-    function calculateNegativeMargin(element, refElement){
+    function calculateNegativeMargin(element, refElement, fakeMargin){
         var fixedHeight = refElement.offsetHeight;
         var referenceHeight = refElement.firstElementChild.offsetHeight;
         
         var distance = fixedHeight - referenceHeight;
-        if(refElement.firstElementChild.staggered){
-            distance+=refElement.firstElementChild.staggered;
+        if(refElement.firstElementChild.wasStaggered){
+            distance+=refElement.firstElementChild.wasStaggered;
         }
         distance -= fakeMargin;
         
         element.firstElementChild.style.marginTop = '-'+distance+'px';
-        element.firstElementChild.staggered = distance;
+        element.firstElementChild.wasStaggered = distance;
         element.firstElementChild.style.marginBottom = fakeMargin+'px';
+
+        /**
+         * parent = staggered
+         */
+        element.parentNode.lastStaggeredItem++;
     }
 
     function imgLoaded(imgElement) {
         return imgElement.complete && imgElement.naturalHeight !== 0;
     }
 
-    setUpStaggered();
+    //setUpStaggered();
+    setUpAllStaggered();
 
     console.log()
  })();
