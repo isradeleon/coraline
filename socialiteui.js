@@ -100,7 +100,6 @@
             setUpStaggered(s)
         }
     }
-    var COUNTER = 0;
 
     function setUpStaggered(staggered){
         var items = staggered.querySelectorAll('.staggered > .staggered-item')
@@ -109,26 +108,22 @@
         var fakeMargin = 20;
 
         var w = getDeviceWidth();
-       /*  if(){
 
-        } */
-
-        //var shouldCalculate = true;
         for (var i = staggered.lastStaggeredItem, len = items.length; i < len; i++) {
-            //console.log('ITEEEEEM'+staggered.lastStaggeredItem+" "+i)
-            COUNTER++;
-            console.log('ITERACION'+COUNTER);
 
-            /* if(i == 0){
-                continue;
-            }else if(shouldCalculate){
-                var temp = items[i-1];
-                if(element.offsetTop > temp.offsetTop){
-                    shouldCalculate = false;
+            /* 
+            TEST SETTING COL FOR EACH ELEMENT
+            var element = items[i];
+            if (i == 0) {
+                element.staggeredCol = 1
+            }else{
+                var prevEl = items[i-1];
+                if(prevEl.staggeredCol < cols){
+                    element.staggeredCol = prevEl.staggeredCol+1
                 }else{
-                    continue;
+                    element.staggeredCol = 1
                 }
-            } */
+            }*/
 
             if(i < cols){
                 var element = items[i];
@@ -148,12 +143,6 @@
                         calculateNegativeMargin(element, refElement, fakeMargin)
                     else{
                         img.addEventListener('load',function () {
-                            /* for (var k = i; k >= index; k--) {
-                                var _refElement = items[k-cols];
-                                var _element = items[k];
-                                console.log(_element+" "+k)
-                                calculateNegativeMargin(_element, _refElement, fakeMargin)
-                            } */
                             setUpStaggered(staggered)
                         })
                         //staggered.lastStaggeredItem = index+1;
@@ -193,6 +182,5 @@
         return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     }
 
-    //setUpStaggered();
     setUpAllStaggered();
 })();
