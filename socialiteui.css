@@ -1,14 +1,27 @@
 .feed{
     max-width: 600px;
-    /* max-width: 1128px; */
     margin: 0 auto;
+    display: block;
+}
+
+.container{
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 10px;
+    display: block;
+}
+
+.container-fluid{
+    max-width: 1128px;
+    margin: 0 auto;
+    display: block;
 }
 
 body{
     font-family: sans-serif;
+    margin: 0;
 }
 * {
-    font-weight: normal;
     color: #212121;
     font-weight: 300;
 }
@@ -73,6 +86,7 @@ body{
     margin: 0;
     display: block;
     font-size: 0.8rem;
+    color: gray;
 }
 .post-data{
     padding: 0 0.5rem;
