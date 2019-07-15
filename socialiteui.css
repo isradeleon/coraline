@@ -195,7 +195,7 @@ body{
     }
 }
 /* moibile */
-@media only screen and (max-width: 767px){
+@media (max-width: 767px){
     .staggered > .staggered-item, .staggered.three > .staggered-item,
     .staggered.tablet-two > .staggered-item, 
     .staggered.tablet-three > .staggered-item,
@@ -214,11 +214,103 @@ body{
 }
 
 /* COLUMNS */
-.flex-row-multicolum{
+.cols{
     display: flex; 
     flex-direction: row; 
     flex-wrap: wrap; 
     flex-flow: row wrap;
 }
-.flex-row-multicolum .flex-col{ width: 50%; /*flex: 1;*/ }
+.cols>.col, .cols>*[class*='col-']{
+    padding: 0.5%;
+}
+.cols>.col{flex: 1;}
+.cols>.col-1{
+    width: calc(calc(100%/12) - 1%);
+}
+.cols>.col-2{
+    width: calc(calc(calc(100%/12) * 2) - 1%);
+}
+.cols>.col-3{
+    width: calc(calc(100%/4) - 1%);
+}
+.cols>.col-4{
+    width: calc(calc(calc(100%/12) * 4) - 1%);
+}
+.cols>.col-5{
+    width: calc(calc(calc(100%/12) * 5) - 1%);
+}
+.cols>.col-6{
+    width: calc(calc(100%/2) - 1%);
+}
+.cols>.col-7{
+    width: calc(calc(calc(100%/12) * 7) - 1%);
+}
+.cols>.col-8{
+    width: calc(calc(calc(100%/12) * 8) - 1%);
+}
+.cols>.col-9{
+    width: calc(calc(calc(100%/12) * 9) - 1%);
+}
+.cols>.col-10{
+    width: calc(calc(calc(100%/12) * 10) - 1%);
+}
+.cols>.col-11{
+    width: calc(calc(calc(100%/12) * 11) - 1%);
+}
+.cols>.col-12{
+    width: calc(100% - 1%);
+}
 
+@media (max-width: 991px) {
+    
+}
+/* moibile */
+@media (max-width: 767px){
+    .cols>.col{width: 100%;}
+
+    .cols>.col-m-1{
+        width: calc(calc(100%/12) - 1%);
+        padding: 0.5%;
+    }
+    .cols>.col-m-2{
+        width: calc(calc(calc(100%/12) * 2) - 1%);
+        padding: 0.5%;
+    }
+    .cols>.col-m-1{
+        width: calc(calc(calc(100%/12) * 2) - 1%);
+        padding: 0.5%;
+    }
+    .cols>.col-m-6{
+        width: calc(calc(100%/2) - 1%);
+        padding: 0.5%;
+    }
+    .cols>.col-m-6{
+        width: calc(calc(100%/2) - 1%);
+        padding: 0.5%;
+    }
+    .cols>.col-m-1{
+        width: calc(calc(100%/12) - 1%);
+        padding: 0.5%;
+    }
+    .cols>.col-m-6{
+        width: calc(calc(100%/2) - 1%);
+        padding: 0.5%;
+    }
+    .cols>.col-m-1{
+        width: calc(calc(100%/12) - 1%);
+        padding: 0.5%;
+    }
+    .cols>.col-m-6{
+        width: calc(calc(100%/2) - 1%);
+        padding: 0.5%;
+    }
+    .cols>.col-m-1{
+        width: calc(calc(100%/12) - 1%);
+        padding: 0.5%;
+    }
+    .cols>.col-m-6{
+        width: calc(calc(100%/2) - 1%);
+        padding: 0.5%;
+    }
+    
+}
