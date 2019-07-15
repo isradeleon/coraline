@@ -97,6 +97,7 @@
         var staggered = document.querySelectorAll('.staggered')
         for (var i = 0, len = staggered.length; i < len; i++) {
             const s = staggered[i];
+            /* s = s.cloneNode(true) */
             s.lastStaggeredItem = 0;
             setUpStaggered(s)
         }
@@ -108,16 +109,24 @@
         var cols = 4;
         var fakeMargin = 20;
 
-        if(staggered.classList.contains('three')){
+        /* if(staggered.classList.contains('three')){
             cols = 3;
         }else if(staggered.classList.contains('two')){
             cols = 2;
-        }
+        } */
 
-        /* var w = getDeviceWidth();
+        var w = getDeviceWidth();
 
         if(w <= 767){
-            if(staggered.classList.contains('mobile-two')){
+            if(staggered.classList.contains('mobile-three')){
+                cols = 3;
+            }else if(staggered.classList.contains('mobile-two')){
+                cols = 2;
+            }
+        }else if(w <= 991){
+            if(staggered.classList.contains('tablet-three')){
+                cols = 3;
+            }else if(staggered.classList.contains('tablet-two')){
                 cols = 2;
             }
         }else{
@@ -126,7 +135,7 @@
             }else if(staggered.classList.contains('two')){
                 cols = 2;
             }
-        } */
+        }
 
         /* var w = getDeviceWidth();
         if(w <= 767){
@@ -173,16 +182,20 @@
                 }
             }*/
 
+            var element = items[i];
+            //var content = element;
+            //element.parentNode.replaceChild(element, content);
+            element.firstElementChild.style.marginTop = '0px';
+            element.firstElementChild.style.marginBottom = fakeMargin+'px';
+            element.firstElementChild.wasStaggered = undefined;
+            //element = element.cloneNode()
             if(i < cols){
-                var element = items[i];
-                element.firstElementChild.style.marginTop = '0px';
-                element.firstElementChild.style.marginBottom = fakeMargin+'px';
                 continue;
             }
             
             var index = i-cols;
             var refElement = items[index];
-            var element = items[i];
+            //var element = items[i];
 
             var images = refElement.querySelectorAll('img');
             if(images.length > 0){
