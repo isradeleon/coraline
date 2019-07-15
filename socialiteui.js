@@ -15,7 +15,8 @@
         }
     })
 
-    setTimeout(() => {
+
+   setTimeout(() => {
         document.querySelector('.staggered').insertAdjacentHTML(
             'beforeend', 
             `<div class="staggered-item">
@@ -107,7 +108,54 @@
         var cols = 4;
         var fakeMargin = 20;
 
-        var w = getDeviceWidth();
+        if(staggered.classList.contains('three')){
+            cols = 3;
+        }else if(staggered.classList.contains('two')){
+            cols = 2;
+        }
+
+        /* var w = getDeviceWidth();
+
+        if(w <= 767){
+            if(staggered.classList.contains('mobile-two')){
+                cols = 2;
+            }
+        }else{
+            if(staggered.classList.contains('three')){
+                cols = 3;
+            }else if(staggered.classList.contains('two')){
+                cols = 2;
+            }
+        } */
+
+        /* var w = getDeviceWidth();
+        if(w <= 767){
+            if(staggered.classList.contains('mobile-three')){
+                cols = 3;
+            }else if(staggered.classList.contains('mobile-two')){
+                cols = 2;
+            }else{
+                cols = 4
+            }
+        }
+        else if(w <= 991){
+            if(staggered.classList.contains('tablet-three')){
+                cols = 3;
+            }else if(staggered.classList.contains('tablet-two')){
+                cols = 2;
+            }else{
+                cols = 4
+            }
+        }
+        else{
+            if(staggered.classList.contains('three')){
+                cols = 3;
+            }else if(staggered.classList.contains('two')){
+                cols = 2;
+            }else{
+                cols = 4
+            }
+        } */
 
         for (var i = staggered.lastStaggeredItem, len = items.length; i < len; i++) {
 
@@ -127,6 +175,7 @@
 
             if(i < cols){
                 var element = items[i];
+                element.firstElementChild.style.marginTop = '0px';
                 element.firstElementChild.style.marginBottom = fakeMargin+'px';
                 continue;
             }
