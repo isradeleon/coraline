@@ -3,8 +3,6 @@
      * Staggered functionallity
      */
     window.addEventListener('resize', (e)=>{
-        /* console.log('resize') */
-        //console.log(w)
         setUpAllStaggered();
     })
 
@@ -15,89 +13,10 @@
         }
     })
 
-
-   setTimeout(() => {
-        document.querySelector('.staggered').insertAdjacentHTML(
-            'beforeend', 
-            `<div class="staggered-item">
-            <article class="post">
-    
-                <section class="post-header">
-                    <span class="user-img"
-                    style="
-                    width: 30px; height: 30px;
-                    background-image: url(https://imagenes.milenio.com/mo9ozdZ0_6gSr9na6tncVakxgsk=/958x596/https://www.milenio.com/uploads/media/2019/05/19/elizabeth-olsen-audiciono-para-ser_0_250_913_568.jpg)"></span>
-        
-                    <span class="post-data">
-                        <p>Elizabeth Olsen</p>
-                        <small>5 min ago</small>
-                    </span>
-                </section>
-    
-                <img src="http://es.web.img3.acsta.net/pictures/15/09/15/12/25/231241.jpg" alt="">
-                    
-                <section class="social-actions evenly">
-                    <button class="post-btn">
-                        <i class="far fa-heart"></i>
-                    </button>
-                    <button class="post-btn">
-                        <i class="far fa-comment"></i>
-                    </button>
-                </section>
-    
-            </article>
-        </div>`
-        );
-    }, 1000);
-
-    function jojo(timeout){
-        setTimeout(() => {
-            for (let index = 0; index < 10; index++)
-            document.querySelector('.staggered').insertAdjacentHTML(
-                'beforeend', 
-                `<div class="staggered-item">
-                <article class="post">
-        
-                    <section class="post-header">
-                        <span class="user-img"
-                        style="
-                        width: 30px; height: 30px;
-                        background-image: url(https://imagenes.milenio.com/mo9ozdZ0_6gSr9na6tncVakxgsk=/958x596/https://www.milenio.com/uploads/media/2019/05/19/elizabeth-olsen-audiciono-para-ser_0_250_913_568.jpg)"></span>
-            
-                        <span class="post-data">
-                            <p>Elizabeth Olsen</p>
-                            <small>5 min ago</small>
-                        </span>
-                    </section>
-        
-                    <img src="http://es.web.img3.acsta.net/pictures/15/09/15/12/25/231241.jpg" alt="">
-                        
-                    <section class="social-actions evenly">
-                        <button class="post-btn">
-                            <i class="far fa-heart"></i>
-                        </button>
-                        <button class="post-btn">
-                            <i class="far fa-comment"></i>
-                        </button>
-                    </section>
-        
-                </article>
-            </div>`
-            );
-        }, timeout);
-    }
-
-    jojo(2000)
-    jojo(3000)
-    jojo(4000)
-    jojo(5000)
-
-    //var fakeMargin = 20;
     function setUpAllStaggered(){
         var staggered = document.querySelectorAll('.staggered')
         for (var i = 0, len = staggered.length; i < len; i++) {
             const s = staggered[i];
-            /* s = s.cloneNode(true) */
             s.lastStaggeredItem = 0;
             setUpStaggered(s)
         }
@@ -109,14 +28,7 @@
         var cols = 4;
         var fakeMargin = 20;
 
-        /* if(staggered.classList.contains('three')){
-            cols = 3;
-        }else if(staggered.classList.contains('two')){
-            cols = 2;
-        } */
-
         var w = getDeviceWidth();
-
         if(w <= 767){
             if(staggered.classList.contains('mobile-three')){
                 cols = 3;
@@ -137,35 +49,6 @@
             }
         }
 
-        /* var w = getDeviceWidth();
-        if(w <= 767){
-            if(staggered.classList.contains('mobile-three')){
-                cols = 3;
-            }else if(staggered.classList.contains('mobile-two')){
-                cols = 2;
-            }else{
-                cols = 4
-            }
-        }
-        else if(w <= 991){
-            if(staggered.classList.contains('tablet-three')){
-                cols = 3;
-            }else if(staggered.classList.contains('tablet-two')){
-                cols = 2;
-            }else{
-                cols = 4
-            }
-        }
-        else{
-            if(staggered.classList.contains('three')){
-                cols = 3;
-            }else if(staggered.classList.contains('two')){
-                cols = 2;
-            }else{
-                cols = 4
-            }
-        } */
-
         for (var i = staggered.lastStaggeredItem, len = items.length; i < len; i++) {
 
             /* 
@@ -183,12 +66,9 @@
             }*/
 
             var element = items[i];
-            //var content = element;
-            //element.parentNode.replaceChild(element, content);
             element.firstElementChild.style.marginTop = '0px';
             element.firstElementChild.style.marginBottom = fakeMargin+'px';
             element.firstElementChild.wasStaggered = undefined;
-            //element = element.cloneNode()
             if(i < cols){
                 continue;
             }
