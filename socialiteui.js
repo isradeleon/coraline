@@ -6,18 +6,28 @@
         setUpAllStaggered();
     })
 
+    /*
+    DOMNodeInserted deprecated 
     document.addEventListener('DOMNodeInserted', function(e){
         var parent = e.relatedNode
         if(parent.className.includes('staggered')){
             setUpStaggered(parent);
         }
-    })
+    }) */
 
     function setUpAllStaggered(){
         var staggered = document.querySelectorAll('.staggered')
         for (var i = 0, len = staggered.length; i < len; i++) {
-            const s = staggered[i];
+            var s = staggered[i];
             s.lastStaggeredItem = 0;
+            
+            var observer = new MutationObserver(()=>{
+                setUpStaggered(s);
+            });
+            observer.observe(s, {
+                childList: true
+            });
+
             setUpStaggered(s)
         }
     }
