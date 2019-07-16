@@ -1,8 +1,40 @@
-nav.navbar{
+.navbar{
     height: 65px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    padding: 0 1rem;
+    width: 100%;
+    background-color: white;
+}
+.navbar.fixed{
+    position: fixed;
+    top: 0;
+}
+.navbar a{
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+}
+.navbar a:active {
+    border: none;
+    outline: 0;
+}
+.navbar a:focus {
+    border: none;
+    outline: 0;
+}
+.navbar a:target {
+    border: none;
+    outline: 0;
+}
+.navbar a:hover{
+    background: #fafafa;
+}
+.navbar>.right{
+    margin-left: auto;
+}
+.navbar>.left{
+    margin-right: auto;
 }
 
 .feed{
@@ -22,6 +54,9 @@ nav.navbar{
     margin: 0 auto;
     display: block;
     padding: 0;
+}
+.below-navbar{
+    margin-top: 65px;
 }
 
 body{
@@ -234,7 +269,7 @@ body{
     flex-flow: row wrap;
 }
 .cols>.col, .cols>*[class*='col-']{
-    padding: 0.5%;
+    padding: 10px;
 }
 .cols>.col{flex: 1;}
 .cols>.col-1{
