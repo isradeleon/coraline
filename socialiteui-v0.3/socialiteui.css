@@ -162,7 +162,6 @@ body{
 /* STAGGERED */
 .staggered{
     width: 100%;
-   /*  max-width: 1000px; */
     margin: 0 auto;
     display: flex; 
     flex-direction: row; 
@@ -342,3 +341,52 @@ body{
         width: 100%;
     }
 }
+
+
+/* GRID FEED*/
+/* STAGGERED */
+.grid-feed{
+    width: 100%;
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    flex-flow: row wrap;
+    border-color: white;
+}
+.grid-feed>.grid-feed-item{
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid;
+    border-color: inherit;
+}
+.grid-feed>.grid-feed-item{
+    position: relative;
+    width: 25%;
+    padding-bottom: 25%;
+}
+.grid-feed.three>.grid-feed-item{
+    width: calc(100%/3);
+    padding-bottom: calc(100%/3);
+    /* padding: 0.5%; */
+}
+.grid-feed.two>.grid-feed-item{
+    width: 50%;
+    padding-bottom: 50%;
+    /* padding: 0.5%; */
+}
+
+.grid-feed-item>.item-content{
+    position: absolute;
+    height: 100%; width: 100%;
+    top: 0; right: 0; left: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* padding: 0.5%; */
+}
+
+/* @media (max-width: 767px){
+    .grid-feed>.grid-feed-item{
+        
+    }
+} */
