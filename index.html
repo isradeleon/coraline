@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SocialiteUI</title>
+    <title>SocialiteUI: Responsive framework for designing social interfaces.</title>
     <link rel="stylesheet" href="socialiteui-v0.3/socialiteui.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="stylesheet"
@@ -12,23 +12,24 @@
 </head>
 <body>
     <nav class="navbar fixed">
-        <a href="./index.html">SocialiteUI</a>
+        <a class="link" href="./index.html">SocialiteUI</a>
         
         <section class="right">
-            <a href="./docs.html"><i class="fa fa-book-open"></i> Docs</a>
+            <a class="link" href="./docs.html"><i class="fa fa-book-open"></i> Docs</a>
             <!-- <a href="./staggered.html">staggered</a>
             <a href="./grid.html">grid</a> -->
         </section>
     </nav>
 
-    <section class="container below-navbar" style="text-align: center;">
-        <h1>SocialiteUI</h1>
-        <h4>An open source CSS framework for helping you building social interfaces.</h4>
-    </section>
-    
-    <br>
+    <section class="container below-navbar">
+        <br>
+        <h1>A responsive framework for helping you designing social interfaces.</h1>
+        <div>
+            <a class="btn color-salmon" href="">Download current version (v0.4)</a>
+            <a class="btn" href=""><i class="fab fa-github"></i> View on Github</a>
+            <a class="btn" href="docs.html"><i class="fa fa-book-open"></i> Documentation</a>
+        </div><br>
 
-    <section class="feed">
         <article class="post">
     
             <section class="post-header">
@@ -42,7 +43,7 @@
             </section>
             
             <p class="post-content relevant">
-                    Hey! I'm a text based post! As you can see, I have a circular user image! And some social actions too!
+                    Hey! I'm a text based post! As you can see, I have a circular user image, and some social actions too!
             </p>
             
             <section class="social-actions evenly">
@@ -53,9 +54,11 @@
     
         </article>
         
-        <h4>Sample code:</h4>
-
+        <h4>Code:</h4>
+        
 <pre style="font-size: 0.9rem;"><code class="html"><article class="post">
+
+    <!-- Post header data -->
     <section class="post-header">
         <span class="user-img"
         style="background-image: url(https://picsum.photos/200/200)"></span>
@@ -65,21 +68,29 @@
             <small>5 min ago</small>
         </span>
     </section>
-    
+
+    <!-- .relevant means is a text based post -->
     <p class="post-content relevant">
-        Hey! I'm a text based post! As you can see, I have a circular user image! And some social actions too!
+        Here goes the text!
     </p>
-    
+
+    <!-- Things user can do go inside .social-actions -->
     <section class="social-actions evenly">
         <i style="font-size: 1.5rem;" class="far fa-heart"></i>
         <i style="font-size: 1.5rem;" class="far fa-comment"></i>
         <i style="font-size: 1.5rem;" class="far fa-flag"></i>
     </section>
+
 </article>
+
 </code></pre>
-
-
+    
     </section>
+    
+    <br>
+
+    
+    
 
     <script>
     document.querySelectorAll("code").forEach(function(element) {
