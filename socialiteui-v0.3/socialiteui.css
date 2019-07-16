@@ -1,3 +1,10 @@
+nav.navbar{
+    height: 65px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
 .feed{
     max-width: 600px;
     margin: 0 auto;
@@ -37,9 +44,12 @@ body{
 
 /* SOCIAL ACTIONS */
 .social-actions{
-    padding: 0.4rem 0.8rem;
+    padding: 0.1rem 0.5rem;
     display: flex;
     align-items: center;
+}
+.social-actions > :not(.left):not(.right)   {
+    margin: 0.5rem;
 }
 .social-actions.end{
     justify-content: flex-end;
@@ -56,20 +66,26 @@ body{
 .social-actions > .left{
     margin-right: auto;
 }
+.social-actions > .left > *{
+    margin: 0.5rem;
+}
 .social-actions > .right{
     margin-left: auto;
+}
+.social-actions > .right > *{
+    margin: 0.5rem;
 }
 
 /* POSTS */
 .post{
     border: 1px solid #e0e0e0;
     width: 100%;
+    background-color: white;
     box-shadow: 1px 1px 2px rgba(200, 200, 200, 0.5);
     margin-bottom: 3rem;
 }
 .post>img{
     width: 100%;
-    margin-bottom: 0.1rem;
 }
 .post-header{
     display: flex;
@@ -102,10 +118,7 @@ body{
 .post-content.relevant {
     font-size: 1.2rem;
 }
-.post > .social-actions{
-    padding-top: 0;
-}
-.post-btn{
+/* .post-btn{
     background: transparent;
     border: none;
     cursor: pointer;
@@ -115,13 +128,13 @@ body{
 }
 .post-btn:active{
     color: #212121;
-    -webkit-transition: all .3s ease; /* Safari and Chrome */
-    -moz-transition: all .3s ease; /* Firefox */
-    -ms-transition: all .3s ease; /* IE 9 */
-    -o-transition: all .3s ease; /* Opera */
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
     transition: all .3s ease;
     background-color: #fafafa;
-}
+} */
 
 /* COMMENTS */
 .comment{
