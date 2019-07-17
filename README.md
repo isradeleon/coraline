@@ -5,7 +5,7 @@ A responsive framework for helping you designing social interfaces.
 ## Social components
 
 * Staggered feed
-* Posts & comments
+* Cards & comments
 
 ## Browser Support
 

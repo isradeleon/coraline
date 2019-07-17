@@ -17,7 +17,7 @@
     padding: 0;
 }
 .below-navbar{
-    margin-top: 65px;
+    padding-top: 65px;
 }
 
 body{
@@ -144,7 +144,7 @@ body{
 }
 
 /* POSTS */
-.post{
+.card{
     border: 1px solid #e0e0e0;
     width: 100%;
     max-width: 600px;
@@ -152,57 +152,40 @@ body{
     box-shadow: 1px 1px 2px rgba(200, 200, 200, 0.5);
     margin: 0 auto 3rem auto;
 }
-.post>img{
+.card>img{
     width: 100%;
 }
-.post-header{
+.card-header{
     display: flex;
     padding: 0.8rem;
     align-items: center;
     margin: 0;
 }
 
-.post-data > p{
+.card-data > p{
     font-weight: 400;
     margin-top: 0.1rem; margin-bottom: 0.2rem;
     font-size: 0.9rem;
 }
-.post-data > small{
+.card-data > small{
     margin: 0;
     display: block;
     font-size: 0.8rem;
     color: gray;
 }
-.post-data{
+.card-data{
     padding: 0 0.5rem;
     flex: 1;
 }
 
-.post-content {
+.card-content {
     font-size: 0.9rem;
     padding: 0.1rem 0.8rem 0.8rem 0.8rem;
     margin: 0;
 }
-.post-content.relevant {
+.card-content.relevant {
     font-size: 1.2rem;
 }
-/* .post-btn{
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0.2rem 0.4rem;
-    font-size: 1.5rem;
-    border-radius: 10%;
-}
-.post-btn:active{
-    color: #212121;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-    background-color: #fafafa;
-} */
 
 /* COMMENTS */
 .comment{
@@ -220,7 +203,7 @@ body{
     font-size: 0.8rem;
     color: gray;
 }
-.post > .comment > .user-img{
+.card > .comment > .user-img{
     width: 27px; height: 27px;
 }
 .comment-data > span{
@@ -232,11 +215,11 @@ body{
     padding: 0 0.5rem;
     flex: 1;
 }
-.post > .comment{
+.card > .comment{
     margin-left: 1rem;
     border-left: 1px solid lightgray;
 }
-.post > .comment:last-child{
+.card > .comment:last-child{
     margin-bottom: 0.5rem;
 }
 
