@@ -1,32 +1,59 @@
-{% extends "root.njk.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SocialiteUI: Responsive framework for designing social interfaces.</title>
+    <link rel="stylesheet" href="socialiteui-v0.4.0/socialiteui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/atom-one-light.min.css">
+    
+    
+</head>
+<body>
+  <nav class="navbar fixed">
+    <a class="link" href="./index.html">SocialiteUI</a>
 
-{% block body %}
+    <section class="right">
+        <a class="link" href="./components.html"><i class="fa fa-code"></i> Docs</a>
+        <!-- <a href="./staggered.html">staggered</a>
+        <a href="./grid.html">grid</a> -->
+    </section>
+  </nav>
+  
+  
 <section class="below-navbar">
     <aside class="side-menu">
         <a href="./components.html" class="link text-salmon">
-            {% if current == 'components' %}
+            
                 <i class="fa fa-code text-salmon"></i> 
-            {% endif %} Components</a>
-        <a href="" class="link">{% if current == 'elements' %}
-                <i class="fa fa-code text-salmon"></i> 
-            {% endif %} Elements</a>
-        <a href="" class="link">{% if current == 'form' %}
-                <i class="fa fa-code text-salmon"></i> 
-            {% endif %} Form</a>
-        <a href="" class="link">{% if current == 'grid system' %}
-                <i class="fa fa-code text-salmon"></i> 
-            {% endif %} Grid system</a>
-        <a href="" class="link">{% if current == 'layout' %}
-                <i class="fa fa-code text-salmon"></i> 
-            {% endif %} Layout</a>
-        <a href="" class="link">{% if current == 'helpers' %}
-                <i class="fa fa-code text-salmon"></i> 
-            {% endif %} Helpers</a>
+             Components</a>
+        <a href="" class="link"> Elements</a>
+        <a href="" class="link"> Form</a>
+        <a href="" class="link"> Grid system</a>
+        <a href="" class="link"> Layout</a>
+        <a href="" class="link"> Helpers</a>
     </aside>
 
     <section class="side-menu-content">
-        {% block content %}
-        {% endblock %}
+        
+<div class="container">
+    <h3 style="font-weight: bold;"><i class="fa fa-code"></i> Components</h3>
+    <ul class="content">
+        <li><a href="" class="link">Staggered view</a></li>
+        <li><a href="" class="link">Card</a></li>
+        <li><a href="" class="link">Comment</a></li>
+        <li><a href="" class="link">Side menu</a></li>
+        <li><a href="" class="link">Navbar</a></li>
+    </ul>
+
+    <br>
+    
+    <h4>Staggered view</h4>
+</div>
+
     </section>
 </section>
 
@@ -173,4 +200,16 @@
     </article>
 
 </section> -->
-{% endblock %}
+
+
+  <script>
+    document.querySelectorAll("code").forEach(function(element) {
+        element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+	
+</body>
+</html>
