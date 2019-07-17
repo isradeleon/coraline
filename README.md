@@ -1,10 +1,11 @@
 # [SocialiteUI](https://socialiteui.com)
 
-A responsive framework for helping you designing beautiful user interfaces.
+A responsive framework for helping you designing user interfaces.
 
 ## Social components
 
-* Staggered feed
+* Staggered view
+* Side menu
 * Cards & comments
 
 ## Browser Support
