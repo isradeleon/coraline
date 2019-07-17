@@ -1,6 +1,6 @@
 {
   "name": "socialiteui",
-  "version": "1.0.0",
+  "version": "0.4.0",
   "description": "Responsive WEB framework for social interfaces",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,5 @@
   "bugs": {
     "url": "https://github.com/Isradeleon/socialiteui/issues"
   },
-  "homepage": "https://github.com/Isradeleon/socialiteui#readme"
+  "homepage": "https://socialiteui.com"
 }
