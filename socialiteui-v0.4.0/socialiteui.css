@@ -91,11 +91,11 @@ body{
     cursor: pointer;
 }
 
-.link.color-salmon, .btn.color-salmon{
+.link.salmon, .btn.salmon{
     background-color: #ff7c83;
     color: white;
 }
-.link.color-lightblue, .btn.color-lightblue{
+.link.lightblue, .btn.lightblue{
     background-color: #03A9F4;
     color: white;
 }
@@ -408,7 +408,6 @@ body{
 
 
 /* GRID FEED*/
-/* STAGGERED */
 .grid-feed{
     width: 100%;
     margin: 0 auto;
@@ -460,3 +459,48 @@ body{
         
     }
 } */
+
+/* SIDE-MENU */
+.side-menu{
+    width: 20%;
+    position: fixed;
+}
+.side-menu>*{
+    display: block;
+}
+.side-menu-content{
+    padding-left: 20%;
+}
+
+/* CONTENT */
+.content {
+    padding-top: 0;
+    list-style: none; /* Remove default bullets */
+}
+.content li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    color: #ff7c83;
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+.content.lightblue li::before {
+    color: #03A9F4;
+}
+.content .link{
+    padding: 0.3em;
+    font-size: 0.9rem;
+}
+.content .link:hover{
+    background: none;
+    color: #ff7c83;
+}
+
+/* HELPERS*/
+.text-salmon{
+    color: #ff7c83;
+}
+.text-lightblue{
+    color: #03A9F4;
+}

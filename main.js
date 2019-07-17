@@ -1,10 +1,12 @@
 var nunjucks = require('nunjucks')
 var fs = require('fs'); 
 
-var index = nunjucks.render('website/index.njk.html')
+var env = new nunjucks.Environment(new nunjucks.FileSystemLoader('website'));
+
+var index = env.render('index.njk.html')
 fs.writeFileSync('index.html', index);
 
-var docs = nunjucks.render('website/docs.njk.html')
+var docs = env.render('docs.njk.html')
 fs.writeFileSync('docs.html', docs);
 
-console.log('Ready!')
+console.log('Website is ready!')

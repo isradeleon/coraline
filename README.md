@@ -1,6 +1,6 @@
 # [SocialiteUI](https://socialiteui.com)
 
-A responsive framework for helping you designing social interfaces.
+A responsive framework for helping you designing beautiful user interfaces.
 
 ## Social components
 
