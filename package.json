@@ -1,0 +1,27 @@
+{
+  "name": "socialiteui",
+  "version": "1.0.0",
+  "description": "Responsive WEB framework for social interfaces",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Isradeleon/socialiteui.git"
+  },
+  "keywords": [
+    "css",
+    "js",
+    "framework",
+    "web",
+    "social",
+    "flexbox"
+  ],
+  "author": "isradln",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Isradeleon/socialiteui/issues"
+  },
+  "homepage": "https://github.com/Isradeleon/socialiteui#readme"
+}
