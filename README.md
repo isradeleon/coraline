@@ -2,7 +2,7 @@
 
 A responsive framework for helping you designing user interfaces.
 
-## Social components
+## Components
 
 * Staggered view
 * Side menu
