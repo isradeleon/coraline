@@ -106,7 +106,7 @@ body{
     color: white;
 }
 
-.user-img{
+.circular-img{
     border-radius: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -210,7 +210,7 @@ body{
     font-size: 0.8rem;
     color: gray;
 }
-.card > .comment > .user-img{
+.card > .comment > .circular-img{
     width: 27px; height: 27px;
 }
 .comment-data > span{
