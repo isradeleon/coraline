@@ -16,16 +16,18 @@
     
             <section class="card-header">
                 <span class="user-img"
-                style="background-image: url(https://imagenes.milenio.com/mo9ozdZ0_6gSr9na6tncVakxgsk=/958x596/https://www.milenio.com/uploads/media/2019/05/19/elizabeth-olsen-audiciono-para-ser_0_250_913_568.jpg)"></span>
+                style="background-image: url(https://picsum.photos/200/200)"></span>
     
                 <span class="card-data">
                     <p>Elizabeth</p>
                     <small>5 min ago</small>
                 </span>
             </section>
+
+            <img src="https://picsum.photos/600/300" alt="">
             
             <p class="card-content relevant">
-                Hey! I'm a text based post! As you can see, I have a circular user image, and some social actions too!
+                Hey! I'm a card! As you can see, I have a circular user image, and some actions too!
             </p>
             
             <section class="social-actions evenly">
@@ -36,11 +38,12 @@
     
         </article>
         
-        <h4>Code:</h4>
+        <p>Code for this card component:</p>
         
-<pre style="font-size: 0.9rem;"><code class="html"><article class="card">
+<pre style="font-size: 0.9rem;"><code class="html"><!-- Just add the .card class -->
+<article class="card">
 
-    <!-- Post header data -->
+    <!-- Card header data -->
     <section class="card-header">
         <span class="user-img"
         style="background-image: url(https://picsum.photos/200/200)"></span>
@@ -51,7 +54,10 @@
         </span>
     </section>
 
-    <!-- .relevant means is a text based post -->
+    <!-- Image inside .card will be responsive with 100% width -->
+    <img src="https://picsum.photos/600/300" alt="">
+
+    <!-- .relevant will make this text bigger -->
     <p class="card-content relevant">
         Here goes the text!
     </p>
@@ -66,6 +72,8 @@
 </article>
 
 </code></pre>
+
+
     
     </section>    
 {% endblock %}
