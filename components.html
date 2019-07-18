@@ -10,7 +10,12 @@
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/atom-one-light.min.css">
     
-    
+<style>
+    pre{
+        font-size: 0.9rem;
+    }
+</style>
+
 </head>
 <body>
   <nav class="navbar fixed">
@@ -56,8 +61,8 @@
         <li><a href="#staggered" class="link">Staggered grid view</a></li>
     </ul>
 
+    <!-- CARD -->
     <h3 id="card" class="header-below-navbar text-salmon">Card</h3>
-
     <div class="cols">
         <div class="col-6">
             <article class="card">
@@ -72,9 +77,9 @@
                     </span>
                 </section>
         
-                <img src="https://picsum.photos/600/300" alt="">
+                <img src="https://picsum.photos/600/400" alt="">
 
-                <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="card-content relevant">This card has the header at the top!</p>
                 
                 <section class="social-actions evenly">
                     <i style="font-size: 1.5rem;" class="far fa-heart"></i>
@@ -87,7 +92,7 @@
         <div class="col-6">
             <article class="card">
         
-                <img src="https://picsum.photos/600/300" alt="">
+                <img src="https://picsum.photos/600/400" alt="">
 
                 <section class="card-header">
                     <span class="user-img"
@@ -99,7 +104,7 @@
                     </span>
                 </section>
 
-                <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="card-content relevant">And this one has it below img</p>
                 
                 <section class="social-actions">
                     <i style="font-size: 1.5rem;" class="far fa-heart"></i>
@@ -113,8 +118,78 @@
         </div>
     </div>
 
+    <br>
 
+    <p>Add the <code>.card</code> class to your element. The card is composed of: <code>card-header</code>, 
+    <code>card-content</code>, <code>social-actions</code> and an <code>img</code> element.</p>
+<pre><code class="html"><article class="card">
+
+    <!-- Card header -->
+    <section class="card-header">
+        <span class="user-img"
+        style="background-image: url(https://picsum.photos/200/200)"></span>
+
+        <span class="card-data">
+            <p>Elizabeth</p>
+            <small>5 min ago</small>
+        </span>
+    </section>
+
+    <!-- img will be responsive 100% width -->
+    <img src="https://picsum.photos/600/400" alt="">
+
+    <p class="card-content relevant"><!-- .relevant for bigger text -->
+        ...
+    </p>
     
+    <!-- Evenly distributed actions -->
+    <section class="social-actions evenly">
+        <i style="font-size: 1.5rem;" class="far fa-heart"></i>
+        <i style="font-size: 1.5rem;" class="far fa-comment"></i>
+        <i style="font-size: 1.5rem;" class="far fa-flag"></i>
+    </section>
+
+</article>
+</code></pre>
+
+    <br>
+
+    <p>You may change the order of this elements or remove them if you want:</p>
+
+    <article class="card">
+        <section class="card-header">
+            <span class="user-img"
+            style="width: 40px; height: 40px; background-image: url(https://picsum.photos/200/200)"></span>
+
+            <span class="card-data">
+                <p>Elizabeth</p>
+                <small>5 min ago</small>
+            </span>
+        </section>
+        <p class="card-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus a quis veritatis.</p>
+    </article>
+    
+<pre><code class="html"><article class="card">
+    <section class="card-header">
+        <span class="user-img"
+        style="background-image: url(https://picsum.photos/200/200)"></span>
+
+        <span class="card-data">
+            <p>Elizabeth</p>
+            <small>5 min ago</small>
+        </span>
+    </section>
+
+    <p class="card-content relevant">
+        ...
+    </p>
+
+    <!-- No img and no social-actions in this card -->
+
+</article>
+</code></pre>
+
+    <!-- STAGGERED -->
     <h3 id="staggered" class="header-below-navbar text-salmon">Staggered grid view</h3>
     
     <section class="staggered tablet-two">
@@ -157,7 +232,7 @@
                     </span>
                 </section>
 
-                <img src="https://picsum.photos/500/300"
+                <img src="https://picsum.photos/500/400"
                     alt="">
 
                 <section class="social-actions evenly">
@@ -316,7 +391,7 @@
     </section>
 
     <p>Just add the <code>.staggered</code> class to your element.</p>
-<pre style="font-size: 0.9rem;"><code class="html"><section class="staggered">
+<pre><code class="html"><section class="staggered">
 
     <!-- Every item must be inside a tag with the staggered-item class -->
     <div class="staggered-item">
@@ -335,7 +410,7 @@
 
     <p>In desktop, the staggered grid will be 4 columns length by default. 
     Use the classes <code>.two</code> or <code>.three</code> for 2 or 3 columns.</p>
-<pre style="font-size: 0.9rem;"><code class="html"><section class="staggered two"><!-- Two columns length -->
+<pre><code class="html"><section class="staggered two"><!-- Two columns length -->
     ...
 </section></code></pre>
 
@@ -345,7 +420,7 @@
     Use the classes <code>.mobile-two</code> or <code>.mobile-three</code> for 2 or 3 columns. 
     The tablet will respect the desktop columns, but you may use <code>.tablet-two</code> or <code>.tablet-three</code> 
     to specify a different column length if need it.</p>
-<pre style="font-size: 0.9rem;"><code class="html"><!-- Two columns on mobile, three on tablet and 4 on desktop -->
+<pre><code class="html"><!-- Two columns on mobile, three on tablet and 4 on desktop -->
 <section class="staggered mobile-two tablet-three">
     ...
 </section></code></pre>
