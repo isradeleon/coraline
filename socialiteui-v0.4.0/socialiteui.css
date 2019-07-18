@@ -19,6 +19,9 @@
 .below-navbar{
     padding-top: 65px;
 }
+.header-below-navbar{
+    padding-top: 75px;
+}
 
 body{
     font-family: sans-serif;

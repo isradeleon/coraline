@@ -4,7 +4,7 @@ A responsive framework for helping you designing user interfaces.
 
 ## Components
 
-* Staggered view
+* Staggered grid view
 * Side menu
 * Cards & comments
 
