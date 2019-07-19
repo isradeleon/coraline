@@ -116,38 +116,38 @@ body{
     height: 45px;
 }
 
-/* SOCIAL ACTIONS */
-.social-actions{
+/* USER ACTIONS */
+.user-actions{
     padding: 0.1rem 0.5rem;
     display: flex;
     align-items: center;
 }
-.social-actions > :not(.left):not(.right)   {
+.user-actions > :not(.left):not(.right)   {
     margin: 0.5rem;
     cursor: pointer;
 }
-.social-actions.end{
+.user-actions.end{
     justify-content: flex-end;
 }
-.social-actions.center{
+.user-actions.center{
     justify-content: center;
 }
-.social-actions.evenly{
+.user-actions.evenly{
     justify-content: space-evenly;
 }
-.social-actions.equal{
+.user-actions.equal{
     justify-content: space-around;
 }
-.social-actions > .left{
+.user-actions > .left{
     margin-right: auto;
 }
-.social-actions > .left > *{
+.user-actions > .left > *{
     margin: 0.5rem;
 }
-.social-actions > .right{
+.user-actions > .right{
     margin-left: auto;
 }
-.social-actions > .right > *{
+.user-actions > .right > *{
     margin: 0.5rem;
 }
 
