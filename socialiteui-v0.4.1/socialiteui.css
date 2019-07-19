@@ -111,6 +111,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #eaeaea;
+    /* display: inline-block; */
     width: 45px;
     height: 45px;
 }
@@ -164,6 +165,8 @@ body{
 }
 .card-header{
     display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
     padding: 0.8rem;
     align-items: center;
     margin: 0;
@@ -199,6 +202,8 @@ body{
     display: flex;
     padding: 0.5rem 0.8rem;
     align-items: right;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
     margin: 0;
 }
 .comment-data > p{
