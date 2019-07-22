@@ -1,7 +1,9 @@
 /*
     SocialiteUI v0.4.2
 */
-
+img{
+    vertical-align: middle;
+}
 p{
     font-size: 0.9rem;
 }
@@ -236,7 +238,7 @@ body{
 
 /* CARDS */
 .card{
-    border: 1px solid #e0e0e0;
+    border: 1px solid #eaeaea;
     width: 100%;
     max-width: 600px;
     background-color: white;
