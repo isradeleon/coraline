@@ -69,22 +69,85 @@ body{
     background-color: white;
     z-index: 100;
 }
-@media (max-width: 767px){
-    .navbar{
-        padding: 0 0.5rem;
-    }
+.navbar-content{
+    /* width: 100%;
+     */flex: 1;
+    display: flex;
 }
 .navbar.fixed{
     position: fixed;
     top: 0;
 }
-.navbar>.right{
+.navbar-end{
     margin-left: auto;
 }
-.navbar>.left{
-    margin-right: auto;
+
+.burguer:before{
+    content: '\2630';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.6rem;
+}
+.burguer{
+    font-weight: 100;
+    cursor: pointer;
+    border-radius: 100%;
+}
+.burguer:hover{
+    background: rgba(200, 200, 200, 0.2);
+}
+.burguer-btn{
+    display: none;
+}
+.burguer{
+    display: none;
 }
 
+@media (max-width: 991px){
+    .navbar-content{
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: fixed;
+        background: white;
+        top: 64px;
+        margin: 0;
+        border-bottom: 1px solid #eaeaea;
+        transition: all ease .3s;
+        left: -100%;
+        overflow-y: auto;
+        /*  overflow: hidden; */
+        /* max-height: 0; */
+    }
+    .navbar-content>.navbar-end{
+        width: 100%;
+        display: block;
+    }
+    .navbar-content>*, .navbar-end>*{
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+    .burguer{
+        display: block;
+    }
+    .burguer-btn:checked ~ .navbar-content{
+        left: 0;
+        /* max-height: 100%; */
+    }
+    .burguer-btn:checked ~ .burguer:before{
+        content: '\00D7';
+    }
+    .burguer-btn:checked *{
+        overflow-y: hidden;
+    }
+    .navbar{
+        padding: 0 0.5rem;
+    }
+}
 /* Buttons/links*/
 .link, .btn{
     border: 0px;
