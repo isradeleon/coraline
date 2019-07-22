@@ -109,7 +109,7 @@ body{
 @media (max-width: 991px){
     .navbar-content{
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
         display: block;
         position: fixed;
         background: white;
@@ -118,9 +118,7 @@ body{
         border-bottom: 1px solid #eaeaea;
         transition: all ease .3s;
         left: -100%;
-        overflow-y: auto;
-        /*  overflow: hidden; */
-        /* max-height: 0; */
+        opacity: 0;
     }
     .navbar-content>.navbar-end{
         width: 100%;
@@ -136,7 +134,7 @@ body{
     }
     .burguer-btn:checked ~ .navbar-content{
         left: 0;
-        /* max-height: 100%; */
+        opacity: 1;
     }
     .burguer-btn:checked ~ .burguer:before{
         content: '\00D7';
