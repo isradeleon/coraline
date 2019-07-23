@@ -1,6 +1,6 @@
 # [SocialiteUI](https://socialiteui.com)
 
-A responsive framework for helping you designing user interfaces.
+Lightweight HTML, CSS and JS framework for WEB design. SocialiteUI is 100% responsive and mobile-first designed.
 
 ## Components
 
