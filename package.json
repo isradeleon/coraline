@@ -1,7 +1,7 @@
 {
   "name": "socialiteui",
   "version": "0.4.2",
-  "description": "Responsive WEB framework for social interfaces",
+  "description": "Responsive and lightweight HTML, CSS and JS framework",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
