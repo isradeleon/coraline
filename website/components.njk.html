@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="container">
-    <h3 style="font-weight: bold;"><i class="fa fa-code"></i> Components</h3>
+    <h5><i class="fa fa-code"></i> Components</h5>
     <ul class="content">
         <li><a href="#card" class="link">Card</a></li>
         <li><a href="#comment" class="link">Comment</a></li>
@@ -12,7 +12,7 @@
     </ul>
 
     <!-- CARD -->
-    <h3 id="card" class="header-below-navbar text-salmon">Card</h3>
+    <h5 id="card" class="header-below-navbar text-salmon">Card</h5>
     <div class="cols">
         <div class="col-6">
             <article class="card">
@@ -74,7 +74,7 @@
     <code>card-content</code>, <code>user-actions</code> and an <code>img</code> element.</p>
 <pre><code class="html"><article class="card">
 
-    <!-- Card header -->
+    <!-- Card header data -->
     <section class="card-header">
         <span class="circular-img"
         style="background-image: url(https://picsum.photos/200/200)"></span>
@@ -85,14 +85,15 @@
         </span>
     </section>
 
-    <!-- img will be responsive 100% width -->
+    <!--  Image inside .card will be responsive 100% width -->
     <img src="https://picsum.photos/600/400" alt="">
 
-    <p class="card-content relevant"><!-- .relevant for bigger text -->
+    <!-- .relevant for bigger content font size -->
+    <p class="card-content relevant">
         ...
     </p>
     
-    <!-- Evenly distributed actions -->
+    <!-- Evenly distributed user actions -->
     <section class="user-actions evenly">
         <i style="font-size: 1.5rem;" class="far fa-heart"></i>
         <i style="font-size: 1.5rem;" class="far fa-comment"></i>
@@ -140,7 +141,7 @@
 </code></pre>
 
     <!-- COMMENTS -->
-    <h3 id="comment" class="header-below-navbar text-salmon">Comment</h3>
+    <h5 id="comment" class="header-below-navbar text-salmon">Comment</h5>
 
     <div class="cols">
         <div class="col-6">
@@ -205,7 +206,7 @@
 </code></pre>
 
     <!-- STAGGERED -->
-    <h3 id="staggered" class="header-below-navbar text-salmon">Staggered grid view</h3>
+    <h5 id="staggered" class="header-below-navbar text-salmon">Staggered grid view</h5>
     
     <section class="staggered tablet-two">
 

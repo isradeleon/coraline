@@ -1,12 +1,47 @@
 /*
     SocialiteUI v0.4.2
 */
+*{
+    font-size: 1rem;
+}
+small{
+    font-size: 0.8rem;
+}
+h1, h1 *{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+h2, h2 *{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.75rem;
+}
+h3, h3 *{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+}
+h4, h4 *{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.45rem;
+}
+h5, h5 *{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.30rem;
+}
+h6, h6 *{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+}
+
 img{
     vertical-align: middle;
 }
-p{
-    font-size: 0.9rem;
-}
+
 .feed{
     max-width: 600px;
     margin: 0 auto;
@@ -178,15 +213,16 @@ body{
     outline: 0;
     text-decoration: none;
     padding: 0.75em 0.9em;
-    font-size: 1em;
     display: inline-block;
     position: relative;
     transition: all .1s ease-in-out;
     background-color: transparent;
 }
+.link, .link *, .btn, .btn *{
+    font-size: 1rem;
+}
 .btn{
-    margin-left: 0.3rem;
-    margin-right: 0.3rem;
+    margin: 0.3rem;
 }
 .link:active, .btn:active {
     border: none;
@@ -266,7 +302,7 @@ body{
     max-width: 600px;
     background-color: white;
     /* box-shadow: 1px 1px 2px rgba(200, 200, 200, 0.5); */
-    box-shadow: 0px 1px 1px rgba(200, 200, 200, 0.5);
+    box-shadow: 0px 1px 6px rgba(200, 200, 200, 0.5);
     margin: 0 auto 1rem auto;
 }
 .card>img{
@@ -289,7 +325,6 @@ body{
 .card-data > small{
     margin: 0;
     display: block;
-    font-size: 0.8rem;
     color: gray;
 }
 .card-data{
@@ -297,12 +332,11 @@ body{
     flex: 1;
 }
 
-.card-content {
-    font-size: 0.9rem;
+.card-content{
     padding: 0.4rem 0.8rem 0.8rem 0.8rem;
     margin: 0;
 }
-.card-content.relevant {
+.card-content.relevant, .card-content.relevant *{
     font-size: 1.2rem;
 }
 
@@ -320,8 +354,7 @@ body{
     margin-top: 0.1rem; margin-bottom: 0;
     font-size: 0.9rem;
 }
-.comment-data small{
-    font-size: 0.8rem;
+.comment-data small, .comment-data small *{
     color: gray;
 }
 .comment-data > span{
@@ -590,15 +623,23 @@ body{
 }
 
 /* HELPERS*/
-.text-salmon{
+.text-salmon, .text-salmon *{
     color: #ff7c83;
 }
-.text-lightblue{
+.text-lightblue, .text-lightblue *{
     color: #03A9F4;
 }
-.text-white{
+.text-white, .text-white *{
     color: #ffffff;
 }
+
+.text-bold, .text-bold *{
+    font-weight: bold;
+}
+.text-italic, .text-italic *{
+    font-style: italic;
+}
+
 .hidden{
     display: none;
 }
