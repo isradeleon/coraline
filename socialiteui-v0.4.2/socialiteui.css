@@ -99,7 +99,9 @@ body{
     width: 29px;
     height: 29px;
 }
-.burguer-icon, .burguer-icon:after, .burguer-icon:before{
+.burguer-btn>.burguer-icon, 
+.burguer-btn>.burguer-icon:after, 
+.burguer-btn>.burguer-icon:before{
     background-color: #212121;
     border-radius: 5px;
     content: '';
