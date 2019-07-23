@@ -4,9 +4,9 @@ Lightweight HTML, CSS and JS framework for WEB design. SocialiteUI is 100% respo
 
 ## Components
 
-* Staggered grid view
-* Side menu
-* Cards & comments
+* [Staggered grid view](https://socialiteui.com/components.html#staggered){:target="_blank"}
+* [Card](https://socialiteui.com/components.html#card){:target="_blank"}
+* [Comment](https://socialiteui.com/components.html#comment){:target="_blank"}
 
 ## Browser Support
 
@@ -20,7 +20,7 @@ SocialiteUI is based on [Flexbox](https://developer.mozilla.org/en-US/docs/Web/C
 
 ## Documentation
 
-Currently working on the docs.
+Currently working on the [docs](https://socialiteui.com).
 
 ## License
 This library is licensed under `MIT license`. View [license](LICENSE).
