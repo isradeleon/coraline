@@ -96,21 +96,21 @@ body{
     flex-direction: column;
     justify-content: flex-end;
     margin: 0.5em;
-    width: 30px;
-    height: 30px;
+    width: 29px;
+    height: 29px;
 }
 .burguer-icon, .burguer-icon:after, .burguer-icon:before{
-    background-color: #000;
-    border-radius: 3px;
+    background-color: #212121;
+    border-radius: 5px;
     content: '';
     display: block;
-    height: 1px;
+    height: 2px;
     margin: 10px 0;
     transition: all .2s ease-in-out;
 }
 .burguer-icon{
     position: absolute;
-    top: -5px;
+    top: -8px;
     width: 100%;
 }
 .burguer-btn{
@@ -126,11 +126,12 @@ body{
         background: white;
         top: 64px;
         margin: 0;
-        transition: all ease .3s;
+        transition: all ease .2s;
+        /* left: 0; */
         left: -100%;
         opacity: 0;
-        /* border-bottom: 1px solid #eaeaea; */
-        box-shadow: 0px 2px 2px rgba(200, 200, 200, 0.5);
+        border-bottom: 1px solid #eaeaea;
+        box-shadow: 0px 3px 3px rgba(200, 200, 200, 0.4);
     }
     .navbar-content>.navbar-end{
         width: 100%;
@@ -151,7 +152,8 @@ body{
     }
 
     .menu-toggle:checked ~ .burguer-btn > .burguer-icon:before {
-        transform: rotate(90deg) translateX(-10px);
+        transform: rotate(-270deg) translateX(-10px);
+        /* transform: rotate(90deg) translateX(-10px); */
     }
     
     .menu-toggle:checked ~ .burguer-btn > .burguer-icon:after {
@@ -160,6 +162,7 @@ body{
     
     .menu-toggle:checked ~ .burguer-btn > .burguer-icon {
         transform: translateY(10px) rotate(135deg);
+        /* transform: translateY(10px) rotate(45deg); */
     }
 
     .navbar{
@@ -172,10 +175,11 @@ body{
     border: 0px;
     outline: 0;
     text-decoration: none;
-    padding: 0.6em 1em;
-    font-size: 1rem;
+    padding: 0.75em 0.9em;
+    font-size: 1em;
     display: inline-block;
     position: relative;
+    transition: all .1s ease-in-out;
     background-color: transparent;
 }
 .btn{
@@ -589,6 +593,9 @@ body{
 }
 .text-lightblue{
     color: #03A9F4;
+}
+.text-white{
+    color: #ffffff;
 }
 .hidden{
     display: none;
