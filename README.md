@@ -4,9 +4,9 @@ Lightweight HTML, CSS and JS framework for WEB design. SocialiteUI is 100% respo
 
 ## Components
 
-* [Staggered grid view](https://socialiteui.com/components.html#staggered){:target="_blank"}
-* [Card](https://socialiteui.com/components.html#card){:target="_blank"}
-* [Comment](https://socialiteui.com/components.html#comment){:target="_blank"}
+* <a href="https://socialiteui.com/components.html#staggered" target="_blank">Staggered grid view</a>
+* <a href="https://socialiteui.com/components.html#card" target="_blank">Card</a>
+* <a href="https://socialiteui.com/components.html#comment" target="_blank">Comment</a>
 
 ## Browser Support
 
