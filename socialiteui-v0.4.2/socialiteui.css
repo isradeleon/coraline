@@ -760,3 +760,25 @@ body{
 .full-width{
     width: 100%;
 }
+
+.site-section{
+    display: flex;
+    padding: 15px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fafafa;
+}
+.site-section.purple{
+    background-color: #6c5ce7;
+}
+.site-section.purple *{
+    color: white;
+}
+.site-section.salmon{
+    background-color: #ff7675;
+}
+.site-section.salmon *{
+    color: white;
+}
