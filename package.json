@@ -27,7 +27,9 @@
   },
   "homepage": "https://socialiteui.com",
   "devDependencies": {
+    "autoprefixer": "^9.6.1",
     "csso": "^3.5.1",
-    "nunjucks": "^3.2.0"
+    "nunjucks": "^3.2.0",
+    "postcss": "^7.0.17"
   }
 }
