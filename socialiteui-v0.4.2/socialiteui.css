@@ -1,9 +1,22 @@
 /*
     SocialiteUI v0.4.2
+    Color reference:
+        salmon: #ff7675
+        lightblue: #74b9ff
+        blue: #0984e3
+        lightgreen: #55efc4
+        green: #00b894
+        lightred: #ff6b6b
+        red: #ee5253
+        lightpurple: #a29bfe
+        purple: #6c5ce7
+        lightyellow: #ffeaa7
+        yellow: #fdcb6e
+        darkgray: #2d3436
 */
 *{
     font-size: 1rem;
-    color: #212121;
+    color: #2d3436;
     font-weight: 300;
     box-sizing:border-box;
     line-height: 1.3;
@@ -135,7 +148,7 @@ body{
 .burguer-btn>.burguer-icon, 
 .burguer-btn>.burguer-icon:after, 
 .burguer-btn>.burguer-icon:before{
-    background-color: #212121;
+    background-color: #2d3436;
     border-radius: 5px;
     content: '';
     display: block;
@@ -241,11 +254,15 @@ body{
 }
 
 .link.salmon, .btn.salmon{
-    background-color: #ff7c83;
+    background-color: #ff7675;
     color: white;
 }
 .link.lightblue, .btn.lightblue{
-    background-color: #03A9F4;
+    background-color: #74b9ff;
+    color: white;
+}
+.link.blue, .btn.blue{
+    background-color: #0984e3;
     color: white;
 }
 
@@ -437,7 +454,7 @@ body{
     flex-flow: row wrap;
 }
 .cols>.col, .cols>*[class*='col-']{
-    padding: 0.5%;
+    padding: 1%;
 }
 .cols>.col{flex: 1;}
 .cols>.col-1{
@@ -614,11 +631,11 @@ body{
     font-weight: bold; /* If you want it to be bold */
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
-    color: #ff7c83;
+    color: #ff7675;
     margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 .content.lightblue li::before {
-    color: #03A9F4;
+    color: #74b9ff;
 }
 .content .link{
     padding: 0.3em;
@@ -628,15 +645,27 @@ body{
 }
 .content .link:hover{
     background: none;
-    color: #ff7c83;
+    color: #ff7675;
 }
 
 /* HELPERS*/
 .text-salmon, .text-salmon *{
-    color: #ff7c83;
+    color: #ff7675;
 }
 .text-lightblue, .text-lightblue *{
-    color: #03A9F4;
+    color: #74b9ff;
+}
+.text-blue, .text-blue *{
+    color: #0984e3;
+}
+.text-yellow, .text-yellow *{
+    color: #f9ca24;
+}
+.text-purple, .text-purple *{
+    color: #6c5ce7;
+}
+.text-darkgray, .text-darkgray *{
+    color: #2d3436;
 }
 .text-white, .text-white *{
     color: #ffffff;
@@ -649,7 +678,45 @@ body{
     font-style: italic;
 }
 
+.text-center, .text-center *{
+    text-align: center;
+}
+.text-right, .text-right *{
+    text-align: right;
+}
+.text-left, .text-left *{
+    text-align: left;
+}
+
+.text-size-xs, .text-size-xs *{
+    font-size: 0.8rem;
+}
+.text-size-s, .text-size-s *{
+    font-size: 0.9rem;
+}
+.text-size-1, .text-size-1 *{
+    font-size: 2rem;
+}
+.text-size-2, .text-size-2 *{
+    font-size: 1.75rem;
+}
+.text-size-3, .text-size-3 *{
+    font-size: 1.6rem;
+}
+.text-size-4, .text-size-4 *{
+    font-size: 1.45rem;
+}
+.text-size-5, .text-size-5 *{
+    font-size: 1.30rem;
+}
+.text-size-6, .text-size-6 *{
+    font-size: 1.15rem;
+}
+
 .hidden{
     display: none;
 }
 
+.full-width{
+    width: 100%;
+}
