@@ -17,15 +17,13 @@ fs.writeFileSync('components.html', components);
  */
 var baseCss = fs.readFileSync('base.css')
 
-
-
 /**
  * CSS MINIFIER
  */
 var csso = require('csso');
 
-var minifiedCss = csso.minify(baseCss).css;
-fs.writeFileSync('socialiteui-v0.4.2/socialiteui.min.css', minifiedCss);
+//var minifiedCss = csso.minify(baseCss).css;
+//fs.writeFileSync('socialiteui-v0.4.2/socialiteui.min.css', minifiedCss);
 
 /**
  * AUTOPREFIXER
@@ -40,12 +38,13 @@ const postcss = require('postcss')
     console.log(result)
 }) */
 
-postcss([ autoprefixer ]).process(minifiedCss).then(result => {
+postcss([ autoprefixer ]).process(baseCss,{from: undefined}).then(result => {
     result.warnings().forEach(warn => {
       console.warn(warn.toString())
     })
-    console.log(result.css)
-    console.log(result)
+    
+    var minifiedCss = csso.minify(result.css).css;
+    fs.writeFileSync('socialiteui-v0.4.2/socialiteui.min.css', minifiedCss);
+    
+    console.log('Website is ready!')
 })
-
-console.log('Website is ready!')
