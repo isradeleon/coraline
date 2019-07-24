@@ -1,95 +1,112 @@
 {% extends "root.njk.html" %}
 
 {% block body %}
-    <section class="container below-navbar">
-        <br><br>
+    <section class="site-section white below-navbar">
 
-        <div class="cols">
-            <div class="col-6 col-l-12">
-                <h1>A lightweight, mobile-first framework for HTML, CSS and JS. SocialiteUI is open source, responsive and available for free.</h1>
-                <div>
-                    <a class="btn" href="./components.html"><i class="fa fa-code"></i> Documentation</a>
-                    <a target="_blank" rel="noopener noreferrer" class="btn" 
-                    href="https://github.com/Isradeleon/socialiteui"><i class="fab fa-github"></i> View on Github</a>
-                    <a class="btn salmon" 
-                    href="https://github.com/Isradeleon/socialiteui/archive/0.4.2.zip">Download current version (0.4.2)</a>
+        <section class="container">
+            <br><br>
+    
+            <div class="cols">
+                <div class="col-6">
+                    <h2>A lightweight, mobile-first framework for HTML, CSS and JS. SocialiteUI is open source, responsive and available for free.</h2>
+                    <div>
+                        <!-- <a class="btn" href="./components.html"><i class="fa fa-code"></i> Documentation</a>
+                        <a target="_blank" rel="noopener noreferrer" class="btn" 
+                        href="https://github.com/Isradeleon/socialiteui"><i class="fab fa-github"></i> View on Github</a> -->
+                        <a class="btn salmon" 
+                        href="https://github.com/Isradeleon/socialiteui/archive/0.4.2.zip">Download current version (0.4.2)</a>
+                        
+                        <span id="npm" class="btn">
+                            <input style="display: none;" type="text" value="npm install socialiteui" id="npmInput">
+                            <code>
+                                <b class="text-bold text-salmon">$</b> npm install socialiteui
+                            </code>
+                            <span id="copy">(Copy)</span>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="col-6">
+                    <br>
+    
+                    <article class="card">
+                
+                        <section class="card-header">
+                            <span class="circular-img"
+                            style="background-image: url(https://picsum.photos/200/200)"></span>
+                
+                            <span class="card-data">
+                                <p>Elizabeth</p>
+                                <small>5 min ago</small>
+                            </span>
+                        </section>
+            
+                        <!-- <img src="https://picsum.photos/600/650" alt=""> -->
+                        
+                        <p class="card-content relevant">
+                            Hey! I'm a card component example! As you can see, I have a circular image, and some actions too!
+                        </p>
+                        
+                        <section class="user-actions evenly">
+                            <i class="text-size-4 far fa-heart"></i>
+                            <i class="text-size-4 far fa-comment"></i>
+                            <i class="text-size-4 far fa-flag"></i>
+                        </section>
+                
+                    </article>
+    
+                    <!-- <div class="text-center">
+                        <a class="btn" href="./components.html"><i class="fa fa-code"></i> Docs</a>
+                        <a target="_blank" rel="noopener noreferrer" class="btn" 
+                        href="https://github.com/Isradeleon/socialiteui"><i class="fab fa-github"></i> Github</a>
+                    </div> -->
                 </div>
             </div>
-
-            <div class="col-6 col-l-12">
-                <br>
-
-                <article class="card">
-            
-                    <section class="card-header">
-                        <span class="circular-img"
-                        style="background-image: url(https://picsum.photos/200/200)"></span>
-            
-                        <span class="card-data">
-                            <p>Elizabeth</p>
-                            <small>5 min ago</small>
-                        </span>
-                    </section>
-        
-                    <!-- <img src="https://picsum.photos/600/650" alt=""> -->
-                    
-                    <p class="card-content relevant">
-                        Hey! I'm a card component example! As you can see, I have a circular image, and some actions too!
-                    </p>
-                    
-                    <section class="user-actions evenly">
-                        <i class="text-size-4 far fa-heart"></i>
-                        <i class="text-size-4 far fa-comment"></i>
-                        <i class="text-size-4 far fa-flag"></i>
-                    </section>
-            
-                </article>
-            </div>
-        </div>
-
-        <br>
-
-        <div class="cols">
-            <div class="col-3 col-t-6 text-center">
-                <a href="#lightweight" class="link full-width">
-                    <p class="text-size-5 text-blue">
-                        <i class="fa fa-feather-alt"></i>
-                        <br>Lightweight
-                        <br><span class="text-size-s text-gray">CSS weighs just 9.4K</span>
-                    </p>
-                </a>
-            </div>
-            <div class="col-3 col-t-6 text-center">
-                <a href="" class="link full-width">
-                    <p class="text-size-5 text-purple">
-                        <i class="fa fa-mobile"></i> 
-                        <i class="fa fa-tablet"></i> 
-                        <i class="fa fa-laptop-code"></i> 
-                        <i class="fa fa-desktop"></i>
-                        <br>Responsive
-                        <br><span class="text-size-s text-gray">Adaptable to all screens</span>
-                    </p>
-                </a>
-            </div>
-            <div class="col-3 col-t-6 text-center">
-                <a href="" class="link full-width">
-                    <p class="text-size-5 text-salmon">
-                        <i class="fa fa-bolt"></i> <i class="far fa-lightbulb"></i>
-                        <br>Easy to learn
-                        <br><span class="text-size-s text-gray">Simple & clear syntax</span>
-                    </p>
-                </a>
-            </div>
-            <div class="col-3 col-t-6 text-center">
-                <a href="" class="link full-width">
-                    <p class="text-size-5 text-darkgray">
-                        <i class="fa fa-cloud-download-alt"></i>
-                        <br>Easy to install
-                    </p>
-                </a>
-            </div>
-        </div>
     
+            <br>
+    
+            <div class="cols">
+                <div class="col-3 col-t-6 text-center">
+                    <a href="#lightweight" class="link full-width">
+                        <p class="text-size-5 text-blue">
+                            <i class="fa fa-feather-alt"></i>
+                            <br>Lightweight
+                            <br><span class="text-size-s text-gray">CSS weighs just 9.4K</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="col-3 col-t-6 text-center">
+                    <a href="" class="link full-width">
+                        <p class="text-size-5 text-purple">
+                            <i class="fa fa-mobile"></i> 
+                            <i class="fa fa-tablet"></i> 
+                            <i class="fa fa-laptop-code"></i> 
+                            <i class="fa fa-desktop"></i>
+                            <br>Responsive
+                            <br><span class="text-size-s text-gray">Adaptable to all screens</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="col-3 col-t-6 text-center">
+                    <a href="" class="link full-width">
+                        <p class="text-size-5 text-salmon">
+                            <i class="fa fa-bolt"></i> <i class="far fa-lightbulb"></i>
+                            <br>Easy to learn
+                            <br><span class="text-size-s text-gray">Simple & clear syntax</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="col-3 col-t-6 text-center">
+                    <a href="" class="link full-width">
+                        <p class="text-size-5 text-darkgray">
+                            <i class="fa fa-cloud-download-alt"></i>
+                            <br>Easy to install
+                        </p>
+                    </a>
+                </div>
+            </div>
+        
+        </section>
     </section>
     
     <section class="site-section" id="lightweight">
@@ -103,4 +120,23 @@
             </p>
         </div>
     </section>
+{% endblock %}
+
+{% block js %}
+<script>
+    (function(){
+        document.querySelector('#npm').addEventListener('click',()=>{
+
+            var npmInput = document.querySelector("#npmInput");
+            npmInput.select();
+            document.execCommand("copy");
+            document.querySelector("#copy").textContent = 'Copied!'
+            setTimeout(() => {
+                document.querySelector("#copy").textContent = '(Copy)'
+            }, 1000);
+            /* Alert the copied text */
+            //alert("Copied the text: " + copyText.value);
+        })
+    })();
+</script>
 {% endblock %}
