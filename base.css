@@ -23,9 +23,6 @@
     scrollbar-width: thin;
     scrollbar-color: lightgray #fafafa;
 }
-small{
-    font-size: 0.8rem;
-}
 h1, h1 *{
     margin-top: 1rem;
     margin-bottom: 0.5rem;
@@ -55,6 +52,9 @@ h6, h6 *{
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-size: 1.15rem;
+}
+small, small *{
+    font-size: 0.8rem;
 }
 
 img{
@@ -704,8 +704,8 @@ body{
 .text-purple, .text-purple *{
     color: #6c5ce7;
 }
-.text-darkgray, .text-darkgray *{
-    color: #2d3436;
+.text-gray, .text-gray *{
+    color: gray;
 }
 .text-white, .text-white *{
     color: #ffffff;
@@ -728,29 +728,29 @@ body{
     text-align: left;
 }
 
-.text-size-xs, .text-size-xs *{
-    font-size: 0.8rem;
-}
-.text-size-s, .text-size-s *{
-    font-size: 0.9rem;
-}
-.text-size-1, .text-size-1 *{
-    font-size: 2rem;
-}
-.text-size-2, .text-size-2 *{
-    font-size: 1.75rem;
-}
-.text-size-3, .text-size-3 *{
-    font-size: 1.6rem;
-}
-.text-size-4, .text-size-4 *{
-    font-size: 1.45rem;
+.text-size-6, .text-size-6 *{
+    font-size: 1.15rem;
 }
 .text-size-5, .text-size-5 *{
     font-size: 1.30rem;
 }
-.text-size-6, .text-size-6 *{
-    font-size: 1.15rem;
+.text-size-4, .text-size-4 *{
+    font-size: 1.45rem;
+}
+.text-size-3, .text-size-3 *{
+    font-size: 1.6rem;
+}
+.text-size-2, .text-size-2 *{
+    font-size: 1.75rem;
+}
+.text-size-1, .text-size-1 *{
+    font-size: 2rem;
+}
+.text-size-s, .text-size-s *{
+    font-size: 0.9rem;
+}
+.text-size-xs, .text-size-xs *{
+    font-size: 0.8rem;
 }
 
 .hidden{
