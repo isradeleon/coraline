@@ -494,6 +494,46 @@ body{
     width: 100%;
 }
 
+/* large screen */
+@media (min-width: 1200px){
+    .cols>.col-l-1{
+        width: calc(100%/12);
+    }
+    .cols>.col-l-2{
+        width: calc(calc(100%/12) * 2);
+    }
+    .cols>.col-l-3{
+        width: 25%;
+    }
+    .cols>.col-l-4{
+        width: calc(calc(100%/12) * 4);
+    }
+    .cols>.col-l-5{
+        width: calc(calc(100%/12) * 5);
+    }
+    .cols>.col-l-6{
+        width: 50%;
+    }
+    .cols>.col-l-7{
+        width: calc(calc(100%/12) * 7);
+    }
+    .cols>.col-l-8{
+        width: calc(calc(100%/12) * 8);
+    }
+    .cols>.col-l-9{
+        width: 75%;
+    }
+    .cols>.col-l-10{
+        width: calc(calc(100%/12) * 10);
+    }
+    .cols>.col-l-11{
+        width: calc(calc(100%/12) * 11);
+    }
+    .cols>.col-l-12{
+        width: 100%;
+    }
+}
+
 /* tablet */
 @media (max-width: 991px) {
     /* .cols>.col, .cols>*[class*='col-']{
