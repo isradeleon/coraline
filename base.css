@@ -140,7 +140,8 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 0.5em;
+    /* margin: 0.5rem; */
+    margin: 8px;
     width: 29px;
     height: 29px;
 }
@@ -222,7 +223,7 @@ img{
     border: 0px;
     outline: 0;
     text-decoration: none;
-    padding: 0.75em 0.9em;
+    padding: 0.75rem 0.9rem;
     display: inline-block;
     position: relative;
     transition: all .1s ease-in-out;
@@ -623,42 +624,61 @@ img{
     }
 }
 
-/* SIDE-MENU */
-.side-menu{
+/* SIDEBAR 2 */
+
+
+/* SIDEBAR */
+/* .sidebar-container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.sidebar-container.below-navbar{
+    padding-top: 0;
+}
+.sidebar{
     background-color: white;
     z-index: 1;
     width: 20%;
     height: 100%;
-    position: fixed;
+    position: absolute;
     border-right: 1px solid #eaeaea;
+    overflow-y: auto;
 }
-.side-menu>*{
+.sidebar>*{
     display: block;
 }
-.side-menu-content{
+.sidebar-content{
+    width: 80%;
+    margin-left: 20%;
+    position: absolute;
+    overflow-y: auto;
     padding-left: 20%;
-}
+} */
 /* tablets */
-@media (max-width: 991px) {
-    .side-menu{
+/* @media (max-width: 991px) {
+    .sidebar{
         width: 100%;
         position: relative;
         text-align: center;
         border-right: none;
         border-bottom: 1px #eaeaea solid;
         display: flex;
-        overflow-y: auto;
         height: 60px;
         align-items: center;
     }
-    .side-menu-content{
+    .sidebar-content{
         padding-left: 0;
     }
-    .side-menu>*{
+    .sidebar>*{
         flex-shrink: 0;
         margin: auto;
     }
-}
+} */
 
 /* CONTENT */
 .content {
@@ -669,18 +689,15 @@ img{
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     font-weight: bold; /* If you want it to be bold */
     display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
+    width: 1rem; /* Also needed for space (tweak if needed) */
     color: #ff7675;
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1rem; /* Also needed for space (tweak if needed) */
 }
 .content.lightblue li::before {
     color: #74b9ff;
 }
 .content .link{
-    padding: 0.3em;
-}
-.content .link, .content .link *{
-    font-size: 0.9rem;
+    padding: 0.3rem;
 }
 .content .link:hover{
     background: none;

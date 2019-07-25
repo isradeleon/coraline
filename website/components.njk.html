@@ -6,8 +6,8 @@
     <ul class="content">
         <li><a href="#card" class="link">Card</a></li>
         <li><a href="#comment" class="link">Comment</a></li>
-        <li><a href="" class="link">Side menu</a></li>
-        <li><a href="" class="link">Navbar</a></li>
+        <li><a href="#sidebar" class="link">Sidebar</a></li>
+        <li><a href="#navbar" class="link">Navbar</a></li>
         <li><a href="#staggered" class="link">Staggered grid view</a></li>
     </ul>
 
@@ -204,6 +204,68 @@
 
 </article>
 </code></pre>
+
+    <!-- SIDEBAR -->
+    <h5 id="sidebar" class="header-below-navbar text-salmon">Sidebar</h5>
+
+    <p>A sidebar looks exactly like the one in this documentation page. The <code>.sidebar</code> element will be fixed 
+    and 20% width in desktop and large screen devices. You should place your content inside an element with the <code>.sidebar-content</code> 
+    class next to it.</p>
+<pre><code class="html"><aside class="sidebar">
+    <a href="/path/1" class="link">
+        Option 1
+    </a>
+    <a href="/path/2" class="link">
+        Option 2
+    </a>
+</aside>
+
+<section class="sidebar-content">
+    <!-- Your content goes here -->
+</section>
+</code></pre>
+
+    <br>
+
+    <p>The sidebar is made to work wiht or without a fixed navbar. In case there is one in your page, you may surround these elements with a <code>.below-navbar</code> section.</p>
+<pre><code class="html"><section class="below-navbar">
+    <aside class="sidebar">
+        ...
+    </aside>
+
+    <section class="sidebar-content">
+        ...
+    </section>
+</section>
+</code></pre>
+
+    <!-- NAVBAR -->
+    <h5 id="navbar" class="header-below-navbar text-salmon">Navbar</h5>
+    <section>
+        <nav class="navbar">
+
+            <input class="menu-toggle" type="checkbox" id="menu-toggle" />
+            <label class="burguer-btn" for="menu-toggle">
+                <div class="burguer-icon"></div>
+            </label>
+            
+            <a class="link" href="./index.html">SocialiteUI</a>
+            
+            <section class="navbar-content">
+                
+                <section class="navbar-end">
+                    <a class="link" href="./components.html"><i class="fa fa-code"></i> Documentation</a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Isradeleon/socialiteui" class="link"><i class="fab fa-github"></i> View on Github</a>
+                </section>
+        
+            </section>
+        
+            <section class="navbar-end">
+                <a class="link text-salmon" href="https://github.com/Isradeleon/socialiteui/archive/0.4.2.zip"><i style="font-size: 1.2rem;" class="fa fa-cloud-download-alt"></i> (0.4.2)</a>
+            </section>
+        
+            </nav>
+    </section>
 
     <!-- STAGGERED -->
     <h5 id="staggered" class="header-below-navbar text-salmon">Staggered grid view</h5>
