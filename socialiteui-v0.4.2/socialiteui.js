@@ -7,9 +7,24 @@
     /**
      * Staggered functionallity
      */
-    window.addEventListener('resize', (e)=>{
+    function debounce(func){
+        var timer;
+        return function(event){
+            if(timer) clearTimeout(timer);
+            timer = setTimeout(func,500,event);
+        };
+    }
+
+    window.addEventListener("resize",debounce(function(e){
         setUpAllStaggered();
-    })
+    }));
+
+    /*window.addEventListener('resize', (e)=>{
+        //var staggered = document.querySelector('.staggered')
+        //staggered.lastStaggeredItem = 0;
+        //setUpStaggered(staggered)
+        setUpAllStaggered();
+    })*/
 
     /*
     DOMNodeInserted deprecated 
@@ -64,7 +79,7 @@
             }
         }
 
-        for (var i = staggered.lastStaggeredItem, len = items.length; i < len; i++) {
+        for (var i = 0, len = items.length; i < len; i++) {
 
             /* 
             TEST SETTING COL FOR EACH ELEMENT
@@ -90,7 +105,6 @@
             
             var index = i-cols;
             var refElement = items[index];
-            //var element = items[i];
 
             var images = refElement.querySelectorAll('img');
             if(images.length > 0){
@@ -103,7 +117,6 @@
                             setUpStaggered(staggered)
                         })
                         //staggered.lastStaggeredItem = index+1;
-                        /* podria ahorrarse algunas vueltas */
                         return;
                     }
                 }
@@ -139,15 +152,24 @@
         return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     }
 
+    /*var staggered = document.querySelector('.staggered')
+    var observer = new MutationObserver(()=>{
+        setUpStaggered(staggered);
+    });
+    observer.observe(staggered, {
+        childList: true
+    });
+    staggered.lastStaggeredItem = 0;
+    setUpStaggered(staggered)*/
     setUpAllStaggered();
-
+    
     /**
      * Sidebar functionallity
      */
     var burgerBtn = document.querySelector('.sidebar-content .burger-btn')
-    /* elClone = burgerBtn.cloneNode(true);
+    elClone = burgerBtn.cloneNode(true);
     burgerBtn.parentNode.replaceChild(elClone, burgerBtn);
-    burgerBtn = elClone; */
+    burgerBtn = elClone;
     
     if(burgerBtn){
         burgerBtn.addEventListener('click', ()=>{
@@ -167,9 +189,9 @@
     const links = document.querySelectorAll('.sidebar>.link')
     for (let index = 0; index < links.length; index++) {
         var element = links[index];
-        /* elClone = element.cloneNode(true);
+        elClone = element.cloneNode(true);
         element.parentNode.replaceChild(elClone, element);
-        element = elClone; */
+        element = elClone;
     
         const sibling = element.nextElementSibling
         if(sibling !== null && sibling.classList.contains('children')){
