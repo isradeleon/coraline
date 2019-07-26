@@ -1,4 +1,9 @@
 (function() {
+    
+    if (typeof socialiteUIScriptExecuted !== 'undefined') return;
+    socialiteUIScriptExecuted = true;
+    /* console.log('run') */
+
     /**
      * Staggered functionallity
      */
@@ -140,9 +145,9 @@
      * Sidebar functionallity
      */
     var burgerBtn = document.querySelector('.sidebar-content .burger-btn')
-    elClone = burgerBtn.cloneNode(true);
+    /* elClone = burgerBtn.cloneNode(true);
     burgerBtn.parentNode.replaceChild(elClone, burgerBtn);
-    burgerBtn = elClone;
+    burgerBtn = elClone; */
     
     if(burgerBtn){
         burgerBtn.addEventListener('click', ()=>{
@@ -162,9 +167,9 @@
     const links = document.querySelectorAll('.sidebar>.link')
     for (let index = 0; index < links.length; index++) {
         var element = links[index];
-        elClone = element.cloneNode(true);
+        /* elClone = element.cloneNode(true);
         element.parentNode.replaceChild(elClone, element);
-        element = elClone;
+        element = elClone; */
     
         const sibling = element.nextElementSibling
         if(sibling !== null && sibling.classList.contains('children')){
