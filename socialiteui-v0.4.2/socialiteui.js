@@ -136,24 +136,19 @@
 
     setUpAllStaggered();
 
-    
-})();
-
-(function(){
     /**
      * Sidebar functionallity
      */
     var burgerBtn = document.querySelector('.sidebar-content .burger-btn')
-    //var burgerBtn = document.getElementById('el-id'),
     elClone = burgerBtn.cloneNode(true);
     burgerBtn.parentNode.replaceChild(elClone, burgerBtn);
     burgerBtn = elClone;
-
+    
     if(burgerBtn){
         burgerBtn.addEventListener('click', ()=>{
             console.log(burgerBtn)
             console.log('click called')
-
+    
             if (!burgerBtn.classList.contains('active')) {
                 burgerBtn.classList.add('active')
                 document.getElementById(burgerBtn.htmlFor).classList.add('active')
@@ -163,26 +158,23 @@
             }
         });
     }
-
+    
     const links = document.querySelectorAll('.sidebar>.link')
     for (let index = 0; index < links.length; index++) {
         var element = links[index];
         elClone = element.cloneNode(true);
         element.parentNode.replaceChild(elClone, element);
         element = elClone;
-
+    
         const sibling = element.nextElementSibling
         if(sibling !== null && sibling.classList.contains('children')){
-            var click = ()=>{
-                console.log('click')
+            element.addEventListener('click', ()=>{
                 if(!sibling.classList.contains('active')){
-                sibling.classList.add('active')
+                    sibling.classList.add('active')
                 }else{
-                sibling.classList.remove('active')
+                    sibling.classList.remove('active')
                 }
-            };
-            element.removeEventListener('click', click)
-            element.addEventListener('click', click);
+            });
         }
     }
 })();
