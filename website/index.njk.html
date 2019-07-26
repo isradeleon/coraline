@@ -1,6 +1,30 @@
 {% extends "root.njk.html" %}
 
 {% block body %}
+    <nav class="navbar fixed">
+
+        <input class="menu-toggle" type="checkbox" id="menu-toggle" />
+        <label class="burger-btn" for="menu-toggle">
+            <div class="burger-icon"></div>
+        </label>
+        
+        <a class="link" href="./index.html">SocialiteUI</a>
+        
+        <section class="navbar-content">
+            
+            <section class="navbar-end">
+                <a class="link" href="./components.html"><i class="fa fa-code"></i> Documentation</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Isradeleon/socialiteui" class="link"><i class="fab fa-github"></i> View on Github</a>
+            </section>
+
+        </section>
+
+        <section class="navbar-end">
+            <a class="link text-salmon" href="https://github.com/Isradeleon/socialiteui/archive/0.4.2.zip"><i style="font-size: 1.2rem;" class="fa fa-cloud-download-alt"></i> (0.4.2)</a>
+        </section>
+
+    </nav>
+
     <section class="site-section white below-navbar">
 
         <section class="container">
