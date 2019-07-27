@@ -9,7 +9,10 @@ var env = new nunjucks.Environment(new nunjucks.FileSystemLoader('website'));
 var index = env.render('index.njk.html')
 fs.writeFileSync('index.html', index);
 
-var components = env.render('components.njk.html', {current: 'components'})
+var components = env.render('components.njk.html', 
+{title: 'Components',
+description: 'Responsive, mobile-first designed components: Card • Comment • Staggered grid view • Navbar • Sidebar', 
+current: 'components'})
 fs.writeFileSync('components.html', components);
 
 /**

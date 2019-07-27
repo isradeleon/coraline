@@ -60,6 +60,9 @@ h6, h6 *{
 small, small *{
     font-size: 0.8rem;
 }
+b, strong{
+    font-weight: bold;
+}
 hr{
     display: block; height: 1px;
     border: 0; border-top: 1px solid #eaeaea;

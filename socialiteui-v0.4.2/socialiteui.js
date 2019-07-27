@@ -5,7 +5,7 @@
     /* console.log('run') */
 
     /**
-     * Staggered functionallity
+     * Staggered functionality
      */
     function debounce(func){
         var timer;
@@ -164,7 +164,7 @@
     setUpAllStaggered();
     
     /**
-     * Sidebar functionallity
+     * Sidebar functionality
      */
     var burgerBtn = document.querySelector('.sidebar-content .burger-btn')
     elClone = burgerBtn.cloneNode(true);

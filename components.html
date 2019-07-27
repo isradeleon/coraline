@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Lightweight HTML, CSS and JS framework for WEB design. SocialiteUI is 100% responsive and mobile-first designed.">
-    <title>SocialiteUI • A responsive & lightweight HTML, CSS & JS framework</title>
+    <meta name="description" content="Responsive, mobile-first designed components: Card • Comment • Staggered grid view • Navbar • Sidebar">
+    <title>Components • A responsive & lightweight HTML, CSS & JS framework</title>
     <link rel="stylesheet" href="socialiteui-v0.4.2/socialiteui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="stylesheet"
@@ -133,7 +133,7 @@
 
     <br>
 
-    <p>Add the <code>.card</code> class to your element. The card is composed of: <code>card-header</code>, 
+    <p>Add the <code>card</code> class to your element. The card is composed of: <code>card-header</code>, 
     <code>card-content</code>, <code>user-actions</code> and an <code>img</code> element.</p>
 <pre><code class="html"><article class="card">
 
@@ -244,7 +244,7 @@
 
     <br>
 
-    <p>Just add the <code>.comment</code> class to your html element. The comment component is composed of a <code>circular-img</code>, the 
+    <p>Just add the <code>comment</code> class to your html element. The comment component is composed of a <code>circular-img</code>, the 
     <code>comment-data</code> and it may contain some <code>user-actions</code> if you want.</p>
 
 <pre><code class="html"><article class="comment">
@@ -271,37 +271,50 @@
     <!-- SIDEBAR -->
     <h5 id="sidebar" class="header-below-navbar text-salmon">Sidebar</h5>
 
-    <p>A sidebar looks exactly like the one in this documentation page. The <code>.sidebar</code> element will be fixed 
-    and 20% width in desktop and large screen devices. You should place your content inside an element with the <code>.sidebar-content</code> 
+    <p>A sidebar looks exactly like the one in this documentation page. The <code>sidebar</code> element will be fixed 
+    and 20% width in desktop and large screen devices. You should place your content inside an element with the <code>sidebar-content</code> 
     class next to it.</p>
-<pre><code class="html"><aside class="sidebar">
-    <a href="/path/1" class="link">
-        Option 1
-    </a>
-    <a href="/path/2" class="link">
-        Option 2
-    </a>
+
+    <p>As the sidebar is made to work with the navbar component for responsive functionality, add a simple <code>navbar</code> component
+    as the first child of the <code>sidebar-content</code> element with the <code>with-sidebar</code> class. This navbar 
+    <strong>wont be responsive in the same way</strong> as the normal navbar, as it is designed to work as a 
+    toggler for the sidebar visibility on mobile devices.</p>
+
+<pre><code class="html"><aside class="sidebar" id="documentation"><!-- Set the id for the toggler menu -->
+
+    <a class="link" href="/path/1">Link 1</a>
+
+    <a class="link" href="/path/2">Link 2</a>
+
 </aside>
 
 <section class="sidebar-content">
-    <!-- Your content goes here -->
+    
+    <!-- Special navbar made to work with sidebar menu -->
+    <nav class="navbar with-sidebar">
+
+        <!-- Responsiveness is handled with JS using the 'for' attribute -->
+        <label class="burger-btn arrow-left" for="documentation">
+            <div class="burger-icon"></div>
+        </label>
+        
+        <a class="link" href="/">Brand</a>
+
+        ...
+        
+    </nav>
+
+    <!-- Page content goes here -->
+
 </section>
 </code></pre>
 
     <br>
 
-    <p>The sidebar is made to work wiht or without a fixed navbar. In case there is one in your page, you may surround these elements with a <code>.below-navbar</code> section.</p>
-<pre><code class="html"><section class="below-navbar">
-    <aside class="sidebar">
-        ...
-    </aside>
-
-    <section class="sidebar-content">
-        ...
-    </section>
-</section>
-</code></pre>
-
+    <p>You'll also need to import the javascript file 
+    from socialiteui framework at the bottom of your html document.</p>
+<pre><code class="html"><script src="path_to_socialiteui/socialiteui.js"></script></code></pre>
+    
     <!-- NAVBAR -->
     <h5 id="navbar" class="header-below-navbar text-salmon">Navbar</h5>
     <section style="position: relative;">
@@ -329,6 +342,45 @@
         
         </nav>
     </section>
+
+    <br>
+
+    <p>This is a CSS only responsive navbar. Just add the <code>navbar</code> class to your <code>nav</code> element, 
+    and add every <code>link</code> element you want to be responsive inside the <code>navbar-content</code>.</p>
+<pre><code class="html"><nav class="navbar">
+
+    <!-- CSS animated menu icon -->
+    <input class="menu-toggle" type="checkbox" id="menu-toggle" />
+    <label class="burger-btn" for="menu-toggle">
+        <div class="burger-icon"></div>
+    </label>
+    
+    <a class="link" href="/">Brand</a><!-- This will stay here on mobile devices -->
+    
+    <section class="navbar-content"><!-- This will be responsive on mobile devices -->
+        
+        <section class="navbar-end"><!-- Placed at the end of the navbar -->
+            <a class="link" href="/path/1">Link 1</a>
+            <a class="link" href="/path/2">Link 2</a>
+        </section>
+
+    </section>
+
+    <section class="navbar-end"><!-- This will stay here on mobile devices -->
+        <a class="link" href="/path/3">Link 3</a>
+    </section>
+
+</nav>
+</code></pre>
+
+    <br>
+
+    <p>If you want the navbar to be fixed at the top, add the <code>fixed</code> class.</p>
+<pre><code class="html"><nav class="navbar fixed">
+    ...
+</nav>
+</code></pre>
+
 
     <!-- STAGGERED -->
     <h5 id="staggered" class="header-below-navbar text-salmon">Staggered grid view</h5>
@@ -437,11 +489,11 @@
 
     <p>For the staggered grid to work, you'll need to import the javascript 
     file from socialiteui framework at the bottom of your html document.</p>
-<pre><code class="html"><script src="socialiteui-v0.4.2/socialiteui.js"></script></code></pre>
+<pre><code class="html"><script src="path_to_socialiteui/socialiteui.js"></script></code></pre>
 
     <br>
 
-    <p>Then just add the <code>.staggered</code> class to your element.</p>
+    <p>Then just add the <code>staggered</code> class to your element.</p>
 <pre><code class="html"><section class="staggered">
 
     <!-- Every item must be inside a tag with the staggered-item class -->
@@ -460,7 +512,7 @@
     <br>
 
     <p>In desktop, the staggered grid will be 4 columns length by default. 
-    Use the classes <code>.two</code> or <code>.three</code> for 2 or 3 columns.</p>
+    Use the classes <code>two</code> or <code>three</code> for 2 or 3 columns.</p>
 <pre><code class="html"><section class="staggered two"><!-- Two columns length -->
     ...
 </section></code></pre>
@@ -468,8 +520,8 @@
     <br>
 
     <p>In mobile, the staggered grid will be 1 column length by default. 
-    Use the classes <code>.mobile-two</code> or <code>.mobile-three</code> for 2 or 3 columns. 
-    The tablet will respect the desktop columns, but you may use <code>.tablet-two</code> or <code>.tablet-three</code> 
+    Use the classes <code>mobile-two</code> or <code>mobile-three</code> for 2 or 3 columns. 
+    The tablet will respect the desktop columns, but you may use <code>tablet-two</code> or <code>tablet-three</code> 
     to specify a different column length if need it.</p>
 <pre><code class="html"><!-- Two columns on mobile, three on tablet and 4 on desktop -->
 <section class="staggered mobile-two tablet-three">
