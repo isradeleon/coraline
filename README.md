@@ -32,6 +32,8 @@ The whole framework weighs just 18.5K. That's including the [staggered grid](htt
 
 ## Components
 
+The framework includes some social interface focused components, like for example the cards, comments and a pinterest like staggered grid.
+
 * [Staggered grid view](https://socialiteui.com/components.html#staggered)
 * [Sidebar](https://socialiteui.com/components.html#sidebar)
 * [Navbar](https://socialiteui.com/components.html#navbar)
