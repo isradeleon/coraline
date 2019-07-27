@@ -11,7 +11,25 @@
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/atom-one-light.min.css">
     
-    
+<style>
+    #npmInput{
+        border: none;
+        display: inline-block;
+        color: #2d3436;
+        background: transparent;
+        pointer-events: none;
+        /* font-family: monospace; */
+        max-width: 300px;
+        border: none;
+    }
+    #npmInput:disabled{
+        color: #2d3436;
+        opacity: 1;
+        -webkit-text-fill-color: #2d3436;
+        opacity: 1;
+    }
+</style>
+
 </head>
 <body>
   
@@ -52,14 +70,12 @@
                         <!-- <a class="btn" href="./components.html"><i class="fa fa-code"></i> Documentation</a>
                         <a target="_blank" rel="noopener noreferrer" class="btn" 
                         href="https://github.com/Isradeleon/socialiteui"><i class="fab fa-github"></i> View on Github</a> -->
+
                         <a class="btn salmon" 
                         href="https://github.com/Isradeleon/socialiteui/archive/0.4.3.zip">Download current version (0.4.3)</a>
                         
                         <span id="npm" class="btn">
-                            <input style="display: none;" type="text" value="npm install socialiteui" id="npmInput">
-                            <code>
-                                <b class="text-bold text-salmon">$</b> npm install socialiteui
-                            </code>
+                            <b class="text-bold text-salmon">$</b> <input type="text" disabled value="npm install socialiteui" id="npmInput">
                             <span id="copy">(Copy)</span>
                         </span>
                     </div>
