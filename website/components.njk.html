@@ -72,7 +72,9 @@
 
     <p>Add the <code>card</code> class to your element. The card is composed of: <code>card-header</code>, 
     <code>card-content</code>, <code>user-actions</code> and an <code>img</code> element.</p>
-<pre><code class="html"><div class="card">
+
+<pre class="prettyprint lang-html">
+<div class="card">
 
     <!-- Card header data -->
     <div class="card-header">
@@ -101,7 +103,7 @@
     </div>
 
 </div>
-</code></pre>
+</pre>
 
     <br>
 
@@ -120,7 +122,8 @@
         <p class="card-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus a quis veritatis.</p>
     </div>
     
-<pre><code class="html"><div class="card">
+<pre class="prettyprint lang-html">
+<div class="card">
     <div class="card-header">
         <span class="circular-img"
         style="background-image: url(https://picsum.photos/200/200)"></span>
@@ -138,7 +141,7 @@
     <!-- No img and no user-actions in this card -->
 
 </div>
-</code></pre>
+</pre>
 
     <!-- COMMENTS -->
     <h5 id="comment" class="header-below-navbar text-salmon">Comment</h5>
@@ -184,7 +187,8 @@
     <p>Just add the <code>comment</code> class to your html element. The comment component is composed of a <code>circular-img</code>, the 
     <code>comment-data</code> and it may contain some <code>user-actions</code> if you want.</p>
 
-<pre><code class="html"><div class="comment">
+<pre class="prettyprint lang-html">
+<div class="comment">
     <span class="circular-img"
     style="background-image: url(https://picsum.photos/200/200)"></span>
 
@@ -203,7 +207,7 @@
     </div>
 
 </div>
-</code></pre>
+</pre>
 
     <!-- SIDEBAR -->
     <h5 id="sidebar" class="header-below-navbar text-salmon">Sidebar</h5>
@@ -217,7 +221,8 @@
     <strong>wont be responsive in the same way</strong> as the normal navbar, as it is designed to work as a 
     toggler for the sidebar visibility on mobile devices.</p>
 
-<pre><code class="html"><aside class="sidebar" id="website-menu"><!-- Set the id for the toggler menu -->
+<pre class="prettyprint lang-html">
+<aside class="sidebar" id="website-menu"><!-- Set the id for the toggler menu -->
 
     <a class="link" href="/path/1">Link 1</a>
 
@@ -244,7 +249,7 @@
     <!-- Page content goes here -->
 
 </div>
-</code></pre>
+</pre>
 
     <br>
 
@@ -283,7 +288,8 @@
 
     <p>This is a CSS only responsive navbar. Just add the <code>navbar</code> class to your <code>nav</code> element, 
     and add every <code>link</code> element you want to be responsive inside the <code>navbar-content</code>.</p>
-<pre><code class="html"><nav class="navbar">
+<pre class="prettyprint lang-html">
+<nav class="navbar">
 
     <!-- CSS animated menu icon -->
     <input class="menu-toggle" type="checkbox" id="menu-toggle" />
@@ -307,15 +313,16 @@
     </div>
 
 </nav>
-</code></pre>
+</pre>
 
     <br>
 
     <p>If you want the navbar to be fixed at the top, add the <code>fixed</code> class.</p>
-<pre><code class="html"><nav class="navbar fixed">
+<pre class="prettyprint lang-html">
+<nav class="navbar fixed">
     ...
 </nav>
-</code></pre>
+</pre>
 
 
     <!-- STAGGERED -->
@@ -427,7 +434,8 @@
     file <code class="text-salmon">socialiteui-v0.4.3/socialiteui.js</code> from socialiteui framework at the bottom of your html document.</p>
 
     <p>Then just add the <code>staggered</code> class to your element.</p>
-<pre><code class="html"><div class="staggered">
+<pre class="prettyprint lang-html">
+<div class="staggered">
 
     <!-- Every item must be inside a tag with the staggered-item class -->
     <div class="staggered-item">
@@ -439,16 +447,17 @@
     </div>
 
 </div>
-
-</code></pre>
+</pre>
 
     <br>
 
     <p>In desktop, the staggered grid will be 4 columns length by default. 
     Use the classes <code>two</code> or <code>three</code> for 2 or 3 columns.</p>
-<pre><code class="html"><div class="staggered two"><!-- Two columns length -->
+<pre class="prettyprint lang-html">
+<div class="staggered two"><!-- Two columns length -->
     ...
-</div></code></pre>
+</div>
+</pre>
 
     <br>
 
@@ -456,10 +465,12 @@
     Use the classes <code>mobile-two</code> or <code>mobile-three</code> for 2 or 3 columns. 
     The tablet will respect the desktop columns, but you may use <code>tablet-two</code> or <code>tablet-three</code> 
     to specify a different column length if need it.</p>
-<pre><code class="html"><!-- Two columns on mobile, three on tablet and 4 on desktop -->
+<pre class="prettyprint lang-html">
+<!-- Two columns on mobile, three on tablet and 4 on desktop -->
 <div class="staggered mobile-two tablet-three">
     ...
-</div></code></pre>
+</div>
+</pre>
 
 </div><!-- container end -->
 {% endblock %}

@@ -8,8 +8,8 @@
     <title>SocialiteUI • A responsive & lightweight HTML, CSS & JS framework</title>
     <link rel="stylesheet" href="socialiteui-v0.4.3/socialiteui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/atom-one-light.min.css">
+    <link rel="stylesheet" href="prettifier.css">
+
     
 <style>
     #npmInput{
@@ -187,12 +187,13 @@
 
 
   <script>
-    document.querySelectorAll("pre>code").forEach(function(element) {
+    document.querySelectorAll("pre.prettyprint").forEach(function(element) {
         element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
     });
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script> -->
+  <!-- <script>hljs.initHighlightingOnLoad();</script> -->
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 
   
 <!-- <script>
