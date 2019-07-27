@@ -48,7 +48,7 @@
 
     </aside>
 
-    <section class="sidebar-content">
+    <div class="sidebar-content">
         <nav class="navbar with-sidebar">
 
             <label class="burger-btn arrow-left" for="documentation">
@@ -81,9 +81,9 @@
     <h5 id="card" class="header-below-navbar text-salmon">Card</h5>
     <div class="cols">
         <div class="col-6">
-            <article class="card">
+            <div class="card">
         
-                <section class="card-header">
+                <div class="card-header">
                     <span class="circular-img"
                     style="width: 40px; height: 40px; background-image: url(https://picsum.photos/200/200)"></span>
         
@@ -91,26 +91,26 @@
                         <p>Elizabeth</p>
                         <small>5 min ago</small>
                     </div>
-                </section>
+                </div>
         
                 <img src="https://picsum.photos/600/400" alt="">
 
                 <p class="card-content relevant">This card has the header at the top!</p>
                 
-                <section class="user-actions evenly">
+                <div class="user-actions evenly">
                     <i style="font-size: 1.5rem;" class="far fa-heart"></i>
                     <i style="font-size: 1.5rem;" class="far fa-comment"></i>
                     <i style="font-size: 1.5rem;" class="far fa-flag"></i>
-                </section>
+                </div>
         
-            </article>
+            </div>
         </div>
         <div class="col-6">
-            <article class="card">
+            <div class="card">
         
                 <img src="https://picsum.photos/600/400" alt="">
 
-                <section class="card-header">
+                <div class="card-header">
                     <span class="circular-img"
                     style="width: 40px; height: 40px; background-image: url(https://picsum.photos/200/200)"></span>
         
@@ -118,19 +118,19 @@
                         <p>Elizabeth</p>
                         <small>5 min ago</small>
                     </div>
-                </section>
+                </div>
 
                 <p class="card-content relevant">And this one has it below img</p>
                 
-                <section class="user-actions">
+                <div class="user-actions">
                     <i style="font-size: 1.5rem;" class="far fa-heart"></i>
                     <i style="font-size: 1.5rem;" class="far fa-comment"></i>
                     <span class="right">
                         <i style="font-size: 1.5rem;" class="far fa-flag"></i>
                     </span>
-                </section>
+                </div>
         
-            </article>
+            </div>
         </div>
     </div>
 
@@ -138,10 +138,10 @@
 
     <p>Add the <code>card</code> class to your element. The card is composed of: <code>card-header</code>, 
     <code>card-content</code>, <code>user-actions</code> and an <code>img</code> element.</p>
-<pre><code class="html"><article class="card">
+<pre><code class="html"><div class="card">
 
     <!-- Card header data -->
-    <section class="card-header">
+    <div class="card-header">
         <span class="circular-img"
         style="background-image: url(https://picsum.photos/200/200)"></span>
 
@@ -149,7 +149,7 @@
             <p>Elizabeth</p>
             <small>5 min ago</small>
         </div>
-    </section>
+    </div>
 
     <!--  Image inside .card will be responsive 100% width -->
     <img src="https://picsum.photos/600/400" alt="">
@@ -160,21 +160,21 @@
     </p>
     
     <!-- Evenly distributed user actions -->
-    <section class="user-actions evenly">
+    <div class="user-actions evenly">
         <i style="font-size: 1.5rem;" class="far fa-heart"></i>
         <i style="font-size: 1.5rem;" class="far fa-comment"></i>
         <i style="font-size: 1.5rem;" class="far fa-flag"></i>
-    </section>
+    </div>
 
-</article>
+</div>
 </code></pre>
 
     <br>
 
     <p>You may change the order of this elements or remove them if you want:</p>
 
-    <article class="card">
-        <section class="card-header">
+    <div class="card">
+        <div class="card-header">
             <span class="circular-img"
             style="width: 40px; height: 40px; background-image: url(https://picsum.photos/200/200)"></span>
 
@@ -182,12 +182,12 @@
                 <p>Elizabeth</p>
                 <small>5 min ago</small>
             </div>
-        </section>
+        </div>
         <p class="card-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus a quis veritatis.</p>
-    </article>
+    </div>
     
-<pre><code class="html"><article class="card">
-    <section class="card-header">
+<pre><code class="html"><div class="card">
+    <div class="card-header">
         <span class="circular-img"
         style="background-image: url(https://picsum.photos/200/200)"></span>
 
@@ -195,7 +195,7 @@
             <p>Elizabeth</p>
             <small>5 min ago</small>
         </div>
-    </section>
+    </div>
 
     <p class="card-content relevant">
         ...
@@ -203,7 +203,7 @@
 
     <!-- No img and no user-actions in this card -->
 
-</article>
+</div>
 </code></pre>
 
     <!-- COMMENTS -->
@@ -221,10 +221,10 @@
                     
                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quod nobis praesentium tempore, molestiae quibusdam odit velit veniam!</span>
                     
-                    <section class="user-actions end">
+                    <div class="user-actions end">
                         <i style="font-size: 1.5rem;" class="far fa-star"></i>
                         <i style="font-size: 1.5rem;" class="far fa-bookmark"></i>
-                    </section>
+                    </div>
                 </div>
         
             </div>
@@ -262,10 +262,10 @@
             Comment text goes here...
         </span>
         
-        <section class="user-actions end">
+        <div class="user-actions end">
             <i style="font-size: 1.5rem;" class="far fa-star"></i>
             <i style="font-size: 1.5rem;" class="far fa-bookmark"></i>
-        </section>
+        </div>
     </div>
 
 </div>
@@ -283,7 +283,7 @@
     <strong>wont be responsive in the same way</strong> as the normal navbar, as it is designed to work as a 
     toggler for the sidebar visibility on mobile devices.</p>
 
-<pre><code class="html"><aside class="sidebar" id="documentation"><!-- Set the id for the toggler menu -->
+<pre><code class="html"><aside class="sidebar" id="website-menu"><!-- Set the id for the toggler menu -->
 
     <a class="link" href="/path/1">Link 1</a>
 
@@ -291,13 +291,13 @@
 
 </aside>
 
-<section class="sidebar-content">
+<div class="sidebar-content">
     
     <!-- Special navbar made to work with sidebar menu -->
     <nav class="navbar with-sidebar">
 
         <!-- Responsiveness is handled with JS using the 'for' attribute -->
-        <label class="burger-btn arrow-left" for="documentation">
+        <label class="burger-btn arrow-left" for="website-menu">
             <span class="burger-icon"></span>
         </label>
         
@@ -309,7 +309,7 @@
 
     <!-- Page content goes here -->
 
-</section>
+</div>
 </code></pre>
 
     <br>
@@ -319,7 +319,7 @@
     
     <!-- NAVBAR -->
     <h5 id="navbar" class="header-below-navbar text-salmon">Navbar</h5>
-    <section style="position: relative;">
+    <div style="position: relative;">
         <nav class="navbar">
 
             <input class="menu-toggle" type="checkbox" id="menu-toggle" />
@@ -329,21 +329,21 @@
             
             <a class="link" href="./index.html">SocialiteUI</a>
             
-            <section class="navbar-content">
+            <div class="navbar-content">
                 
-                <section class="navbar-end">
+                <div class="navbar-end">
                     <a class="link" href="./components.html"><i class="fa fa-code"></i> Documentation</a>
                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/Isradeleon/socialiteui" class="link"><i class="fab fa-github"></i> View on Github</a>
-                </section>
+                </div>
         
-            </section>
+            </div>
         
-            <section class="navbar-end">
+            <div class="navbar-end">
                 <a class="link text-salmon" href="https://github.com/Isradeleon/socialiteui/archive/0.4.3.zip"><i style="font-size: 1.2rem;" class="fa fa-cloud-download-alt"></i> (0.4.3)</a>
-            </section>
+            </div>
         
         </nav>
-    </section>
+    </div>
 
     <br>
 
@@ -359,18 +359,18 @@
     
     <a class="link" href="/">Brand</a><!-- This will stay here on mobile devices -->
     
-    <section class="navbar-content"><!-- This will be responsive on mobile devices -->
+    <div class="navbar-content"><!-- This will be responsive on mobile devices -->
         
-        <section class="navbar-end"><!-- Placed at the end of the navbar -->
+        <div class="navbar-end"><!-- Placed at the end of the navbar -->
             <a class="link" href="/path/1">Link 1</a>
             <a class="link" href="/path/2">Link 2</a>
-        </section>
+        </div>
 
-    </section>
+    </div>
 
-    <section class="navbar-end"><!-- This will stay here on mobile devices -->
+    <div class="navbar-end"><!-- This will stay here on mobile devices -->
         <a class="link" href="/path/3">Link 3</a>
-    </section>
+    </div>
 
 </nav>
 </code></pre>
@@ -387,12 +387,12 @@
     <!-- STAGGERED -->
     <h5 id="staggered" class="header-below-navbar text-salmon">Staggered grid view</h5>
     
-    <section class="staggered tablet-two">
+    <div class="staggered tablet-two">
 
         <div class="staggered-item">
-            <article class="card">
+            <div class="card">
 
-                <section class="card-header">
+                <div class="card-header">
                     <span class="circular-img"
                         style="
                 width: 30px; height: 30px;
@@ -401,31 +401,31 @@
                     <div class="card-data">
                         <p>Elizabeth</p>
                     </div>
-                </section>
+                </div>
 
                 <p class="card-content relevant">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur libero enim, sapiente similique debitis ducimus totam magnam excepturi tempora soluta ad consequatur?</p>
 
-                <section class="user-actions evenly">
+                <div class="user-actions evenly">
                     <i style="font-size: 1.5rem;" class="fa fa-fire-alt"></i>
                     <i style="font-size: 1.5rem;" class="fa fa-heartbeat"></i>
-                </section>
+                </div>
 
-            </article>
+            </div>
         </div>
 
         <div class="staggered-item">
-            <article class="card">
+            <div class="card">
 
                 <img src="https://picsum.photos/600/400"
                     alt="">
 
-            </article>
+            </div>
         </div>
 
         <div class="staggered-item">
-            <article class="card">
+            <div class="card">
 
-                <section class="card-header">
+                <div class="card-header">
                     <span class="circular-img"
                         style="
                 width: 30px; height: 30px;
@@ -434,66 +434,66 @@
                     <div class="card-data">
                         <p>Elizabeth</p>
                     </div>
-                </section>
+                </div>
 
                 <p class="card-content relevant">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet voluptatibus tempore quisquam iusto asperiores aliquam dolore, dolorem nihil enim, pariatur ut iste nesciunt eveniet perferendis.</p>
 
-                <section class="user-actions evenly">
+                <div class="user-actions evenly">
                     <i style="font-size: 1.5rem;" class="far fa-star"></i>
                     <i style="font-size: 1.5rem;" class="far fa-comment-dots"></i>
-                </section>
+                </div>
 
-            </article>
+            </div>
         </div>
 
         <div class="staggered-item">
-            <article class="card">
+            <div class="card">
 
                 <img src="https://picsum.photos/600/400" alt="">
 
-            </article>
+            </div>
         </div>
 
         <div class="staggered-item">
-            <article class="card">
+            <div class="card">
 
                 <img src="https://picsum.photos/500/640"
                     alt="">
 
-            </article>
+            </div>
         </div>
         <div class="staggered-item">
-            <article class="card">
+            <div class="card">
 
                 <img src="https://picsum.photos/500/670"
                     alt="">
 
-            </article>
+            </div>
         </div>
         <div class="staggered-item">
-            <article class="card">
+            <div class="card">
 
                 <img src="https://picsum.photos/500/610"
                     alt="">
 
-            </article>
+            </div>
         </div>
         <div class="staggered-item">
-            <article class="card">
+            <div class="card">
 
                 <img src="https://picsum.photos/500/620"
                     alt="">
 
-            </article>
+            </div>
         </div>
 
-    </section>
+    </div>
 
     <p>For the staggered grid to work, you'll need to import the javascript 
     file <code class="text-salmon">socialiteui-v0.4.3/socialiteui.js</code> from socialiteui framework at the bottom of your html document.</p>
 
     <p>Then just add the <code>staggered</code> class to your element.</p>
-<pre><code class="html"><section class="staggered">
+<pre><code class="html"><div class="staggered">
 
     <!-- Every item must be inside a tag with the staggered-item class -->
     <div class="staggered-item">
@@ -504,7 +504,7 @@
         ...
     </div>
 
-</section>
+</div>
 
 </code></pre>
 
@@ -512,9 +512,9 @@
 
     <p>In desktop, the staggered grid will be 4 columns length by default. 
     Use the classes <code>two</code> or <code>three</code> for 2 or 3 columns.</p>
-<pre><code class="html"><section class="staggered two"><!-- Two columns length -->
+<pre><code class="html"><div class="staggered two"><!-- Two columns length -->
     ...
-</section></code></pre>
+</div></code></pre>
 
     <br>
 
@@ -523,13 +523,13 @@
     The tablet will respect the desktop columns, but you may use <code>tablet-two</code> or <code>tablet-three</code> 
     to specify a different column length if need it.</p>
 <pre><code class="html"><!-- Two columns on mobile, three on tablet and 4 on desktop -->
-<section class="staggered mobile-two tablet-three">
+<div class="staggered mobile-two tablet-three">
     ...
-</section></code></pre>
+</div></code></pre>
 
 </div><!-- container end -->
 
-    </section>
+    </div>
 
 
 
