@@ -2,6 +2,9 @@
 
 Lightweight HTML, CSS and JS framework for WEB design. SocialiteUI is 100% responsive and mobile-first designed.
 
+[![npm](https://img.shields.io/npm/v/socialiteui.svg?color=ff7675)][npm-link]
+[![npm](https://img.shields.io/npm/dm/socialiteui.svg?color=6c5ce7)][npm-link]
+
 ## Components
 
 * [Staggered grid view](https://socialiteui.com/components.html#staggered)
