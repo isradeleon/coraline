@@ -4,12 +4,13 @@
     background: #fafafa;
     font-family: Menlo, Bitstream Vera Sans Mono, DejaVu Sans Mono, Monaco, Consolas, monospace;
     border: 0 !important;
+    font-size: .8rem !important;
 }
 
 .pln {
     color: #4d4d4c !important;
     font-size: .9rem !important;
-    line-height: 1 !important;
+    line-height: 1.2 !important;
 }
 
 ol.linenums {
@@ -17,7 +18,7 @@ ol.linenums {
     margin-bottom: 0;
     color: #8e908c !important;
     font-size: .9rem !important;
-    line-height: 1 !important;
+    line-height: 1.2 !important;
 }
 
 li.L0,
@@ -34,78 +35,78 @@ li.L9 {
     background-color: #fff;
     list-style-type: decimal;
     font-size: .9rem !important;
-    line-height: 1 !important;
+    line-height: 1.2 !important;
 }
 
 @media screen {
     .str {
         color: #718c00 !important;
         font-size: .9rem;
-        line-height: 1;
+        line-height: 1.2;
     }
     .kwd {
         color: #8959a8 !important;
         font-size: .9rem;
-        line-height: 1;
+        line-height: 1.2;
     }
     .com {
         color: #8e908c !important;
         font-size: .9rem;
-        line-height: 1;
+        line-height: 1.2;
     }
     .typ {
         color: #4271ae !important;
         font-size: .9rem;
-        line-height: 1;
+        line-height: 1.2;
     }
     .lit {
         color: #f0932b !important;
         font-size: .9rem;
-        line-height: 1;
+        line-height: 1.2;
     }
     .pun {
         color: #4d4d4c !important;
         font-size: .9rem;
-        line-height: 1;
+        line-height: 1.2;
     }
     .opn {
         color: #4d4d4c !important;
         font-size: .9rem;
-        line-height: 1;
+        line-height: 1.2;
     }
     .clo {
         color: #4d4d4c !important;
         font-size: .9rem;
-        line-height: 1;
+        line-height: 1.2;
     }
     .tag {
         color: #ff7675 !important;
         font-size: .9rem;
-        line-height: 1;
+        line-height: 1.2;
     }
     .atn {
         color: #f0932b !important;
         font-size: .9rem;
-        line-height: 1;
+        line-height: 1.2;
     }
     .atv {
         color: #3e999f !important;
         font-size: .9rem;
-        line-height: 1;
+        line-height: 1.2;
     }
     .dec {
         color: #f0932b !important;
         font-size: .9rem;
-        line-height: 1;
+        line-height: 1.2;
     }
     .var {
         color: #c82829 !important;
         font-size: .9rem;
-        line-height: 1;
+        line-height: 1.2;
     }
     .fun {
         color: #4271ae !important;
         font-size: .9rem;
-        line-height: 1;
+        line-height: 1.2;
     }
 }
