@@ -5,6 +5,19 @@ Lightweight HTML, CSS and JS framework for WEB design. SocialiteUI is 100% respo
 [![npm](https://img.shields.io/npm/v/socialiteui.svg?color=ff7675)](https://www.npmjs.com/package/socialiteui)
 [![npm](https://img.shields.io/npm/dm/socialiteui.svg?color=6c5ce7)](https://www.npmjs.com/package/socialiteui)
 
+## Components
+
+The framework includes some social interface focused components, like for example the cards, comments and a pinterest like staggered grid.
+
+* [Staggered grid view](https://socialiteui.com/components.html#staggered)
+* [Sidebar](https://socialiteui.com/components.html#sidebar)
+* [Navbar](https://socialiteui.com/components.html#navbar)
+* [Card](https://socialiteui.com/components.html#card)
+* [Comment](https://socialiteui.com/components.html#comment)
+
+## Lightweight
+
+The whole framework weighs just 18.5K. That's including the [staggered grid](https://socialiteui.com/components.html#staggered) and the [sidebar menu](https://socialiteui.com/components.html#sidebar) functionality.
 
 ## Easy to install
 
@@ -25,20 +38,6 @@ npm install socialiteui
 <!-- Staggered grid and sidebar functionality -->
 <script src="socialiteui-v0.4.3/socialiteui.js"></script>
 ```
-
-## Lightweight
-
-The whole framework weighs just 18.5K. That's including the [staggered grid](https://socialiteui.com/components.html#staggered) and the [sidebar menu](https://socialiteui.com/components.html#sidebar) functionality.
-
-## Components
-
-The framework includes some social interface focused components, like for example the cards, comments and a pinterest like staggered grid.
-
-* [Staggered grid view](https://socialiteui.com/components.html#staggered)
-* [Sidebar](https://socialiteui.com/components.html#sidebar)
-* [Navbar](https://socialiteui.com/components.html#navbar)
-* [Card](https://socialiteui.com/components.html#card)
-* [Comment](https://socialiteui.com/components.html#comment)
 
 ## Browser Support
 
