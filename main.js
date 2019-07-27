@@ -26,7 +26,7 @@ var baseCss = fs.readFileSync('base.css')
 var csso = require('csso');
 
 //var minifiedCss = csso.minify(baseCss).css;
-//fs.writeFileSync('socialiteui-v0.4.2/socialiteui.min.css', minifiedCss);
+//fs.writeFileSync('socialiteui-v0.4.3/socialiteui.min.css', minifiedCss);
 
 /**
  * AUTOPREFIXER
@@ -47,7 +47,7 @@ postcss([ autoprefixer ]).process(baseCss,{from: undefined}).then(result => {
     })
     
     var minifiedCss = csso.minify(result.css).css;
-    fs.writeFileSync('socialiteui-v0.4.2/socialiteui.min.css', minifiedCss);
+    fs.writeFileSync('socialiteui-v0.4.3/socialiteui.min.css', minifiedCss);
     
     console.log('Website is ready!')
 })
