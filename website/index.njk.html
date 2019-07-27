@@ -59,13 +59,20 @@
                         <a target="_blank" rel="noopener noreferrer" class="btn" 
                         href="https://github.com/Isradeleon/socialiteui"><i class="fab fa-github"></i> View on Github</a> -->
 
-                        <a class="btn salmon" 
-                        href="https://github.com/Isradeleon/socialiteui/archive/0.4.3.zip">Download current version (0.4.3)</a>
+                        <div>
+                            <a class="btn salmon" 
+                            href="https://github.com/Isradeleon/socialiteui/archive/0.4.3.zip">Download current version (0.4.3)</a>
+                        </div>
                         
-                        <span id="npm" class="btn">
+                        <br>
+                        
+                        <div>
+                            <code class="text-size-6"><b class="text-bold text-salmon">$</b> npm install socialiteui</code>
+                        </div>
+                        <!-- <span id="npm" class="btn">
                             <b class="text-bold text-salmon">$</b> <input type="text" disabled value="npm install socialiteui" id="npmInput">
                             <span id="copy">(Copy)</span>
-                        </span>
+                        </span> -->
                     </div>
                 </div>
     
@@ -168,7 +175,7 @@
 {% endblock %}
 
 {% block js %}
-<script>
+<!-- <script>
     (function(){
         document.querySelector('#npm').addEventListener('click',()=>{
 
@@ -179,9 +186,7 @@
             setTimeout(() => {
                 document.querySelector("#copy").textContent = '(Copy)'
             }, 1000);
-            /* Alert the copied text */
-            //alert("Copied the text: " + copyText.value);
         })
     })();
-</script>
+</script> -->
 {% endblock %}
