@@ -11,10 +11,13 @@
         var timer;
         return function(event){
             if(timer) clearTimeout(timer);
-            timer = setTimeout(func,250,event);
+            timer = setTimeout(func,300,event);
         };
     }
 
+    window.addEventListener("resize",function(e){
+        setUpAllStaggered();
+    });
     window.addEventListener("resize",debounce(function(e){
         setUpAllStaggered();
     }));
