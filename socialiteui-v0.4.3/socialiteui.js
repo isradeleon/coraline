@@ -162,10 +162,10 @@
         burgerBtn.addEventListener('click', ()=>{
             if (!burgerBtn.classList.contains('active')) {
                 burgerBtn.classList.add('active')
-                document.getElementById(burgerBtn.htmlFor).classList.add('active')
+                document.getElementById(burgerBtn.dataset.sidebar).classList.add('active')
             }else{
                 burgerBtn.classList.remove('active')
-                document.getElementById(burgerBtn.htmlFor).classList.remove('active')
+                document.getElementById(burgerBtn.dataset.sidebar).classList.remove('active')
             }
         });
     }

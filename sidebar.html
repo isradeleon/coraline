@@ -69,9 +69,9 @@
     <div class="sidebar-content">
         <nav class="navbar with-sidebar">
 
-            <label class="burger-btn arrow-left" for="documentation">
+            <span class="burger-btn arrow-left" data-sidebar="documentation">
                 <span class="burger-icon"></span>
-            </label>
+            </span>
         
             <a href="index.html" class="link text-size-6">SocialiteUI</a>
         
@@ -112,10 +112,10 @@ class next to it.</p>
     <!-- Special navbar made to work with sidebar menu -->
     <nav class="navbar with-sidebar">
 
-        <!-- Responsiveness is handled with JS using the 'for' attribute -->
-        <label class="burger-btn arrow-left" for="website-menu">
+        <!-- Responsiveness is handled with JS using the dataset -->
+        <span class="burger-btn arrow-left" data-sidebar="website-menu">
             <span class="burger-icon"></span>
-        </label>
+        </span>
         
         <a class="link" href="/">Brand</a>
 
