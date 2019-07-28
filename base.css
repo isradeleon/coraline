@@ -619,9 +619,6 @@ input.menu-toggle{
     padding: 0.4rem 0.8rem 0.8rem 0.8rem;
     margin: 0;
 }
-.card-content.relevant, .card-content.relevant *{
-    font-size: 1.2rem;
-}
 
 /* COMMENTS */
 .comment{

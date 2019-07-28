@@ -4,47 +4,47 @@
 <!-- SIDEBAR -->
 <h1 id="sidebar" class="text-brand">Sidebar</h1>
 
+<p>For the sidebar component, you'll need to import the javascript file <code class="text-brand">socialiteui-v0.4.3/socialiteui.js</code>
+from socialiteui framework at the bottom of your html document.</p>
+
 <p>A sidebar looks exactly like the one in this documentation page. The <code>sidebar</code> element will be fixed 
 and 20% width in desktop and large screen devices. You should place your content inside an element with the <code>sidebar-content</code> 
 class next to it.</p>
 
-<p>As the sidebar is made to work with the navbar component for responsive functionality, add a simple <code>navbar</code> component
-as the first child of the <code>sidebar-content</code> element with the <code>with-sidebar</code> class. This navbar 
-<strong>wont be responsive in the same way</strong> as the normal navbar, as it is designed to work as a 
-toggler for the sidebar visibility on mobile devices.</p>
-
 <pre class="prettyprint lang-html">
 <aside class="sidebar" id="website-menu"><!-- Set the id for the toggler menu -->
 
-<a class="link" href="/path/1">Link 1</a>
+    <a class="link" href="/path/1">Link 1</a>
 
-<a class="link" href="/path/2">Link 2</a>
+    <a class="link" href="/path/2">Link 2</a>
 
 </aside>
 
 <div class="sidebar-content">
 
-<!-- Special navbar made to work with sidebar menu -->
-<nav class="navbar with-sidebar">
+    <!-- Special navbar made to work with sidebar menu -->
+    <nav class="navbar with-sidebar">
 
-    <!-- Responsiveness is handled with JS using the 'for' attribute -->
-    <label class="burger-btn arrow-left" for="website-menu">
-        <span class="burger-icon"></span>
-    </label>
-    
-    <a class="link" href="/">Brand</a>
+        <!-- Responsiveness is handled with JS using the 'for' attribute -->
+        <label class="burger-btn arrow-left" for="website-menu">
+            <span class="burger-icon"></span>
+        </label>
+        
+        <a class="link" href="/">Brand</a>
 
-    ...
-    
-</nav>
+        ...
+        
+    </nav>
 
-<!-- Page content goes here -->
+    <!-- Page content goes here -->
 
 </div>
 </pre>
 
 <br>
 
-<p>You'll also need to import the javascript file <code class="text-brand">socialiteui-v0.4.3/socialiteui.js</code>
-from socialiteui framework at the bottom of your html document.</p>
+<p>As the sidebar is made to work with the navbar component for responsive functionality, add a simple <code>navbar</code> component
+as the first child of the <code>sidebar-content</code> element, with the <code>with-sidebar</code> class. This navbar 
+<strong>wont be responsive in the same way</strong> as the normal navbar, as it is designed to work as a 
+toggler for the sidebar visibility on mobile and tablet.</p>
 {% endblock %}
