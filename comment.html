@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Lightweight HTML, CSS and JS framework for WEB design. SocialiteUI is 100% responsive and mobile-first designed.">
+    <title>Comment • A responsive & lightweight HTML, CSS & JS framework</title>
+    <link rel="stylesheet" href="socialiteui-v0.4.3/socialiteui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="prettifier.css">
+    
+<style>
+    code{
+        font-size: 1.1rem;
+    }
+    pre.prettyprint.lang-html{
+        display: block;
+        width: 100%;
+        overflow-y: auto;
+    }
+</style>
+
+</head>
+<body>
+  
+  
+
+    <aside id="documentation" class="sidebar">
+
+        <p class="text-center">
+            v0.4.3
+        </p>
+
+        <hr>
+
+        <a class="link">Components</a>
+
+        <div class="children active">
+            <a href="card.html" class="link text-size-s ">Card</a>
+            <a href="comment.html" class="link text-size-s text-brand">Comment</a>
+            <a href="sidebar.html" class="link text-size-s ">Sidebar</a>
+            <a href="navbar.html" class="link text-size-s ">Navbar</a>
+            <a href="staggered.html" class="link text-size-s ">Staggered grid view</a>
+        </div>
+
+        <a class="link">Elements</a>
+
+        <div class="children active">
+            <a class="link text-size-s">Button</a>
+            <a class="link text-size-s">Circle image</a>
+        </div>
+
+        
+
+        <a class="link">Grid system</a>
+
+        <div class="children active">
+            <a class="link text-size-s">Basic usage</a>
+            <a class="link text-size-s">Responsiveness</a>
+        </div>
+
+        <a class="link">Layout</a>
+
+        
+
+    </aside>
+
+    <div class="sidebar-content">
+        <nav class="navbar with-sidebar">
+
+            <label class="burger-btn arrow-left" for="documentation">
+                <span class="burger-icon"></span>
+            </label>
+        
+            <a href="index.html" class="link text-size-6">SocialiteUI</a>
+        
+            <div class="navbar-content">
+                <div class="navbar-end">
+                    <a target="_blank" rel="noopener noreferrer" class="link" href="https://github.com/Isradeleon/socialiteui"><i class="fab fa-github"></i></a>
+                    <a class="link text-brand" href="https://github.com/Isradeleon/socialiteui/archive/0.4.3.zip"><i style="font-size: 1.2rem;" class="fa fa-cloud-download-alt"></i></a>
+                </div>
+            </div>
+        
+        </nav>
+              
+        <div class="container below-navbar">
+            
+<!-- COMMENT -->
+<h5 id="comment" class="header-below-navbar text-brand">Comment</h5>
+
+<div class="cols">
+    <div class="col-6">
+        <div class="comment">
+            <span class="circular-img"
+            style="background-image: url(https://picsum.photos/200/200)"></span>
+    
+            <div class="comment-data">
+                <p>Elizabeth </p>
+                <small>• 5 min ago</small>
+                
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quod nobis praesentium tempore, molestiae quibusdam odit velit veniam!</span>
+                
+                <div class="user-actions end">
+                    <i style="font-size: 1.5rem;" class="far fa-star"></i>
+                    <i style="font-size: 1.5rem;" class="far fa-bookmark"></i>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="comment">
+            <span class="circular-img"
+            style="background-image: url(https://picsum.photos/200/200)"></span>
+    
+            <div class="comment-data">
+                <p>Elizabeth</p>
+                
+                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum alias, numquam laborum possimus nemo iste minima veritatis quaerat explicabo laboriosam atque aspernatur.</span>
+                
+            </div>
+    
+        </div>
+    </div>
+</div>
+
+<br>
+
+<p>Just add the <code>comment</code> class to your html element. The comment component is composed of a <code>circular-img</code>, the 
+<code>comment-data</code> and it may contain some <code>user-actions</code> if you want.</p>
+
+<pre class="prettyprint lang-html">
+<div class="comment">
+    <span class="circular-img"
+    style="background-image: url(https://picsum.photos/200/200)"></span>
+
+    <div class="comment-data">
+        <p>Elizabeth </p>
+        <small>• 5 min ago</small><!-- small tag for the time -->
+        
+        <span>
+            Comment text goes here...
+        </span>
+        
+        <div class="user-actions end">
+            <i style="font-size: 1.5rem;" class="far fa-star"></i>
+            <i style="font-size: 1.5rem;" class="far fa-bookmark"></i>
+        </div>
+    </div>
+</div>
+</pre>
+
+        </div>
+    </div>
+
+
+
+  <script>
+    document.querySelectorAll("pre.prettyprint").forEach(function(element) {
+        element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+  
+<script src="socialiteui-v0.4.3/socialiteui.js"></script>
+
+</body>
+</html>

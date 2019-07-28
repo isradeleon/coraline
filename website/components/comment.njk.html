@@ -1,0 +1,68 @@
+{% extends "docs.njk.html" %}
+
+{% block content %}
+<!-- COMMENT -->
+<h5 id="comment" class="header-below-navbar text-brand">Comment</h5>
+
+<div class="cols">
+    <div class="col-6">
+        <div class="comment">
+            <span class="circular-img"
+            style="background-image: url(https://picsum.photos/200/200)"></span>
+    
+            <div class="comment-data">
+                <p>Elizabeth </p>
+                <small>• 5 min ago</small>
+                
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quod nobis praesentium tempore, molestiae quibusdam odit velit veniam!</span>
+                
+                <div class="user-actions end">
+                    <i style="font-size: 1.5rem;" class="far fa-star"></i>
+                    <i style="font-size: 1.5rem;" class="far fa-bookmark"></i>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="comment">
+            <span class="circular-img"
+            style="background-image: url(https://picsum.photos/200/200)"></span>
+    
+            <div class="comment-data">
+                <p>Elizabeth</p>
+                
+                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum alias, numquam laborum possimus nemo iste minima veritatis quaerat explicabo laboriosam atque aspernatur.</span>
+                
+            </div>
+    
+        </div>
+    </div>
+</div>
+
+<br>
+
+<p>Just add the <code>comment</code> class to your html element. The comment component is composed of a <code>circular-img</code>, the 
+<code>comment-data</code> and it may contain some <code>user-actions</code> if you want.</p>
+
+<pre class="prettyprint lang-html">
+<div class="comment">
+    <span class="circular-img"
+    style="background-image: url(https://picsum.photos/200/200)"></span>
+
+    <div class="comment-data">
+        <p>Elizabeth </p>
+        <small>• 5 min ago</small><!-- small tag for the time -->
+        
+        <span>
+            Comment text goes here...
+        </span>
+        
+        <div class="user-actions end">
+            <i style="font-size: 1.5rem;" class="far fa-star"></i>
+            <i style="font-size: 1.5rem;" class="far fa-bookmark"></i>
+        </div>
+    </div>
+</div>
+</pre>
+{% endblock %}

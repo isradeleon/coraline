@@ -9,11 +9,36 @@ var env = new nunjucks.Environment(new nunjucks.FileSystemLoader('website'));
 var index = env.render('index.njk.html')
 fs.writeFileSync('index.html', index);
 
-var components = env.render('components.njk.html', 
+/* var components = env.render('components.njk.html', 
 {title: 'Components',
 description: 'Responsive, mobile-first designed components: Card • Comment • Staggered grid view • Navbar • Sidebar', 
 current: 'components'})
-fs.writeFileSync('components.html', components);
+fs.writeFileSync('components.html', components); */
+
+var card = env.render('components/card.njk.html', 
+{title: 'Card', 
+current: 'card'})
+fs.writeFileSync('card.html', card);
+
+var comment = env.render('components/comment.njk.html', 
+{title: 'Comment', 
+current: 'comment'})
+fs.writeFileSync('comment.html', comment);
+
+var navbar = env.render('components/navbar.njk.html', 
+{title: 'Navbar', 
+current: 'navbar'})
+fs.writeFileSync('navbar.html', navbar);
+
+var sidebar = env.render('components/sidebar.njk.html', 
+{title: 'Sidebar', 
+current: 'sidebar'})
+fs.writeFileSync('sidebar.html', sidebar);
+
+var staggered = env.render('components/staggered.njk.html', 
+{title: 'Staggered grid', 
+current: 'staggered'})
+fs.writeFileSync('staggered.html', staggered);
 
 /**
  * BASE CSS CODE
@@ -25,21 +50,11 @@ var baseCss = fs.readFileSync('base.css')
  */
 var csso = require('csso');
 
-//var minifiedCss = csso.minify(baseCss).css;
-//fs.writeFileSync('socialiteui-v0.4.3/socialiteui.min.css', minifiedCss);
-
 /**
  * AUTOPREFIXER
  */
 const autoprefixer = require('autoprefixer')
 const postcss = require('postcss')
-/* postcss([ autoprefixer({ overrideBrowserslist: 'last 2 versions' }) ]).process(minifiedCss).then(result => {
-    result.warnings().forEach(warn => {
-      console.warn(warn.toString())
-    })
-    console.log(result.css)
-    console.log(result)
-}) */
 
 postcss([ autoprefixer ]).process(baseCss,{from: undefined}).then(result => {
     result.warnings().forEach(warn => {

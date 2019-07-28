@@ -75,7 +75,7 @@
             }
         }
 
-        for (var i = 0, len = items.length; i < len; i++) {
+        for (var i = staggered.lastStaggeredItem, len = items.length; i < len; i++) {
 
             /* 
             TEST SETTING COL FOR EACH ELEMENT

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Lightweight HTML, CSS and JS framework for WEB design. SocialiteUI is 100% responsive and mobile-first designed.">
+    <title>Navbar • A responsive & lightweight HTML, CSS & JS framework</title>
+    <link rel="stylesheet" href="socialiteui-v0.4.3/socialiteui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="prettifier.css">
+    
+<style>
+    code{
+        font-size: 1.1rem;
+    }
+    pre.prettyprint.lang-html{
+        display: block;
+        width: 100%;
+        overflow-y: auto;
+    }
+</style>
+
+</head>
+<body>
+  
+  
+
+    <aside id="documentation" class="sidebar">
+
+        <p class="text-center">
+            v0.4.3
+        </p>
+
+        <hr>
+
+        <a class="link">Components</a>
+
+        <div class="children active">
+            <a href="card.html" class="link text-size-s ">Card</a>
+            <a href="comment.html" class="link text-size-s ">Comment</a>
+            <a href="sidebar.html" class="link text-size-s ">Sidebar</a>
+            <a href="navbar.html" class="link text-size-s text-brand">Navbar</a>
+            <a href="staggered.html" class="link text-size-s ">Staggered grid view</a>
+        </div>
+
+        <a class="link">Elements</a>
+
+        <div class="children active">
+            <a class="link text-size-s">Button</a>
+            <a class="link text-size-s">Circle image</a>
+        </div>
+
+        
+
+        <a class="link">Grid system</a>
+
+        <div class="children active">
+            <a class="link text-size-s">Basic usage</a>
+            <a class="link text-size-s">Responsiveness</a>
+        </div>
+
+        <a class="link">Layout</a>
+
+        
+
+    </aside>
+
+    <div class="sidebar-content">
+        <nav class="navbar with-sidebar">
+
+            <label class="burger-btn arrow-left" for="documentation">
+                <span class="burger-icon"></span>
+            </label>
+        
+            <a href="index.html" class="link text-size-6">SocialiteUI</a>
+        
+            <div class="navbar-content">
+                <div class="navbar-end">
+                    <a target="_blank" rel="noopener noreferrer" class="link" href="https://github.com/Isradeleon/socialiteui"><i class="fab fa-github"></i></a>
+                    <a class="link text-brand" href="https://github.com/Isradeleon/socialiteui/archive/0.4.3.zip"><i style="font-size: 1.2rem;" class="fa fa-cloud-download-alt"></i></a>
+                </div>
+            </div>
+        
+        </nav>
+              
+        <div class="container below-navbar">
+            
+<!-- NAVBAR -->
+<h5 id="navbar" class="header-below-navbar text-brand">Navbar</h5>
+<div style="position: relative;">
+    <nav class="navbar">
+
+        <input class="menu-toggle" type="checkbox" id="menu-toggler" />
+        <label class="burger-btn" for="menu-toggler">
+            <span class="burger-icon"></span>
+        </label>
+        
+        <a class="link" href="./index.html">SocialiteUI</a>
+        
+        <div class="navbar-content">
+            
+            <div class="navbar-end">
+                <a class="link" href="./components.html"><i class="fa fa-code"></i> Documentation</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Isradeleon/socialiteui" class="link"><i class="fab fa-github"></i> View on Github</a>
+            </div>
+    
+        </div>
+    
+        <div class="navbar-end">
+            <a class="link text-brand" href="https://github.com/Isradeleon/socialiteui/archive/0.4.3.zip"><i style="font-size: 1.2rem;" class="fa fa-cloud-download-alt"></i> (0.4.3)</a>
+        </div>
+    
+    </nav>
+</div>
+
+<br>
+
+<p>This is a CSS only responsive navbar. Just add the <code>navbar</code> class to your <code>nav</code> element, 
+and add every <code>link</code> element you want to be responsive inside the <code>navbar-content</code>.</p>
+<pre class="prettyprint lang-html">
+<nav class="navbar">
+
+<!-- CSS animated menu icon -->
+<input class="menu-toggle" type="checkbox" id="menu-toggle" />
+<label class="burger-btn" for="menu-toggle">
+    <span class="burger-icon"></span>
+</label>
+
+<a class="link" href="/">Brand</a><!-- This will stay here on mobile devices -->
+
+<div class="navbar-content"><!-- This will be responsive on mobile devices -->
+    
+    <div class="navbar-end"><!-- Placed at the end of the navbar -->
+        <a class="link" href="/path/1">Link 1</a>
+        <a class="link" href="/path/2">Link 2</a>
+    </div>
+
+</div>
+
+<div class="navbar-end"><!-- This will stay here on mobile devices -->
+    <a class="link" href="/path/3">Link 3</a>
+</div>
+
+</nav>
+</pre>
+
+<br>
+
+<p>If you want the navbar to be fixed at the top, add the <code>fixed</code> class.</p>
+<pre class="prettyprint lang-html">
+<nav class="navbar fixed">
+...
+</nav>
+</pre>
+
+        </div>
+    </div>
+
+
+
+  <script>
+    document.querySelectorAll("pre.prettyprint").forEach(function(element) {
+        element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+  
+<script src="socialiteui-v0.4.3/socialiteui.js"></script>
+
+</body>
+</html>

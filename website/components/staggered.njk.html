@@ -1,0 +1,150 @@
+{% extends "docs.njk.html" %}
+
+{% block content %}
+<!-- STAGGERED -->
+<h5 id="staggered" class="header-below-navbar text-brand">Staggered grid view</h5>
+    
+<div class="staggered tablet-two">
+
+    <div class="staggered-item">
+        <div class="card">
+
+            <div class="card-header">
+                <span class="circular-img"
+                    style="
+            width: 30px; height: 30px;
+            background-image: url(https://picsum.photos/200/200)"></span>
+
+                <div class="card-data">
+                    <p>Elizabeth</p>
+                </div>
+            </div>
+
+            <p class="card-content relevant">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur libero enim, sapiente similique debitis ducimus totam magnam excepturi tempora soluta ad consequatur?</p>
+
+            <div class="user-actions evenly">
+                <i style="font-size: 1.5rem;" class="fa fa-fire-alt"></i>
+                <i style="font-size: 1.5rem;" class="fa fa-heartbeat"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="staggered-item">
+        <div class="card">
+
+            <img src="https://picsum.photos/600/400"
+                alt="">
+
+        </div>
+    </div>
+
+    <div class="staggered-item">
+        <div class="card">
+
+            <div class="card-header">
+                <span class="circular-img"
+                    style="
+            width: 30px; height: 30px;
+            background-image: url(https://picsum.photos/200/200)"></span>
+
+                <div class="card-data">
+                    <p>Elizabeth</p>
+                </div>
+            </div>
+
+            <p class="card-content relevant">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet voluptatibus tempore quisquam iusto asperiores aliquam dolore, dolorem nihil enim, pariatur ut iste nesciunt eveniet perferendis.</p>
+
+            <div class="user-actions evenly">
+                <i style="font-size: 1.5rem;" class="far fa-star"></i>
+                <i style="font-size: 1.5rem;" class="far fa-comment-dots"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="staggered-item">
+        <div class="card">
+
+            <img src="https://picsum.photos/600/400" alt="">
+
+        </div>
+    </div>
+
+    <div class="staggered-item">
+        <div class="card">
+
+            <img src="https://picsum.photos/500/640"
+                alt="">
+
+        </div>
+    </div>
+    <div class="staggered-item">
+        <div class="card">
+
+            <img src="https://picsum.photos/500/670"
+                alt="">
+
+        </div>
+    </div>
+    <div class="staggered-item">
+        <div class="card">
+
+            <img src="https://picsum.photos/500/610"
+                alt="">
+
+        </div>
+    </div>
+    <div class="staggered-item">
+        <div class="card">
+
+            <img src="https://picsum.photos/500/620"
+                alt="">
+
+        </div>
+    </div>
+
+</div>
+
+<p>For the staggered grid to work, you'll need to import the javascript 
+file <code class="text-brand">socialiteui-v0.4.3/socialiteui.js</code> from socialiteui framework at the bottom of your html document.</p>
+
+<p>Then just add the <code>staggered</code> class to your element.</p>
+<pre class="prettyprint lang-html">
+<div class="staggered">
+
+<!-- Every item must be inside a tag with the staggered-item class -->
+<div class="staggered-item">
+    ...
+</div>
+
+<div class="staggered-item">
+    ...
+</div>
+
+</div>
+</pre>
+
+<br>
+
+<p>In desktop, the staggered grid will be 4 columns length by default. 
+Use the classes <code>two</code> or <code>three</code> for 2 or 3 columns.</p>
+<pre class="prettyprint lang-html">
+<div class="staggered two"><!-- Two columns length -->
+...
+</div>
+</pre>
+
+<br>
+
+<p>In mobile, the staggered grid will be 1 column length by default. 
+Use the classes <code>mobile-two</code> or <code>mobile-three</code> for 2 or 3 columns. 
+The tablet will respect the desktop columns, but you may use <code>tablet-two</code> or <code>tablet-three</code> 
+to specify a different column length if need it.</p>
+<pre class="prettyprint lang-html">
+<!-- Two columns on mobile, three on tablet and 4 on desktop -->
+<div class="staggered mobile-two tablet-three">
+...
+</div>
+</pre>
+{% endblock %}

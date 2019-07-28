@@ -23,40 +23,35 @@
 
         <hr>
 
-        <a class="link text-brand">
-            {% if current == 'components' %}
-                <i class="fa fa-code"></i> 
-            {% endif %} Components</a>
+        <a class="link">Components</a>
 
-            <div class="children active">
-                <a href="#card" class="link text-size-s">Card</a>
-                <a href="#comment" class="link text-size-s">Comment</a>
-                <a href="#sidebar" class="link text-size-s">Sidebar</a>
-                <a href="#navbar" class="link text-size-s">Navbar</a>
-                <a href="#staggered" class="link text-size-s">Staggered grid view</a>
-            </div>
+        <div class="children active">
+            <a href="card.html" class="link text-size-s {% if current == 'card' %}text-brand{% endif %}">Card</a>
+            <a href="comment.html" class="link text-size-s {% if current == 'comment' %}text-brand{% endif %}">Comment</a>
+            <a href="sidebar.html" class="link text-size-s {% if current == 'sidebar' %}text-brand{% endif %}">Sidebar</a>
+            <a href="navbar.html" class="link text-size-s {% if current == 'navbar' %}text-brand{% endif %}">Navbar</a>
+            <a href="staggered.html" class="link text-size-s {% if current == 'staggered' %}text-brand{% endif %}">Staggered grid view</a>
+        </div>
 
-        <a class="link">{% if current == 'elements' %}
-                <i class="fa fa-code text-brand"></i> 
-            {% endif %} Elements</a>
+        <a class="link">Elements</a>
 
-            <!-- <div class="children"><a href="" class="link">jjojojo</a></div> -->
+        <div class="children active">
+            <a class="link text-size-s">Button</a>
+            <a class="link text-size-s">Circle image</a>
+        </div>
 
-        {#<a class="link">{% if current == 'form' %}
-                <i class="fa fa-code text-brand"></i> 
-            {% endif %} Form</a>#}
+        {#<a class="link">Form</a>#}
 
-        <a class="link">{% if current == 'grid system' %}
-                <i class="fa fa-code text-brand"></i> 
-            {% endif %} Grid system</a>
+        <a class="link">Grid system</a>
 
-        <a class="link">{% if current == 'layout' %}
-                <i class="fa fa-code text-brand"></i> 
-            {% endif %} Layout</a>
+        <div class="children active">
+            <a class="link text-size-s">Basic usage</a>
+            <a class="link text-size-s">Responsiveness</a>
+        </div>
 
-        {#<a class="link">{% if current == 'helpers' %}
-                <i class="fa fa-code text-brand"></i> 
-            {% endif %} Helpers</a>#}
+        <a class="link">Layout</a>
+
+        {#<a class="link"> Helpers</a>#}
 
     </aside>
 
@@ -78,8 +73,10 @@
         
         </nav>
               
-        {% block content %}
-        {% endblock %}
+        <div class="container below-navbar">
+            {% block content %}
+            {% endblock %}
+        </div>
     </div>
 
 {% endblock %}
