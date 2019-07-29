@@ -17,6 +17,18 @@
 
     window.addEventListener("resize",function(e){
         setUpAllStaggered();
+        
+        let w = getDeviceWidth()
+        if(w >= 992){
+            document.body.style.overflowY = 'auto'
+        }else{
+            var buBtn = document.querySelector('.sidebar-content .burger-btn.active');
+            if(buBtn){
+                document.body.style.overflowY = 'hidden'
+            }else{
+                document.body.style.overflowY = 'auto'
+            }
+        }
     });
     window.addEventListener("resize",debounce(function(e){
         setUpAllStaggered();
@@ -162,9 +174,11 @@
         burgerBtn.addEventListener('click', ()=>{
             if (!burgerBtn.classList.contains('active')) {
                 burgerBtn.classList.add('active')
+                document.body.style.overflowY = 'hidden'
                 document.getElementById(burgerBtn.dataset.sidebar).classList.add('active')
             }else{
                 burgerBtn.classList.remove('active')
+                document.body.style.overflowY = 'auto'
                 document.getElementById(burgerBtn.dataset.sidebar).classList.remove('active')
             }
         });
