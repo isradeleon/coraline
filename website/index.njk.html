@@ -18,6 +18,12 @@
         -webkit-text-fill-color: #2d3436;
         opacity: 1;
     }
+
+    #responsive .cols>.col,
+    #responsive .cols>*[class*='col-'] {
+        background: #ff7675;
+        border: 1px solid white;
+    }
 </style>
 {% endblock %}
 
@@ -118,7 +124,7 @@
                     </a>
                 </div>
                 <div class="col-3 col-t-6 text-center">
-                    <a class="link full-width">
+                    <a href="#responsive" class="link full-width">
                         <p class="text-size-5 text-violet">
                             <i class="fa fa-mobile"></i> 
                             <i class="fa fa-tablet"></i> 
@@ -162,6 +168,40 @@
                 <a href="staggered.html">staggered grid</a> and the 
                 <a href="sidebar.html">sidebar menu</a> functionality.
             </p>
+        </div>
+    </div>
+
+    <div class="site-section violet" id="responsive">
+        <div class="container text-center">
+            <h3>
+                <i class="fa fa-mobile"></i> 
+                <i class="fa fa-tablet"></i> 
+                <i class="fa fa-laptop-code"></i> 
+                <i class="fa fa-desktop"></i>
+                <br>Responsive
+            </h3>
+
+            <p>An easy to learn grid system, that is adaptable to all screens.</p>
+
+            <div class="cols">
+                <div class="col-12">col-12</div>
+    
+                <div class="col-1">col-1</div>
+                <div class="col-2">col-2</div>
+
+                <div class="col-1">col-1</div>
+                <div class="col-4">col-4</div>
+                <div class="col-1">col-1</div>
+
+                <div class="col-t-8 col-1 col-l-6 col-m-5">col-l-6</div>
+                <div class="col-1">col-1</div>
+
+                <div class="col-6">col-6</div>
+                <div class="col">col</div>
+
+                <div class="col-m-6 col-t-8">col-m-6</div>
+                <div class="col">col</div>
+            </div>
         </div>
     </div>
 {% endblock %}
