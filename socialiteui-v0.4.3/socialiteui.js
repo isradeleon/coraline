@@ -19,14 +19,18 @@
         setUpAllStaggered();
         
         let w = getDeviceWidth()
-        if(w >= 992){
-            document.body.style.overflowY = 'auto'
-        }else{
-            var buBtn = document.querySelector('.sidebar-content .burger-btn.active');
-            if(buBtn){
-                document.body.style.overflowY = 'hidden'
-            }else{
+        var _sidebar = document.querySelector('.sidebar')
+        var _sidebarContent = document.querySelector('.sidebar ~ .sidebar-content')
+        if(_sidebar && _sidebarContent){
+            if(w >= 992){
                 document.body.style.overflowY = 'auto'
+            }else{
+                var buBtn = document.querySelector('.sidebar-content .burger-btn.active');
+                if(buBtn){
+                    document.body.style.overflowY = 'hidden'
+                }else{
+                    document.body.style.overflowY = 'auto'
+                }
             }
         }
     });

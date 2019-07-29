@@ -721,135 +721,46 @@ input.menu-toggle{
     padding: 1%;
 }
 .cols>.col{flex: 1;}
-
-/* mobile goes first */
-.cols>.col-m-1{
-    width: calc(100%/12);
-}
-.cols>.col-m-2{
-    width: calc(calc(100%/12) * 2);
-}
-.cols>.col-m-3{
-    width: 25%;
-}
-.cols>.col-m-4{
-    width: calc(calc(100%/12) * 4);
-}
-.cols>.col-m-5{
-    width: calc(calc(100%/12) * 5);
-}
-.cols>.col-m-6{
-    width: 50%;
-}
-.cols>.col-m-7{
-    width: calc(calc(100%/12) * 7);
-}
-.cols>.col-m-8{
-    width: calc(calc(100%/12) * 8);
-}
-.cols>.col-m-9{
-    width: 75%;
-}
-.cols>.col-m-10{
-    width: calc(calc(100%/12) * 10);
-}
-.cols>.col-m-11{
-    width: calc(calc(100%/12) * 11);
-}
-.cols>.col-m-12{
+.cols>*[class*='col-']{
+    flex: none;
     width: 100%;
 }
 
-/* desktop */
-@media (min-width: 768px) and (max-width: 1199px) {
-    .cols>*[class*="col-l-"]:not([class*="col-t-"]):not([class*="col-m-"]){
-        flex: none;
-        width: 100%;
-    }
+.cols>.col-1{
+    width: calc(100%/12);
 }
-@media (min-width: 768px) {
-    .cols>.col-1{
-        width: calc(100%/12);
-    }
-    .cols>.col-2{
-        width: calc(calc(100%/12) * 2);
-    }
-    .cols>.col-3{
-        width: 25%;
-    }
-    .cols>.col-4{
-        width: calc(calc(100%/12) * 4);
-    }
-    .cols>.col-5{
-        width: calc(calc(100%/12) * 5);
-    }
-    .cols>.col-6{
-        width: 50%;
-    }
-    .cols>.col-7{
-        width: calc(calc(100%/12) * 7);
-    }
-    .cols>.col-8{
-        width: calc(calc(100%/12) * 8);
-    }
-    .cols>.col-9{
-        width: 75%;
-    }
-    .cols>.col-10{
-        width: calc(calc(100%/12) * 10);
-    }
-    .cols>.col-11{
-        width: calc(calc(100%/12) * 11);
-    }
-    .cols>.col-12{
-        width: 100%;
-    }
+.cols>.col-2{
+    width: calc(calc(100%/12) * 2);
 }
-
-/* tablet */
-@media (min-width: 768px) and (max-width: 991px) {
-    /* .cols>*:not([class*="col-t-"]):not([class*="col-m-"]){
-        flex: none;
-        width: 100%;
-    } */
+.cols>.col-3{
+    width: 25%;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-    .cols>.col-t-1{
-        width: calc(100%/12);
-    }
-    .cols>.col-t-2{
-        width: calc(calc(100%/12) * 2);
-    }
-    .cols>.col-t-3{
-        width: 25%;
-    }
-    .cols>.col-t-4{
-        width: calc(calc(100%/12) * 4);
-    }
-    .cols>.col-t-5{
-        width: calc(calc(100%/12) * 5);
-    }
-    .cols>.col-t-6{
-        width: 50%;
-    }
-    .cols>.col-t-7{
-        width: calc(calc(100%/12) * 7);
-    }
-    .cols>.col-t-8{
-        width: calc(calc(100%/12) * 8);
-    }
-    .cols>.col-t-9{
-        width: 75%;
-    }
-    .cols>.col-t-10{
-        width: calc(calc(100%/12) * 10);
-    }
-    .cols>.col-t-11{
-        width: calc(calc(100%/12) * 11);
-    }
-    .cols>.col-t-12{
-        width: 100%;
-    }
+.cols>.col-4{
+    width: calc(calc(100%/12) * 4);
+}
+.cols>.col-5{
+    width: calc(calc(100%/12) * 5);
+}
+.cols>.col-6{
+    width: 50%;
+}
+.cols>.col-7{
+    width: calc(calc(100%/12) * 7);
+}
+.cols>.col-8{
+    width: calc(calc(100%/12) * 8);
+}
+.cols>.col-9{
+    width: 75%;
+}
+.cols>.col-10{
+    width: calc(calc(100%/12) * 10);
+}
+.cols>.col-11{
+    width: calc(calc(100%/12) * 11);
+}
+.cols>.col-12{
+    width: 100%;
 }
 
 /* large screen */
@@ -892,19 +803,87 @@ input.menu-toggle{
     }
 }
 
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .cols>.col-t-1{
+        width: calc(100%/12);
+    }
+    .cols>.col-t-2{
+        width: calc(calc(100%/12) * 2);
+    }
+    .cols>.col-t-3{
+        width: 25%;
+    }
+    .cols>.col-t-4{
+        width: calc(calc(100%/12) * 4);
+    }
+    .cols>.col-t-5{
+        width: calc(calc(100%/12) * 5);
+    }
+    .cols>.col-t-6{
+        width: 50%;
+    }
+    .cols>.col-t-7{
+        width: calc(calc(100%/12) * 7);
+    }
+    .cols>.col-t-8{
+        width: calc(calc(100%/12) * 8);
+    }
+    .cols>.col-t-9{
+        width: 75%;
+    }
+    .cols>.col-t-10{
+        width: calc(calc(100%/12) * 10);
+    }
+    .cols>.col-t-11{
+        width: calc(calc(100%/12) * 11);
+    }
+    .cols>.col-t-12{
+        width: 100%;
+    }
+}
+
 /* moibile */
 @media (max-width: 767px){
-    /* .cols>.col, .cols>*[class*='col-'],
-    .cols>*[class*='col-t'],
-    .cols>*[class*='col-l']{
-        flex: none;
-        width: 100%; 
-    } */
-
-    /* .cols>.col, */ 
     .cols>*:not([class*="col-m-"]){
         flex: none;
         width: 100%; 
+    }
+    .cols>.col-m-1{
+        width: calc(100%/12);
+    }
+    .cols>.col-m-2{
+        width: calc(calc(100%/12) * 2);
+    }
+    .cols>.col-m-3{
+        width: 25%;
+    }
+    .cols>.col-m-4{
+        width: calc(calc(100%/12) * 4);
+    }
+    .cols>.col-m-5{
+        width: calc(calc(100%/12) * 5);
+    }
+    .cols>.col-m-6{
+        width: 50%;
+    }
+    .cols>.col-m-7{
+        width: calc(calc(100%/12) * 7);
+    }
+    .cols>.col-m-8{
+        width: calc(calc(100%/12) * 8);
+    }
+    .cols>.col-m-9{
+        width: 75%;
+    }
+    .cols>.col-m-10{
+        width: calc(calc(100%/12) * 10);
+    }
+    .cols>.col-m-11{
+        width: calc(calc(100%/12) * 11);
+    }
+    .cols>.col-m-12{
+        width: 100%;
     }
 }
 
@@ -925,23 +904,7 @@ input.menu-toggle{
     display: block;
 }
 
-/* 
-.sidebar>.link::after{
-    content: '\25BE';
-    position: absolute;
-    color: #2d3436;
-    right: 1rem;
-} */
-
 .sidebar-content{
-    /* width: 78%;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    position: fixed;
-    overflow-y: auto;
-    transition: all .3s ease; */
-
     padding-left: 22%;
     position: relative;
     transition: all .3s ease;
@@ -989,23 +952,7 @@ input.menu-toggle{
         border-left: 0;
     }
     .sidebar-content{
-        /* width: 100%;
-        position: relative; */
         padding-left: 0;
-        /* height: 0%;
-        overflow: hidden; */
-        /* margin-right: -100%; */
-    }
-    .sidebar.active ~ .sidebar-content{
-        /* height: 0; */
-        /* position: absolute; */
-        /* width: 0%; */
-        /* overflow: hidden; */
-        /* display: none; */
-        /* margin-right: -100%; */
-        /* position: fixed; */
-        /* max-height: 100vh; */
-        /* overflow: hidden; */
     }
     .sidebar-content>header{
         position: fixed;
