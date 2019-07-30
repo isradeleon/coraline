@@ -35,13 +35,26 @@ current: 'staggered'})
 fs.writeFileSync('staggered.html', staggered);
 
 /**
+ * BASE JS CODE
+ */
+var baseJs = fs.readFileSync('base.js').toString();
+
+// JS minifier
+var Terser = require("terser");
+var jsResult = Terser.minify(baseJs);
+if(!jsResult.error){
+  fs.writeFileSync('socialiteui-v0.4.3/socialiteui.min.js', jsResult.code);
+}else{
+  console.log('JS ERROR')
+  console.log(jsResult.error)
+}
+
+/**
  * BASE CSS CODE
  */
 var baseCss = fs.readFileSync('base.css')
 
-/**
- * CSS MINIFIER
- */
+// CSS minifier
 var csso = require('csso');
 
 /**

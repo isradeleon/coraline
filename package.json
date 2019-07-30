@@ -30,6 +30,7 @@
     "autoprefixer": "^9.6.1",
     "csso": "^3.5.1",
     "nunjucks": "^3.2.0",
-    "postcss": "^7.0.17"
+    "postcss": "^7.0.17",
+    "terser": "^4.1.2"
   }
 }

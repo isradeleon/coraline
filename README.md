@@ -17,7 +17,7 @@ The framework includes some social interface components, like for example the ca
 
 ## Lightweight
 
-The whole framework weighs just 18.5K. That's including the [staggered grid](https://socialiteui.com/components.html#staggered) and the [sidebar menu](https://socialiteui.com/components.html#sidebar) functionality.
+The whole framework weighs just 17K. That's including the [staggered grid](https://socialiteui.com/components.html#staggered) and the [sidebar menu](https://socialiteui.com/components.html#sidebar) functionality.
 
 ## Easy to install
 
@@ -36,7 +36,7 @@ npm install socialiteui
 <link rel="stylesheet" href="socialiteui-v0.4.3/socialiteui.min.css">
 
 <!-- Staggered grid and sidebar functionality -->
-<script src="socialiteui-v0.4.3/socialiteui.js"></script>
+<script src="socialiteui-v0.4.3/socialiteui.min.js"></script>
 ```
 
 ## Browser Support
