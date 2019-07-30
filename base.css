@@ -2,15 +2,12 @@
     SocialiteUI v0.4.3
     Color reference:
         brand: #ff7675
-        lightblue: #74b9ff
-        blue: #0984e3
-        lightgreen: #55efc4
-        green: #00b894
-        red: #ee5253
-        lightviolet: #a29bfe
-        violet: #6c5ce7
-        purple: #8e44ad
-        yellow: #fdcb6e
+        primary: #6c5ce7
+        secondary: #0984e3
+        info: #74b9ff
+        success: #1dd1a1
+        danger: #ee5253
+        warning: #fdcb6e
         dark: #2d3436
 */
 *{
@@ -291,39 +288,27 @@ input.menu-toggle{
     background-color: #ff7675;
     color: white;
 }
-.btn.lightblue{
+.btn.info{
     background-color: #74b9ff;
     color: white;
 }
-.btn.blue{
+.btn.secondary{
     background-color: #0984e3;
     color: white;
 }
-.btn.lightgreen{
-    background-color: #55efc4;
+.btn.success{
+    background-color: #1dd1a1;
     color: white;
 }
-.btn.green{
-    background-color: #00b894;
+.btn.danger{
+    background-color: #ee5253;
     color: white;
 }
-.btn.red{
-    background-color: #d63031;
-    color: white;
-}
-.btn.lightviolet{
-    background-color: #a29bfe;
-    color: white;
-}
-.btn.violet{
+.btn.primary{
     background-color: #6c5ce7;
     color: white;
 }
-.btn.purple{
-    background-color: #8e44ad;
-    color: white;
-}
-.btn.yellow{
+.btn.warning{
     background-color: #fdcb6e;
     color: white;
 }
@@ -357,147 +342,99 @@ input.menu-toggle{
     color: white;
 }
 
-.btn.lightblue.inverted{
+.btn.info.inverted{
     background-color: white;
     color: #74b9ff;
     border: 1px solid #74b9ff;
 } 
-.btn.lightblue.inverted *{
+.btn.info.inverted *{
     color: #74b9ff;
 }
-.btn.lightblue.inverted:hover{
+.btn.info.inverted:hover{
     background-color: #74b9ff;
     color: white;
 }
-.btn.lightblue.inverted:hover *{
+.btn.info.inverted:hover *{
     color: white;
 }
 
-.btn.blue.inverted{
+.btn.secondary.inverted{
     background-color: white;
     color: #0984e3;
     border: 1px solid #0984e3;
 }
-.btn.blue.inverted *{
+.btn.secondary.inverted *{
     color: #0984e3;
 }
-.btn.blue.inverted:hover{
+.btn.secondary.inverted:hover{
     background-color: #0984e3;
     color: white;
 }
-.btn.blue.inverted:hover *{
+.btn.secondary.inverted:hover *{
     color: white;
 }
 
-.btn.green.inverted{
+.btn.success.inverted{
     background-color: white;
-    color: #00b894;
-    border: 1px solid #00b894;
+    color: #1dd1a1;
+    border: 1px solid #1dd1a1;
 }
-.btn.green.inverted *{
-    color: #00b894;
+.btn.success.inverted *{
+    color: #1dd1a1;
 }
-.btn.green.inverted:hover{
-    background-color: #00b894;
+.btn.success.inverted:hover{
+    background-color: #1dd1a1;
     color: white;
 }
-.btn.green.inverted:hover *{
+.btn.success.inverted:hover *{
     color: white;
 }
 
-.btn.lightgreen.inverted{
+.btn.danger.inverted{
     background-color: white;
-    color: #55efc4;
-    border: 1px solid #55efc4;
+    color: #ee5253;
+    border: 1px solid #ee5253;
 }
-.btn.lightgreen.inverted *{
-    color: #55efc4;
+.btn.danger.inverted *{
+    color: #ee5253;
 }
-.btn.lightgreen.inverted:hover{
-    background-color: #55efc4;
+.btn.danger.inverted:hover{
+    background-color: #ee5253;
     color: white;
 }
-.btn.lightgreen.inverted:hover *{
-    color: white;
-}
-
-.btn.red.inverted{
-    background-color: white;
-    color: #d63031;
-    border: 1px solid #d63031;
-}
-.btn.red.inverted *{
-    color: #d63031;
-}
-.btn.red.inverted:hover{
-    background-color: #d63031;
-    color: white;
-}
-.btn.red.inverted:hover *{
+.btn.danger.inverted:hover *{
     color: white;
 }
 
-.btn.lightviolet.inverted{
-    background-color: white;
-    color: #a29bfe;
-    border: 1px solid #a29bfe;
-}
-.btn.lightviolet.inverted *{
-    color: #a29bfe;
-}
-.btn.lightviolet.inverted:hover{
-    background-color: #a29bfe;
-    color: white;
-}
-.btn.lightviolet.inverted:hover *{
-    color: white;
-}
-
-.btn.violet.inverted{
+.btn.primary.inverted{
     background-color: white;
     color: #6c5ce7;
     border: 1px solid #6c5ce7;
 }
-.btn.violet.inverted *{
+.btn.primary.inverted *{
     color: #6c5ce7;
 }
-.btn.violet.inverted:hover{
+.btn.primary.inverted:hover{
     background-color: #6c5ce7;
     color: white;
 }
-.btn.violet.inverted:hover *{
+.btn.primary.inverted:hover *{
     color: white;
 }
 
-.btn.purple.inverted{
-    background-color: white;
-    color: #8e44ad;
-    border: 1px solid #8e44ad;
-} 
-.btn.purple.inverted *{
-    color: #8e44ad;
-}
-.btn.purple.inverted:hover{
-    background-color: #8e44ad;
-    color: white;
-}
-.btn.purple.inverted:hover *{
-    color: white;
-}
-
-.btn.yellow.inverted{
+.btn.warning.inverted{
     background-color: white;
     color: #fdcb6e;
     border: 1px solid #fdcb6e;
 }  
-.btn.yellow.inverted *{
+.btn.warning.inverted *{
     color: #fdcb6e;
 }
-.btn.yellow.inverted:hover{
+.btn.warning.inverted:hover{
     background-color: #fdcb6e;
     color: white;
 }
-.btn.yellow.inverted:hover *{
+.btn.warning.inverted:hover *{
     color: white;
 }
 
@@ -970,99 +907,22 @@ input.menu-toggle{
     .sidebar.active{
         left: 0;
     }
-}  
-
-/* SIDEBAR */
-/* .sidebar-container{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-.sidebar-container.below-navbar{
-    padding-top: 0;
-}
-.sidebar{
-    background-color: white;
-    z-index: 1;
-    width: 20%;
-    height: 100%;
-    position: absolute;
-    border-right: 1px solid #eaeaea;
-    overflow-y: auto;
-}
-.sidebar>*{
-    display: block;
-}
-.sidebar-content{
-    width: 80%;
-    margin-left: 20%;
-    position: absolute;
-    overflow-y: auto;
-    padding-left: 20%;
-} */
-/* tablets */
-/* @media (max-width: 991px) {
-    .sidebar{
-        width: 100%;
-        position: relative;
-        text-align: center;
-        border-right: none;
-        border-bottom: 1px #eaeaea solid;
-        display: flex;
-        height: 60px;
-        align-items: center;
-    }
-    .sidebar-content{
-        padding-left: 0;
-    }
-    .sidebar>*{
-        flex-shrink: 0;
-        margin: auto;
-    }
-} */
-
-/* CONTENT */
-.content {
-    padding-top: 0;
-    list-style: none; /* Remove default bullets */
-}
-.content li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1rem; /* Also needed for space (tweak if needed) */
-    color: #ff7675;
-    margin-left: -1rem; /* Also needed for space (tweak if needed) */
-}
-.content.lightblue li::before {
-    color: #74b9ff;
-}
-.content .link{
-    padding: 0.3rem;
-}
-.content .link:hover{
-    background: none;
-    color: #ff7675;
 }
 
 /* HELPERS*/
 .text-brand, .text-brand *{
     color: #ff7675;
 }
-.text-lightblue, .text-lightblue *{
+.text-info, .text-info *{
     color: #74b9ff;
 }
-.text-blue, .text-blue *{
+.text-secondary, .text-secondary *{
     color: #0984e3;
 }
-.text-yellow, .text-yellow *{
+.text-warning, .text-warning *{
     color: #f9ca24;
 }
-.text-violet, .text-violet *{
+.text-primary, .text-primary *{
     color: #6c5ce7;
 }
 .text-gray, .text-gray *{
@@ -1139,13 +999,13 @@ input.menu-toggle{
     min-height: 100vh;
     background-color: #fafafa;
 }
-.site-section.violet{
+.site-section.primary{
     background-color: #6c5ce7;
 }
 .site-section.white{
     background-color: white;
 }
-.site-section.violet *{
+.site-section.primary *{
     color: white;
 }
 .site-section.brand{
