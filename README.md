@@ -7,13 +7,13 @@ Lightweight HTML, CSS and JS framework for WEB design. SocialiteUI is 100% respo
 
 ## Components
 
-The framework includes some social interface components, like for example the cards, comments and a pinterest like staggered grid.
+The framework includes some social interface components, like for example the card, the comment and a pinterest like staggered grid.
 
-* [Staggered grid view](https://socialiteui.com/components.html#staggered)
-* [Sidebar](https://socialiteui.com/components.html#sidebar)
-* [Navbar](https://socialiteui.com/components.html#navbar)
-* [Card](https://socialiteui.com/components.html#card)
-* [Comment](https://socialiteui.com/components.html#comment)
+* [Staggered grid view](https://socialiteui.com/staggered.html)
+* [Sidebar](https://socialiteui.com/sidebar.html)
+* [Navbar](https://socialiteui.com/navbar.html)
+* [Card](https://socialiteui.com/card.html)
+* [Comment](https://socialiteui.com/comment.html)
 
 ## Lightweight
 

@@ -54,7 +54,6 @@ var jsResult = Terser.minify(baseJs);
 if(!jsResult.error){
   fs.writeFileSync('socialiteui-v0.4.3/socialiteui.min.js', jsResult.code);
   fs.writeFileSync(docsSourcesPath+'/socialiteui.min.js', jsResult.code);
-
 }else{
   console.log('JS ERROR')
   console.log(jsResult.error)
