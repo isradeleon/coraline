@@ -33,10 +33,10 @@ npm install socialiteui
 
 ```html
 <!-- Import the styles -->
-<link rel="stylesheet" href="socialiteui-v0.4.3/socialiteui.min.css">
+<link rel="stylesheet" href="socialiteui-v0.4.4/socialiteui.min.css">
 
 <!-- Staggered grid and sidebar functionality -->
-<script src="socialiteui-v0.4.3/socialiteui.min.js"></script>
+<script src="socialiteui-v0.4.4/socialiteui.min.js"></script>
 ```
 
 ## Browser Support
