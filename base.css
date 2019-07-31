@@ -647,182 +647,183 @@ input.menu-toggle{
 }
 
 /* COLUMNS */
-.cols{
+.grid{
     width: 100%;
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap; 
     flex-flow: row wrap;
 }
-.cols>.col, .cols>*[class*='col-']{
+.grid>.col, .grid>*[class*='col-']{
     padding: 1%;
 }
-.cols>.col{flex: 1;}
-.cols>*[class*='col-'],
-.cols>*[class*='mobile-'],
-.cols>*[class*='tablet-'],
-.cols>*[class*='large-']{
+.grid>.col{flex: 1;}
+.grid>*[class*='col-'],
+.grid>*[class*='mobile-'],
+.grid>*[class*='tablet-'],
+.grid>*[class*='large-']{
     flex: none;
+    flex-wrap: wrap;
     width: 100%;
 }
 
-.cols>.col-1{
+.grid>.col-1{
     width: calc(100%/12);
 }
-.cols>.col-2{
+.grid>.col-2{
     width: calc(calc(100%/12) * 2);
 }
-.cols>.col-3{
+.grid>.col-3{
     width: 25%;
 }
-.cols>.col-4{
+.grid>.col-4{
     width: calc(calc(100%/12) * 4);
 }
-.cols>.col-5{
+.grid>.col-5{
     width: calc(calc(100%/12) * 5);
 }
-.cols>.col-6{
+.grid>.col-6{
     width: 50%;
 }
-.cols>.col-7{
+.grid>.col-7{
     width: calc(calc(100%/12) * 7);
 }
-.cols>.col-8{
+.grid>.col-8{
     width: calc(calc(100%/12) * 8);
 }
-.cols>.col-9{
+.grid>.col-9{
     width: 75%;
 }
-.cols>.col-10{
+.grid>.col-10{
     width: calc(calc(100%/12) * 10);
 }
-.cols>.col-11{
+.grid>.col-11{
     width: calc(calc(100%/12) * 11);
 }
-.cols>.col-12{
+.grid>.col-12{
     width: 100%;
 }
 
 /* large screen */
 @media (min-width: 1200px){
-    .cols>.large-1{
+    .grid>.large-1{
         width: calc(100%/12);
     }
-    .cols>.large-2{
+    .grid>.large-2{
         width: calc(calc(100%/12) * 2);
     }
-    .cols>.large-3{
+    .grid>.large-3{
         width: 25%;
     }
-    .cols>.large-4{
+    .grid>.large-4{
         width: calc(calc(100%/12) * 4);
     }
-    .cols>.large-5{
+    .grid>.large-5{
         width: calc(calc(100%/12) * 5);
     }
-    .cols>.large-6{
+    .grid>.large-6{
         width: 50%;
     }
-    .cols>.large-7{
+    .grid>.large-7{
         width: calc(calc(100%/12) * 7);
     }
-    .cols>.large-8{
+    .grid>.large-8{
         width: calc(calc(100%/12) * 8);
     }
-    .cols>.large-9{
+    .grid>.large-9{
         width: 75%;
     }
-    .cols>.large-10{
+    .grid>.large-10{
         width: calc(calc(100%/12) * 10);
     }
-    .cols>.large-11{
+    .grid>.large-11{
         width: calc(calc(100%/12) * 11);
     }
-    .cols>.large-12{
+    .grid>.large-12{
         width: 100%;
     }
 }
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 991px) {
-    .cols>.tablet-1{
+    .grid>.tablet-1{
         width: calc(100%/12);
     }
-    .cols>.tablet-2{
+    .grid>.tablet-2{
         width: calc(calc(100%/12) * 2);
     }
-    .cols>.tablet-3{
+    .grid>.tablet-3{
         width: 25%;
     }
-    .cols>.tablet-4{
+    .grid>.tablet-4{
         width: calc(calc(100%/12) * 4);
     }
-    .cols>.tablet-5{
+    .grid>.tablet-5{
         width: calc(calc(100%/12) * 5);
     }
-    .cols>.tablet-6{
+    .grid>.tablet-6{
         width: 50%;
     }
-    .cols>.tablet-7{
+    .grid>.tablet-7{
         width: calc(calc(100%/12) * 7);
     }
-    .cols>.tablet-8{
+    .grid>.tablet-8{
         width: calc(calc(100%/12) * 8);
     }
-    .cols>.tablet-9{
+    .grid>.tablet-9{
         width: 75%;
     }
-    .cols>.tablet-10{
+    .grid>.tablet-10{
         width: calc(calc(100%/12) * 10);
     }
-    .cols>.tablet-11{
+    .grid>.tablet-11{
         width: calc(calc(100%/12) * 11);
     }
-    .cols>.tablet-12{
+    .grid>.tablet-12{
         width: 100%;
     }
 }
 
 /* moibile */
 @media (max-width: 767px){
-    .cols>*:not([class*="mobile-"]){
+    .grid>*:not([class*="mobile-"]){
         flex: none;
         width: 100%; 
     }
-    .cols>.mobile-1{
+    .grid>.mobile-1{
         width: calc(100%/12);
     }
-    .cols>.mobile-2{
+    .grid>.mobile-2{
         width: calc(calc(100%/12) * 2);
     }
-    .cols>.mobile-3{
+    .grid>.mobile-3{
         width: 25%;
     }
-    .cols>.mobile-4{
+    .grid>.mobile-4{
         width: calc(calc(100%/12) * 4);
     }
-    .cols>.mobile-5{
+    .grid>.mobile-5{
         width: calc(calc(100%/12) * 5);
     }
-    .cols>.mobile-6{
+    .grid>.mobile-6{
         width: 50%;
     }
-    .cols>.mobile-7{
+    .grid>.mobile-7{
         width: calc(calc(100%/12) * 7);
     }
-    .cols>.mobile-8{
+    .grid>.mobile-8{
         width: calc(calc(100%/12) * 8);
     }
-    .cols>.mobile-9{
+    .grid>.mobile-9{
         width: 75%;
     }
-    .cols>.mobile-10{
+    .grid>.mobile-10{
         width: calc(calc(100%/12) * 10);
     }
-    .cols>.mobile-11{
+    .grid>.mobile-11{
         width: calc(calc(100%/12) * 11);
     }
-    .cols>.mobile-12{
+    .grid>.mobile-12{
         width: 100%;
     }
 }
