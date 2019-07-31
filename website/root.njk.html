@@ -16,10 +16,18 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
-    
+
     <meta property="og:title" content="{% if title %}{{ title }}{% else %}SocialiteUI{% endif %} • A responsive and lightweight CSS framework">
     <meta property="og:description" content="{% if description %}{{ description }}{% else %}Lightweight HTML, CSS and JS framework for WEB design. SocialiteUI is 100% responsive and mobile first designed.{% endif %}">
     <meta property="og:image" content="https://socialiteui.com/logo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@isradeleon">
+    <meta name="twitter:creator" content="@isradeleon">
+
+    <meta name="twitter:title" content="{% if title %}{{ title }}{% else %}SocialiteUI{% endif %} • A responsive and lightweight CSS framework">
+    <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}Lightweight HTML, CSS and JS framework for WEB design. SocialiteUI is 100% responsive and mobile first designed.{% endif %}">
+    <meta name="twitter:image" content="https://socialiteui.com/logo.png">
 
     {% block css %}
     {% endblock %}
