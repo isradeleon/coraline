@@ -3,13 +3,14 @@
 {% block content %}
 <!-- SIDEBAR -->
 <h1 id="sidebar" class="text-brand">Sidebar</h1>
+<p>A responsive sidebar menu built with CSS and JS.</p>
 
-<p>For the sidebar component, you'll need to import the javascript file <code class="text-brand">socialiteui-v0.4.4/socialiteui.min.js</code>
+<p>For the sidebar, you'll need to import the javascript file <code class="text-brand">socialiteui-v0.4.4/socialiteui.min.js</code>
 from socialiteui framework at the bottom of your html document.</p>
 
 <p>A sidebar looks exactly like the one in this documentation page. The <code>sidebar</code> element will be fixed 
 and 20% width in desktop and large screen devices. You should place your content inside an element with the <code>sidebar-content</code> 
-class next to it.</p>
+class, below a <code>navbar</code> element.</p>
 
 <pre class="prettyprint lang-html">
 <aside class="sidebar" id="website-menu"><!-- Set the id for the toggler menu -->
@@ -45,8 +46,36 @@ class next to it.</p>
 
 <br>
 
-<p>As the sidebar is made to work with the navbar component for responsive functionality, add a simple <code>navbar</code> component
+<p>As the sidebar is made to work with the navbar component for responsiveness, add a simple <code>navbar</code> component
 as the first child of the <code>sidebar-content</code> element, with the <code>with-sidebar</code> class. This navbar 
 <strong>wont be responsive in the same way</strong> as the normal navbar, as it is designed to work as a 
 toggler for the sidebar visibility on mobile and tablet.</p>
+
+<br>
+
+<p>If your sidebar menu needs subcategories, you can add them inside an element with the <code>children</code> 
+class. The toggle for the subcategories is handled by Javascript.</p>
+<pre class="prettyprint lang-html">
+<aside class="sidebar" id="website-menu">
+
+    <span class="link">Category 1</span>
+    <div class="children">
+        <a class="link text-size-s" href="#">Subcategory 1</a>
+
+        <a class="link text-size-s" href="#">Subcategory 2</a>
+
+        <a class="link text-size-s" href="#">Subcategory 3</a>
+    </div>
+
+    <a class="link" href="#">Category 2</a>
+
+</aside>
+
+...
+</pre>
+
+<br>
+<p>In this example the <code>text-size-s</code> helper class for smaller text is implemented. 
+Remove it if you don't want the subcategories to have smaller font size.</p>
+
 {% endblock %}
