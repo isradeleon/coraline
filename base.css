@@ -896,7 +896,7 @@ input.menu-toggle{
         width: 100%;
         left: -100%;
         top: 64px;
-        border-left: 0;
+        border-right: none;
     }
     .sidebar-content{
         width: 100%;
