@@ -53,10 +53,9 @@
 
     </nav>
 
-    <div class="site-section white below-navbar">
+    <div class="site-section white">
 
-        <div class="container">
-            <br><br>
+        <div class="container below-navbar">
     
             <div class="grid">
                 <div class="col-6">
@@ -98,7 +97,7 @@
                         <!-- <img src="https://picsum.photos/600/650" alt=""> -->
                         
                         <p class="card-content text-size-6">
-                            Hey! I'm a card component example! As you can see, I have a circular image, and some actions too!
+                            Hi! This is a card component example! As you can see, it has a circular image, and some user actions too
                         </p>
                         
                         <div class="user-actions evenly">
@@ -120,7 +119,7 @@
                         <p class="text-size-5 text-secondary">
                             <i class="fa fa-feather-alt"></i>
                             <br>Lightweight
-                            <br><span class="text-size-s text-gray">Only 17K</span>
+                            <br><span class="text-size-s text-gray">The framework weighs 17K</span>
                         </p>
                     </a>
                 </div>
@@ -160,29 +159,28 @@
     
     <div class="site-section" id="lightweight">
         <div class="container text-center">
-            <h3 class="text-secondary">
+            <h2 class="text-secondary">
                 <i class="fa fa-feather-alt"></i>
                 <br> Lightweight (Only 17K)
-            </h3>
+            </h2>
             <p>
-                The whole framework weighs just 17K. That's including the 
-                <a href="staggered.html">staggered grid</a> and the 
-                <a href="sidebar.html">sidebar menu</a> functionality.
+                The whole framework weighs just 17K.<br>It comes with multiple class helpers, 
+                a grid system and helpful components like navbar, cards, and more.
             </p>
         </div>
     </div>
 
     <div class="site-section white" id="responsive">
-        <div class="container text-center">
-            <h3 class="text-primary">
+        <div class="container text-center below-navbar">
+            <h2 class="text-primary">
                 <i class="fa fa-mobile"></i> 
                 <i class="fa fa-tablet"></i> 
                 <i class="fa fa-laptop-code"></i> 
                 <i class="fa fa-desktop"></i>
                 <br>Responsive & mobile first
-            </h3>
+            </h2>
 
-            <p>An easy to learn <a href="grid-system.html">grid system</a>, that is adaptable to all screens.</p>
+            <p>A simple and easy to learn <a href="grid-system.html">grid system</a>, that is adaptable to all screens.</p>
 
             <div class="grid">
                 <div class="col-12">col-12</div>
@@ -200,6 +198,22 @@
                 <div class="col">col</div>
                 
             </div>
+
+            <br>
+            <p>Need a different column span on mobile and tablet? Then just add:</p>
+
+            <div class="grid text-white">
+                <div class="col-4 tablet-12 mobile-6">
+                    <p>col-4, tablet-12, mobile-6</p>
+                </div>
+                <div class="col-4 tablet-12 mobile-6">
+                    <p>col-4, tablet-12, mobile-6</p>
+                </div>                
+                <div class="col-4 tablet-12 mobile-12">
+                    <p>col-4, tablet-12, mobile-12</p>
+                </div>                
+            </div>
+
         </div>
     </div>
 {% endblock %}
