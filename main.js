@@ -23,13 +23,13 @@ fs.writeFileSync(docsPath+'/index.html', index);
  */
 var card = env.render('components/card.njk.html', 
 {title: 'Card', 
-description: 'Card: A flexible social interface component for visual and text content',
+description: 'Card: A flexible UI component for displaying visual and text content',
 current: 'card'})
 fs.writeFileSync(docsPath+'/card.html', card);
 
 var comment = env.render('components/comment.njk.html', 
 {title: 'Comment', 
-description: 'Comment: A flexible social interface component for visual and text content',
+description: 'Comment: A flexible social interface component for displaying visual and text content',
 current: 'comment'})
 fs.writeFileSync(docsPath+'/comment.html', comment);
 
