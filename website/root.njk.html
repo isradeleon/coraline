@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="{% if description %}{{ description }}{% else %}Lightweight HTML, CSS and JS framework for WEB design. SocialiteUI is 100% responsive and mobile-first designed.{% endif %}">
+    <meta name="description" content="{% if description %}{{ description }}{% else %}Lightweight HTML, CSS and JS framework for WEB design. SocialiteUI is 100% responsive and mobile first designed.{% endif %}">
     <title>{% if title %}{{ title }}{% else %}SocialiteUI{% endif %} • A responsive and lightweight CSS framework</title>
     <link rel="stylesheet" href="socialiteui-v0.4.4/socialiteui.min.css">
     <link rel="icon" href="logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="stylesheet" href="prettifier.css">
+
+    <meta property="og:url" content="https://socialiteui.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    
+    <meta property="og:title" content="{% if title %}{{ title }}{% else %}SocialiteUI{% endif %} • A responsive and lightweight CSS framework">
+    <meta property="og:description" content="{% if description %}{{ description }}{% else %}Lightweight HTML, CSS and JS framework for WEB design. SocialiteUI is 100% responsive and mobile first designed.{% endif %}">
+    <meta property="og:image" content="https://socialiteui.com/logo.png">
+
     {% block css %}
     {% endblock %}
 </head>
