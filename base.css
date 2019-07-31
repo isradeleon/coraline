@@ -846,8 +846,14 @@ input.menu-toggle{
 }
 
 .sidebar-content{
-    padding-left: 22%;
-    position: relative;
+    width: 78%;
+    position: absolute;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    /* padding-left: 22%;
+    position: relative; */
     transition: all .3s ease;
 }
 
@@ -893,7 +899,8 @@ input.menu-toggle{
         border-left: 0;
     }
     .sidebar-content{
-        padding-left: 0;
+        width: 100%;
+        /* padding-left: 0; */
     }
     .sidebar-content>header{
         position: fixed;
