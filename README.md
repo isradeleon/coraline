@@ -21,7 +21,7 @@ The framework comes with a legible and easy to learn [grid system](https://socia
 
 ## Lightweight
 
-The whole framework weighs just 17K. That's including the [staggered grid](https://socialiteui.com/components.html#staggered) and the [sidebar menu](https://socialiteui.com/components.html#sidebar) functionality.
+The whole framework weighs just 17K. It comes with multiple CSS class helpers, helpful components like navbar, cards, and more.
 
 ## Easy to install
 
