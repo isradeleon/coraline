@@ -150,4 +150,74 @@ the column span for each element.</p>
 
 </div>
 </pre>
+
+<br>
+
+<h2>Responsiveness</h2>
+
+<p>For defining a diferent a different column span for mobile and tablet, just use the 
+<code>mobile-*</code> and <code>tablet-*</code> syntax with the same 12 column system.</p>
+
+<div class="example grid text-white">
+    <div class="col-4 tablet-12 mobile-6">
+        <p>col-4, tablet-12, mobile-6</p>
+    </div>
+    <div class="col-4 tablet-12 mobile-6">
+        <p>col-4, tablet-12, mobile-6</p>
+    </div>                
+    <div class="col-4 tablet-12 mobile-12">
+        <p>col-4, tablet-12, mobile-12</p>
+    </div>                
+</div>
+<pre class="prettyprint lang-html">
+<div class="grid">
+
+    <div class="col-4 tablet-12 mobile-6">
+        ...
+    </div>
+    
+    <div class="col-4 tablet-12 mobile-6">
+        ...
+    </div>                
+    
+    <div class="col-4 tablet-12 mobile-12">
+        ...
+    </div>
+    
+</div>
+</pre>
+
+<br>
+
+<p>If you don't set the tablet column span, it will respect the desktop columns. 
+On the other hand, mobile will override them to fill the 100% width of the grid.</p>
+
+<br>
+
+<p>For large screen devices is the same, you just need to use the <code>large-*</code> syntax 
+with the 12 column system. If you don't set these values, the columns you set with the <code>col-*</code> 
+syntax will stay the same.</p>
+
+<div class="example grid text-white">
+    <div class="col-12 large-6">
+        <p>col-12, large-6</p>
+    </div>
+    <div class="col-12 large-6">
+        <p>col-12, large-6</p>
+    </div>
+</div>
+<pre class="prettyprint lang-html">
+<div class="grid">
+    
+    <div class="col-12 large-6">
+        ...
+    </div>
+
+    <div class="col-12 large-6">
+        ...
+    </div>
+
+</div>
+</pre>
+
 {% endblock %}
