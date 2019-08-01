@@ -109,13 +109,16 @@
 </div>
 
 <p>For the staggered grid to work, you'll need to import the javascript 
-file <code class="text-brand">socialiteui-v0.4.5/socialiteui.min.js</code> from socialiteui framework at the bottom of your html document.</p>
+file <code class="text-brand">socialiteui-v0.4.5/socialiteui.min.js</code> from socialiteui framework 
+to the bottom of your html document. The script makes the calculation for the negative margin-top 
+for each element, making it look staggered. It also listens for resize window events and when new 
+elements are added to the staggered grid using a mutation observer.</p>
 
-<p>Then just add the <code>staggered</code> class to your element.</p>
+<p>All you need to do is adding the <code>staggered</code> class to your element. Every item you want to place inside the
+staggered grid, must be surrounded by an html element with the <code>staggered-item</code> class.</p>
 <pre class="prettyprint lang-html">
 <div class="staggered">
 
-    <!-- Every item must be inside a tag with the staggered-item class -->
     <div class="staggered-item">
         ...
     </div>
@@ -130,9 +133,11 @@ file <code class="text-brand">socialiteui-v0.4.5/socialiteui.min.js</code> from 
 <br>
 
 <p>In desktop, the staggered grid will be 4 columns length by default. 
-Use the classes <code>two</code> or <code>three</code> for 2 or 3 columns.</p>
+To overwrite this behavior, use the classes <code>two</code> or <code>three</code> 
+for two or three columns.</p>
 <pre class="prettyprint lang-html">
-<div class="staggered two"><!-- Two columns length -->
+<!-- Two columns length -->
+<div class="staggered two">
     ...
 </div>
 </pre>
@@ -144,7 +149,7 @@ Use the classes <code>mobile-two</code> or <code>mobile-three</code> for 2 or 3 
 The tablet will respect the desktop columns, but you may use <code>tablet-two</code> or <code>tablet-three</code> 
 to specify a different column length if need it.</p>
 <pre class="prettyprint lang-html">
-<!-- Two columns on mobile, three on tablet and 4 on desktop -->
+<!-- Two columns on mobile, three on tablet and four on desktop -->
 <div class="staggered mobile-two tablet-three">
     ...
 </div>

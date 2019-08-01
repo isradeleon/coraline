@@ -23,34 +23,26 @@ body{
     font-family: sans-serif;
     margin: 0;
 }
-h1, h1 *{
+h1,h2,h3,h4,h5,h6{
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+}
+h1, h1 *{
     font-size: 2rem;
 }
 h2, h2 *{
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
     font-size: 1.75rem;
 }
 h3, h3 *{
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
     font-size: 1.6rem;
 }
 h4, h4 *{
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
     font-size: 1.45rem;
 }
 h5, h5 *{
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
     font-size: 1.30rem;
 }
 h6, h6 *{
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
     font-size: 1.15rem;
 }
 small, small *{
@@ -323,7 +315,7 @@ input.menu-toggle{
 }
 
 .btn.brand.inverted{
-    background-color: white;
+    background-color: transparent;
     color: #ff7675;
     border: 1px solid #ff7675;
 }
@@ -339,7 +331,7 @@ input.menu-toggle{
 }
 
 .btn.info.inverted{
-    background-color: white;
+    background-color: transparent;
     color: #74b9ff;
     border: 1px solid #74b9ff;
 } 
@@ -355,7 +347,7 @@ input.menu-toggle{
 }
 
 .btn.secondary.inverted{
-    background-color: white;
+    background-color: transparent;
     color: #0984e3;
     border: 1px solid #0984e3;
 }
@@ -371,7 +363,7 @@ input.menu-toggle{
 }
 
 .btn.success.inverted{
-    background-color: white;
+    background-color: transparent;
     color: #1dd1a1;
     border: 1px solid #1dd1a1;
 }
@@ -387,7 +379,7 @@ input.menu-toggle{
 }
 
 .btn.danger.inverted{
-    background-color: white;
+    background-color: transparent;
     color: #ee5253;
     border: 1px solid #ee5253;
 }
@@ -403,7 +395,7 @@ input.menu-toggle{
 }
 
 .btn.primary.inverted{
-    background-color: white;
+    background-color: transparent;
     color: #6c5ce7;
     border: 1px solid #6c5ce7;
 }
@@ -419,7 +411,7 @@ input.menu-toggle{
 }
 
 .btn.warning.inverted{
-    background-color: white;
+    background-color: transparent;
     color: #fdcb6e;
     border: 1px solid #fdcb6e;
 }  
@@ -435,7 +427,7 @@ input.menu-toggle{
 }
 
 .btn.dark.inverted{
-    background-color: white;
+    background-color: transparent;
     color: #2d3436;
     border: 1px solid #2d3436;
 }  
@@ -459,7 +451,7 @@ input.menu-toggle{
     color: white;
 }
 .btn.inverted:hover{
-    background-color: white;
+    background-color: transparent;
     color: #2d3436;
 }
 .btn.inverted:hover *{
@@ -911,6 +903,38 @@ input.menu-toggle{
     }
 }
 
+/* SECTIONS */
+.site-section{
+    display: flex;
+    padding: 15px 0;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fafafa;
+}
+.site-section.white{
+    background-color: white;
+}
+.site-section.primary{
+    background-color: #6c5ce7;
+}
+.site-section.primary *{
+    color: white;
+}
+.site-section.brand{
+    background-color: #ff7675;
+}
+.site-section.brand *{
+    color: white;
+}
+.site-section.secondary{
+    background-color: #0984e3;
+}
+.site-section.secondary *{
+    color: white;
+}
+
 /* HELPERS*/
 .text-brand, .text-brand *{
     color: #ff7675;
@@ -923,6 +947,12 @@ input.menu-toggle{
 }
 .text-warning, .text-warning *{
     color: #f9ca24;
+}
+.text-success, .text-success *{
+    color: #1dd1a1;
+}
+.text-danger, .text-danger *{
+    color: #ee5253;
 }
 .text-primary, .text-primary *{
     color: #6c5ce7;
@@ -950,7 +980,10 @@ input.menu-toggle{
 .text-left, .text-left *{
     text-align: left;
 }
-
+.text-size-1,.text-size-2,.text-size-3,.text-size-4,.text-size-5,.text-size-6{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
 .text-size-6, .text-size-6 *{
     font-size: 1.15rem;
 }
@@ -1003,30 +1036,4 @@ input.menu-toggle{
 }
 .box-shadow-4{
     box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* SECTIONS */
-.site-section{
-    display: flex;
-    padding: 15px 0;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #fafafa;
-}
-.site-section.primary{
-    background-color: #6c5ce7;
-}
-.site-section.white{
-    background-color: white;
-}
-.site-section.primary *{
-    color: white;
-}
-.site-section.brand{
-    background-color: #ff7675;
-}
-.site-section.brand *{
-    color: white;
 }
