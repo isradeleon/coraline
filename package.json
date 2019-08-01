@@ -1,6 +1,6 @@
 {
   "name": "socialiteui",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "Responsive and lightweight HTML, CSS and JS framework",
   "main": "main.js",
   "scripts": {
@@ -13,10 +13,10 @@
   "keywords": [
     "framework",
     "responsive",
+    "lightweight",
     "css",
     "js",
     "design",
-    "web",
     "social",
     "flexbox"
   ],
