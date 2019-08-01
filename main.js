@@ -4,7 +4,7 @@ var fs = require('fs');
 var env = new nunjucks.Environment(new nunjucks.FileSystemLoader('website'));
 
 /**
- * SOCIALITEUI.COM WEBSITE
+ * SOCIALITEUI.COM DOCUMENTATION
  */
 var docsPath = '../socialiteui-docs';
 if (!fs.existsSync(docsPath)){
@@ -18,47 +18,61 @@ if (!fs.existsSync(docsSourcesPath)){
 var index = env.render('index.njk.html')
 fs.writeFileSync(docsPath+'/index.html', index);
 
-/**
- * COMPONENTS
- */
-var card = env.render('components/card.njk.html', 
-{title: 'Card', 
-description: 'Card: A flexible UI component for displaying visual and text content',
-current: 'card'})
-fs.writeFileSync(docsPath+'/card.html', card);
+const documentation = [
+  /**
+   * COMPONENTS
+   */
+  {
+    title: 'Card', 
+    canonical: '/card.html',
+    njk: 'components/card.njk.html',
+    description: 'Card: A flexible UI component for displaying visual and text content',
+    current: 'card'
+  },
+  {
+    title: 'Comment', 
+    canonical: '/comment.html',
+    njk: 'components/comment.njk.html',
+    description: 'Comment: A flexible social interface component for displaying visual and text content',
+    current: 'comment'
+  },
+  {
+    title: 'Navbar', 
+    canonical: '/navbar.html',
+    njk: 'components/navbar.njk.html',
+    description: 'Navbar: A CSS only, fully responsive and easy to implement navbar menu',
+    current: 'navbar'
+  },
+  {
+    title: 'Sidebar', 
+    canonical: '/sidebar.html',
+    njk: 'components/sidebar.njk.html',
+    description: 'Sidebar: A responsive and easy to implement sidebar menu built with CSS and JS',
+    current: 'sidebar'
+  },
+  { title: 'Staggered grid', 
+    canonical: '/staggered.html',
+    njk: 'components/staggered.njk.html',
+    description: 'Staggered grid view: A responsive, left to right staggered grid built with CSS and JS',
+    current: 'staggered'
+  },
+  /**
+   * GRID SYSTEM
+   */
+  {
+    title: 'Grid system', 
+    canonical: '/grid-system.html',
+    njk: 'grid-system.njk.html',
+    description: 'Grid system: A simple and easy to learn grid system, that is adaptable to all screens',
+    current: 'grid-system'
+  }
+];
 
-var comment = env.render('components/comment.njk.html', 
-{title: 'Comment', 
-description: 'Comment: A flexible social interface component for displaying visual and text content',
-current: 'comment'})
-fs.writeFileSync(docsPath+'/comment.html', comment);
-
-var navbar = env.render('components/navbar.njk.html', 
-{title: 'Navbar', 
-description: 'Navbar: A CSS only, fully responsive and easy to implement navbar menu',
-current: 'navbar'})
-fs.writeFileSync(docsPath+'/navbar.html', navbar);
-
-var sidebar = env.render('components/sidebar.njk.html', 
-{title: 'Sidebar', 
-description: 'Sidebar: A responsive and easy to implement sidebar menu built with CSS and JS',
-current: 'sidebar'})
-fs.writeFileSync(docsPath+'/sidebar.html', sidebar);
-
-var staggered = env.render('components/staggered.njk.html', 
-{title: 'Staggered grid', 
-description: 'Staggered grid view: A responsive, left to right staggered grid built with Javascript',
-current: 'staggered'})
-fs.writeFileSync(docsPath+'/staggered.html', staggered);
-
-/**
- * GRID SYSTEM
- */
-var gridSystem = env.render('grid-system.njk.html', 
-{title: 'Grid system', 
-description: 'Grid system: A simple and easy to learn grid system, that is adaptable to all screens',
-current: 'grid-system'})
-fs.writeFileSync(docsPath+'/grid-system.html', gridSystem);
+for (let index = 0; index < documentation.length; index++) {
+  let element = documentation[index];
+  var rendered = env.render(element.njk, element)
+  fs.writeFileSync(docsPath+element.canonical, rendered);
+}
 
 /**
  * BASE JS CODE
