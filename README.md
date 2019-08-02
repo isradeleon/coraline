@@ -7,13 +7,15 @@ Lightweight HTML, CSS and JS framework for responsive WEB design. SocialiteUI is
 [![license](https://img.shields.io/github/license/isradeleon/socialiteui.svg?color=0984e3)](LICENSE)
 [![maintained](https://img.shields.io/maintenance/yes/2019.svg?color=1dd1a1)](https://www.npmjs.com/package/socialiteui)
 
-<a href="https://socialiteui.com">
-    <img src="https://github.com/Isradeleon/socialiteui/blob/master/logo.ico" alt="SocialiteUI framework" style="max-width: 256px; width: 100%;">
-</a>
+<p style="text-align: center;">
+    <a href="https://socialiteui.com">
+        <img src="https://github.com/Isradeleon/socialiteui/blob/master/logo.ico" alt="SocialiteUI framework" style="max-width: 256px; width: 100%;">
+    </a>
+</p>
 
 ## Easy to install
 
-You may just install the framework from npm or download it from [here](https://github.com/Isradeleon/socialiteui/archive/0.4.5.zip). Then just import the CSS and JS files into your project.
+You may just install the framework from npm or download the current version from [here](https://github.com/Isradeleon/socialiteui/archive/0.4.5.zip). Then just import the minified CSS and JS files into your project.
 
 ### NPM
 
@@ -62,10 +64,10 @@ The framework is compatible with recent versions of:
 
 ## Built with
 
-* [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) Flexible Box Module.
-* [Autoprefixer](https://github.com/postcss/autoprefixer) for better browser support.
-* [CSSO](https://github.com/css/csso) CSS compressor.
-* [Terser](https://github.com/terser-js/terser) JS compressor.
+* [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) Flexible Box Module
+* [Autoprefixer](https://github.com/postcss/autoprefixer) for better browser support
+* [CSSO](https://github.com/css/csso) CSS compressor
+* [Terser](https://github.com/terser-js/terser) JS compressor
 
 ## Documentation
 
