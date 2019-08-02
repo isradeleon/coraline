@@ -12,7 +12,7 @@ Lightweight HTML, CSS and JS framework for responsive WEB design. SocialiteUI is
 
 ## Easy to install
 
-You may just install the framework from npm and import the CSS and JS files into your project, or download it from the [website](https://socialiteui.com).
+You may just install the framework from npm or download it from [here](https://github.com/Isradeleon/socialiteui/archive/0.4.5.zip). Then just import the CSS and JS files into your project.
 
 ### NPM
 
@@ -29,6 +29,8 @@ npm install socialiteui
 <!-- Staggered grid and sidebar functionality -->
 <script src="socialiteui-v0.4.5/socialiteui.min.js"></script>
 ```
+
+You'll also find the documentation inside the website folder, which is generated using [Nunjucks](https://github.com/mozilla/nunjucks) at **../socialiteui-docs/**.
 
 ## Components
 
