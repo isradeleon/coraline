@@ -980,10 +980,10 @@ input.menu-toggle{
 .text-left, .text-left *{
     text-align: left;
 }
-.text-size-1,.text-size-2,.text-size-3,.text-size-4,.text-size-5,.text-size-6{
+/* .text-size-1,.text-size-2,.text-size-3,.text-size-4,.text-size-5,.text-size-6{
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-}
+} */
 .text-size-6, .text-size-6 *{
     font-size: 1.15rem;
 }
