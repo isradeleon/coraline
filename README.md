@@ -47,15 +47,12 @@ The framework comes with a legible and easy to learn [grid system](https://socia
 
 ```html
 <div class="grid">
-
     <div class="col-6 tablet-12 mobile-6">
         ...
     </div>
-    
     <div class="col-6 tablet-12 mobile-6">
         ...
     </div>
-    
 </div>
 ```
 
