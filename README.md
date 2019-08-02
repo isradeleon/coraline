@@ -1,31 +1,13 @@
 # [SocialiteUI](https://socialiteui.com)
 
-Lightweight HTML, CSS and JS framework for WEB design. SocialiteUI is 100% responsive and mobile-first designed.
+Lightweight HTML, CSS and JS framework for responsive WEB design. SocialiteUI is open source, and available for free.
 
 [![npm](https://img.shields.io/npm/v/socialiteui.svg?color=ff7675)](https://www.npmjs.com/package/socialiteui)
 [![npm](https://img.shields.io/npm/dm/socialiteui.svg?color=6c5ce7)](https://www.npmjs.com/package/socialiteui)
 
-<a href="https://socialiteui.com">
+<a href="https://socialiteui.com" style="text-align: center;">
     <img src="https://github.com/Isradeleon/socialiteui/blob/master/logo.ico" alt="SocialiteUI framework" style="max-width:256px; width: 100%; margin: auto;">
 </a>
-
-## Components
-
-The framework includes some social interface components, like for example the card, the comment and a left to right staggered grid.
-
-* [Staggered grid view](https://socialiteui.com/staggered.html)
-* [Sidebar](https://socialiteui.com/sidebar.html)
-* [Navbar](https://socialiteui.com/navbar.html)
-* [Card](https://socialiteui.com/card.html)
-* [Comment](https://socialiteui.com/comment.html)
-
-## Grid system
-
-The framework comes with a legible and easy to learn [grid system](https://socialiteui.com/grid-system.html).
-
-## Lightweight
-
-The whole framework weighs just 17K. It comes with multiple CSS class helpers, helpful components like navbar, cards, and more.
 
 ## Easy to install
 
@@ -46,6 +28,24 @@ npm install socialiteui
 <!-- Staggered grid and sidebar functionality -->
 <script src="socialiteui-v0.4.5/socialiteui.min.js"></script>
 ```
+
+## Components
+
+The framework includes some social interface components, like for example the card, the comment and a left to right staggered grid.
+
+* [Staggered grid view](https://socialiteui.com/staggered.html)
+* [Sidebar](https://socialiteui.com/sidebar.html)
+* [Navbar](https://socialiteui.com/navbar.html)
+* [Card](https://socialiteui.com/card.html)
+* [Comment](https://socialiteui.com/comment.html)
+
+## Grid system
+
+The framework comes with a legible and easy to learn [grid system](https://socialiteui.com/grid-system.html).
+
+## Lightweight
+
+The whole framework weighs just 17K. It comes with multiple CSS class helpers, helpful components like navbar, cards, and more.
 
 ## Browser Support
 
