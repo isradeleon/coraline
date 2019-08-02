@@ -80,7 +80,7 @@
         </div>
     </div>
 
-    <!--  Image inside .card will be responsive 100% width -->
+    <!--  Card image -->
     <img src="https://picsum.photos/600/400" alt="Random picsum.photos image">
 
     <!-- Card content, .text-size-6 for h6 font size -->
@@ -100,7 +100,9 @@
 
 <br>
 
-<p>You may change the order of this elements or remove them if you want:</p>
+<p>The <code>img</code> element inside the card will be 100% width. In the example above, the 
+<code>text-size-6</code> class is implemented for h6 font-size, just remove it if you want the normal 
+1rem font-size. You may also change the order of this elements if you want:</p>
 
 <div class="card box-shadow-2">
     <div class="card-header">
@@ -112,7 +114,7 @@
             <small>5 min ago</small>
         </div>
     </div>
-    <p class="card-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus a quis veritatis.</p>
+    <p class="card-content">This card has a normal font-size, without the text-size-6 helper class.</p>
 </div>
     
 <pre class="prettyprint lang-html">
@@ -151,7 +153,7 @@ you need a 100% width card:</p>
             <small>5 min ago</small>
         </div>
     </div>
-    <p class="card-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus a quis veritatis.</p>
+    <p class="card-content">This card has the full-width class.</p>
 </div>
 
 <pre class="prettyprint lang-html">
@@ -224,6 +226,135 @@ don't want any shadow in you card component.</p>
 <pre class="prettyprint lang-html">
 <!-- No box shadow -->
 <div class="card">
+    ...
+</div>
+</pre>
+
+<br>
+
+<p>As you can see, you can implement multiple CSS helpers with the card component. Here 
+is an example of the <code>rounded</code> class implemented in case you want rounded corners:</p>
+<div class="grid">
+    <div class="col-6">
+        <div class="card rounded">
+    
+            <div class="card-header">
+                <span class="circular-img"
+                style="width: 40px; height: 40px; background-image: url(https://picsum.photos/64/64)"></span>
+    
+                <div class="card-data">
+                    <p>Elizabeth</p>
+                    <small>5 min ago</small>
+                </div>
+            </div>
+    
+            <img src="https://picsum.photos/600/400" alt="Random picsum.photos image">
+
+            <p class="card-content text-size-6">This card has rounded corners</p>
+            
+            <div class="user-actions evenly">
+                <i style="font-size: 1.5rem;" class="far fa-heart"></i>
+                <i style="font-size: 1.5rem;" class="far fa-comment"></i>
+                <i style="font-size: 1.5rem;" class="far fa-flag"></i>
+            </div>
+    
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card rounded">
+    
+            <img src="https://picsum.photos/600/400" alt="Random picsum.photos image">
+
+            <div class="card-header">
+                <span class="circular-img"
+                style="width: 40px; height: 40px; background-image: url(https://picsum.photos/64/64)"></span>
+    
+                <div class="card-data">
+                    <p>Elizabeth</p>
+                    <small>5 min ago</small>
+                </div>
+            </div>
+
+            <p class="card-content text-size-6">This one too, and no shadow</p>
+            
+            <div class="user-actions">
+                <i style="font-size: 1.5rem;" class="far fa-heart"></i>
+                <i style="font-size: 1.5rem;" class="far fa-comment"></i>
+                <span class="right">
+                    <i style="font-size: 1.5rem;" class="far fa-flag"></i>
+                </span>
+            </div>
+    
+        </div>
+    </div>
+</div>
+<pre class="prettyprint lang-html">
+<!-- Rounded corners helper -->
+<div class="card rounded">
+    ...
+</div>
+</pre>
+
+<br>
+
+<p>In case you only want a little border radius, use the <code>radius</code> class helper.</p>
+<div class="grid">
+    <div class="col-6">
+        <div class="card radius">
+    
+            <div class="card-header">
+                <span class="circular-img"
+                style="width: 40px; height: 40px; background-image: url(https://picsum.photos/64/64)"></span>
+    
+                <div class="card-data">
+                    <p>Elizabeth</p>
+                    <small>5 min ago</small>
+                </div>
+            </div>
+    
+            <img src="https://picsum.photos/600/400" alt="Random picsum.photos image">
+
+            <p class="card-content text-size-6">Card with little border radius</p>
+            
+            <div class="user-actions evenly">
+                <i style="font-size: 1.5rem;" class="far fa-heart"></i>
+                <i style="font-size: 1.5rem;" class="far fa-comment"></i>
+                <i style="font-size: 1.5rem;" class="far fa-flag"></i>
+            </div>
+    
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card radius">
+    
+            <img src="https://picsum.photos/600/400" alt="Random picsum.photos image">
+
+            <div class="card-header">
+                <span class="circular-img"
+                style="width: 40px; height: 40px; background-image: url(https://picsum.photos/64/64)"></span>
+    
+                <div class="card-data">
+                    <p>Elizabeth</p>
+                    <small>5 min ago</small>
+                </div>
+            </div>
+
+            <p class="card-content text-size-6">Card with little border radius</p>
+            
+            <div class="user-actions">
+                <i style="font-size: 1.5rem;" class="far fa-heart"></i>
+                <i style="font-size: 1.5rem;" class="far fa-comment"></i>
+                <span class="right">
+                    <i style="font-size: 1.5rem;" class="far fa-flag"></i>
+                </span>
+            </div>
+    
+        </div>
+    </div>
+</div>
+<pre class="prettyprint lang-html">
+<!-- Adding a little border radius -->
+<div class="card radius">
     ...
 </div>
 </pre>
