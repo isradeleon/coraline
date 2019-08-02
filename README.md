@@ -43,7 +43,21 @@ The framework includes the next list of components:
 
 ## Grid system
 
-The framework comes with a legible and easy to learn [grid system](https://socialiteui.com/grid-system.html).
+The framework comes with a legible and easy to learn [grid system](https://socialiteui.com/grid-system.html). Here is a little code sample for defining the columns size on desktop, mobile and tablet:
+
+```html
+<div class="grid">
+
+    <div class="col-6 tablet-12 mobile-6">
+        ...
+    </div>
+    
+    <div class="col-6 tablet-12 mobile-6">
+        ...
+    </div>
+    
+</div>
+```
 
 ## Lightweight
 
