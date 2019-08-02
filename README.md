@@ -21,7 +21,7 @@ You may just install the framework from npm or download it from [here](https://g
 npm install socialiteui
 ```
 
-**Here is a little code snippet:**
+**Here is a code snippet:**
 
 ```html
 <!-- Import the styles -->
@@ -30,8 +30,6 @@ npm install socialiteui
 <!-- Staggered grid and sidebar functionality -->
 <script src="socialiteui-v0.4.5/socialiteui.min.js"></script>
 ```
-
-You'll also find the documentation inside the website folder, which is generated using [Nunjucks](https://github.com/mozilla/nunjucks) at **../socialiteui-docs/**.
 
 ## Components
 
@@ -53,7 +51,7 @@ The whole framework weighs just 17K.
 
 ## Browser Support
 
-SocialiteUI is based on [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes). With the use of [autoprefixer](https://github.com/postcss/autoprefixer), the framework is compatible with recent versions of:
+The framework is compatible with recent versions of:
 
 * Firefox
 * Chrome
@@ -62,9 +60,16 @@ SocialiteUI is based on [Flexbox](https://developer.mozilla.org/en-US/docs/Web/C
 * Opera
 * Partial support for Internet Explorer
 
+## Built with
+
+* [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
+* [Autoprefixer](https://github.com/postcss/autoprefixer) for better browser support.
+* [CSSO](https://github.com/css/csso) CSS compressor.
+* [terser](https://github.com/terser-js/terser) JS compressor.
+
 ## Documentation
 
-Currently working on the [documentation](https://socialiteui.com).
+You'll find the documentation inside the website folder, which is generated using [Nunjucks](https://github.com/mozilla/nunjucks) and saved to **../socialiteui-docs/**. Currently working to improve this [docs](https://socialiteui.com).
 
 ## License
 
