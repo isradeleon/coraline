@@ -62,14 +62,14 @@ The framework is compatible with recent versions of:
 
 ## Built with
 
-* [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
+* [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) Flexible Box Module.
 * [Autoprefixer](https://github.com/postcss/autoprefixer) for better browser support.
 * [CSSO](https://github.com/css/csso) CSS compressor.
-* [terser](https://github.com/terser-js/terser) JS compressor.
+* [Terser](https://github.com/terser-js/terser) JS compressor.
 
 ## Documentation
 
-You'll find the documentation inside the website folder, which is generated using [Nunjucks](https://github.com/mozilla/nunjucks) and saved to **../socialiteui-docs/**. Currently working to improve this [docs](https://socialiteui.com).
+You'll find the documentation inside the website folder. The docs are generated using [Nunjucks](https://github.com/mozilla/nunjucks) and saved to **../socialiteui-docs/**. Currently working to improve this [docs](https://socialiteui.com).
 
 ## License
 
