@@ -36,9 +36,10 @@ npm install socialiteui
 The framework includes the next list of components:
 
 * [Staggered grid view](https://socialiteui.com/staggered.html)
-* [Sidebar](https://socialiteui.com/sidebar.html)
-![](example/sidebar3.gif)
-* [Navbar](https://socialiteui.com/navbar.html)
+* [Sidebar](https://socialiteui.com/sidebar.html) 
+![](example/sidebar.gif)
+* [Navbar](https://socialiteui.com/navbar.html) 
+![](example/navbar.gif)
 * [Card](https://socialiteui.com/card.html)
 * [Comment](https://socialiteui.com/comment.html)
 
