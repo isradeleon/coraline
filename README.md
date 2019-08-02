@@ -5,6 +5,10 @@ Lightweight HTML, CSS and JS framework for WEB design. SocialiteUI is 100% respo
 [![npm](https://img.shields.io/npm/v/socialiteui.svg?color=ff7675)](https://www.npmjs.com/package/socialiteui)
 [![npm](https://img.shields.io/npm/dm/socialiteui.svg?color=6c5ce7)](https://www.npmjs.com/package/socialiteui)
 
+<a href="https://socialiteui.com">
+    <img src="https://socialiteui.com/logo.ico" alt="SocialiteUI framework" style="max-width:256px; width: 100%;">
+</a>
+
 ## Components
 
 The framework includes some social interface components, like for example the card, the comment and a left to right staggered grid.
