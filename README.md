@@ -69,7 +69,7 @@ The framework is compatible with recent versions of:
 
 ## Documentation
 
-You'll find the documentation inside the website folder. The docs are generated using [Nunjucks](https://github.com/mozilla/nunjucks) and saved to **../socialiteui-docs/**. Currently working to improve this [docs](https://socialiteui.com).
+Currently working to improve the [documentation](https://socialiteui.com). You'll find the documentation inside the website folder. The docs are generated using [Nunjucks](https://github.com/mozilla/nunjucks) and saved to **../socialiteui-docs/**.
 
 ## License
 
