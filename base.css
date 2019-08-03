@@ -7,7 +7,7 @@
         info: #74b9ff
         success: #1dd1a1
         danger: #ee5253
-        warning: #fdcb6e
+        warning: #f7b731
         dark: #2d3436
 */
 *{
@@ -301,7 +301,7 @@ input.menu-toggle{
     color: white;
 }
 .btn.warning{
-    background-color: #fdcb6e;
+    background-color: #f7b731;
     color: white;
 }
 .btn.dark{
@@ -412,14 +412,14 @@ input.menu-toggle{
 
 .btn.warning.inverted{
     background-color: transparent;
-    color: #fdcb6e;
-    border: 1px solid #fdcb6e;
+    color: #f7b731;
+    border: 1px solid #f7b731;
 }  
 .btn.warning.inverted *{
-    color: #fdcb6e;
+    color: #f7b731;
 }
 .btn.warning.inverted:hover{
-    background-color: #fdcb6e;
+    background-color: #f7b731;
     color: white;
 }
 .btn.warning.inverted:hover *{
@@ -456,6 +456,19 @@ input.menu-toggle{
 }
 .btn.inverted:hover *{
     color: #2d3436;
+}
+
+.btn:disabled, .btn.inverted:disabled {
+    opacity: 0.75;
+    border: none;
+    transition: none;
+    background-color: lightgray;
+    color: #2d3436;
+}
+.btn:disabled:hover, .btn.inverted:disabled:hover{
+    background-color: lightgray;
+    color: #2d3436;
+    cursor: not-allowed !important;
 }
 
 .circular-img{
@@ -946,7 +959,7 @@ input.menu-toggle{
     color: #0984e3;
 }
 .text-warning, .text-warning *{
-    color: #f9ca24;
+    color: #f7b731;
 }
 .text-success, .text-success *{
     color: #1dd1a1;
@@ -1014,7 +1027,7 @@ input.menu-toggle{
 }
 
 .radius{
-    border-radius: 6px;
+    border-radius: 10px;
 }
 .rounded{
     border-radius: 25px;
@@ -1026,14 +1039,14 @@ input.menu-toggle{
 }
 
 .box-shadow-1{
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 3px rgba(0, 0 , 0, 0.13);
 }
 .box-shadow-2{
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 6px rgba(0, 0 , 0, 0.13);
 }
 .box-shadow-3{
-    box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 9px rgba(0, 0 , 0, 0.13);
 }
 .box-shadow-4{
-    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 12px rgba(0, 0 , 0, 0.13);
 }

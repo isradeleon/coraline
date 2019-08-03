@@ -65,7 +65,16 @@ const documentation = [
     njk: 'grid-system.njk.html',
     description: 'Grid system: A simple and easy to learn grid system, that is adaptable to all screens',
     current: 'grid-system'
-  }
+  },
+  /**
+   * ELEMENTS
+   */
+  { title: 'Button', 
+    canonical: '/button.html',
+    njk: 'elements/button.njk.html',
+    description: 'Button: A simple element with multiple ways to customize through CSS classes',
+    current: 'button'
+  },
 ];
 
 for (let index = 0; index < documentation.length; index++) {
