@@ -41,13 +41,11 @@ The framework includes the next list of components:
 
 [**Sidebar**](https://socialiteui.com/sidebar.html)  
 
-![](example/sidebar.gif)
+![](example/sidebar4.gif)
 
 [**Navbar**](https://socialiteui.com/navbar.html)  
 
-<p align="center">
-  <img src="example/navbar.gif">
-</p>
+![](example/navbar1.gif)
 
 [**Card**](https://socialiteui.com/card.html)  
 
