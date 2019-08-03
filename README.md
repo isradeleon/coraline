@@ -3,7 +3,7 @@
 Lightweight HTML, CSS and JS framework for responsive WEB design. SocialiteUI is open source, and available for free.
 
 <a href="https://socialiteui.com">
-    <img src="https://github.com/Isradeleon/socialiteui/blob/master/logo.ico" alt="SocialiteUI framework" style="max-width: 256px; width: 100%;">
+    <img src="https://github.com/Isradeleon/socialiteui/blob/master/logo.ico" alt="SocialiteUI framework" style="width: 100%;">
 </a>
 
 [![npm](https://img.shields.io/npm/v/socialiteui.svg?color=ff7675)](https://www.npmjs.com/package/socialiteui)
