@@ -13,7 +13,7 @@ Star the project on Github! :star: That helps a lot!
 
 ## Easy to install
 
-You may just install the framework from npm or download the current version from [here](https://github.com/Isradeleon/socialiteui/archive/0.4.7.zip). Then just import the minified CSS and JS files into your project.
+You may just install the framework from npm or download the current version from [here](https://github.com/Isradeleon/socialiteui/archive/0.4.8.zip). Then just import the minified CSS and JS files into your project.
 
 ### NPM
 
@@ -25,10 +25,10 @@ npm install socialiteui
 
 ```html
 <!-- Import the styles -->
-<link rel="stylesheet" href="socialiteui-v0.4.7/socialiteui.min.css">
+<link rel="stylesheet" href="socialiteui-v0.4.8/socialiteui.min.css">
 
 <!-- Staggered grid and sidebar functionality -->
-<script src="socialiteui-v0.4.7/socialiteui.min.js"></script>
+<script src="socialiteui-v0.4.8/socialiteui.min.js"></script>
 ```
 
 ## Components

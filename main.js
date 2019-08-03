@@ -10,7 +10,7 @@ var docsPath = '../socialiteui-docs';
 if (!fs.existsSync(docsPath)){
   fs.mkdirSync(docsPath);
 }
-var docsSourcesPath = docsPath+'/socialiteui-v0.4.7';
+var docsSourcesPath = docsPath+'/socialiteui-v0.4.8';
 if (!fs.existsSync(docsSourcesPath)){
   fs.mkdirSync(docsSourcesPath);
 }
@@ -92,7 +92,7 @@ var baseJs = fs.readFileSync('base.js').toString();
 var Terser = require("terser");
 var jsResult = Terser.minify(baseJs);
 if(!jsResult.error){
-  fs.writeFileSync('socialiteui-v0.4.7/socialiteui.min.js', jsResult.code);
+  fs.writeFileSync('socialiteui-v0.4.8/socialiteui.min.js', jsResult.code);
   fs.writeFileSync(docsSourcesPath+'/socialiteui.min.js', jsResult.code);
 }else{
   console.log('JS ERROR')
@@ -119,7 +119,7 @@ postcss([ autoprefixer ]).process(baseCss,{from: undefined}).then(result => {
     })
     
     var minifiedCss = csso.minify(result.css).css;
-    fs.writeFileSync('socialiteui-v0.4.7/socialiteui.min.css', minifiedCss);
+    fs.writeFileSync('socialiteui-v0.4.8/socialiteui.min.css', minifiedCss);
     fs.writeFileSync(docsSourcesPath+'/socialiteui.min.css', minifiedCss);
     
     console.log('Website is ready!')
