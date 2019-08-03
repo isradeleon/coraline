@@ -45,7 +45,9 @@ The framework includes the next list of components:
 
 [**Navbar**](https://socialiteui.com/navbar.html)  
 
-![](example/navbar.gif)
+<p align="center">
+  <img src="example/navbar.gif">
+</p>
 
 [**Card**](https://socialiteui.com/card.html)  
 
