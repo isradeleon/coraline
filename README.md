@@ -47,8 +47,14 @@ The framework includes the next list of components:
 
 ![](example/navbar.gif)
 
-* [Card](https://socialiteui.com/card.html)
-* [Comment](https://socialiteui.com/comment.html)
+[**Card**](https://socialiteui.com/card.html)  
+
+![](example/card.png)
+
+[**Comment**](https://socialiteui.com/comment.html)  
+
+![](example/comment.png)
+
 
 ## Grid system
 
