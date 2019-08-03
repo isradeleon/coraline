@@ -2,14 +2,14 @@
 
 Lightweight HTML, CSS and JS framework for responsive WEB design. SocialiteUI is open source, and available for free.
 
+<a href="https://socialiteui.com">
+    <img src="https://github.com/Isradeleon/socialiteui/blob/master/logo.ico" alt="SocialiteUI framework" style="max-width: 256px; width: 100%;">
+</a>
+
 [![npm](https://img.shields.io/npm/v/socialiteui.svg?color=ff7675)](https://www.npmjs.com/package/socialiteui)
 [![npm](https://img.shields.io/npm/dm/socialiteui.svg?color=6c5ce7)](https://www.npmjs.com/package/socialiteui)
 [![license](https://img.shields.io/github/license/isradeleon/socialiteui.svg?color=0984e3)](LICENSE)
 [![maintained](https://img.shields.io/maintenance/yes/2019.svg?color=1dd1a1)](https://www.npmjs.com/package/socialiteui)
-
-<a href="https://socialiteui.com">
-    <img src="https://github.com/Isradeleon/socialiteui/blob/master/logo.ico" alt="SocialiteUI framework" style="max-width: 256px; width: 100%;">
-</a>
 
 ## Easy to install
 
@@ -75,6 +75,13 @@ The framework comes with a legible and easy to learn [grid system](https://socia
 
 The whole framework weighs just 17K.
 
+## Built with
+
+* [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) Flexible Box Module
+* [Autoprefixer](https://github.com/postcss/autoprefixer) for better browser support
+* [CSSO](https://github.com/css/csso) CSS compressor
+* [Terser](https://github.com/terser-js/terser) JS compressor
+
 ## Browser Support
 
 The framework is compatible with recent versions of:
@@ -85,13 +92,6 @@ The framework is compatible with recent versions of:
 * Edge
 * Opera
 * Partial support for Internet Explorer
-
-## Built with
-
-* [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) Flexible Box Module
-* [Autoprefixer](https://github.com/postcss/autoprefixer) for better browser support
-* [CSSO](https://github.com/css/csso) CSS compressor
-* [Terser](https://github.com/terser-js/terser) JS compressor
 
 ## Documentation
 
