@@ -72,7 +72,7 @@ const documentation = [
   { title: 'Button', 
     canonical: '/button.html',
     njk: 'elements/button.njk.html',
-    description: 'Button: A simple element with multiple ways to customize through CSS classes',
+    description: 'Button: A useful element with multiple ways to customize through CSS classes',
     current: 'button'
   },
 ];
