@@ -86,7 +86,7 @@ And for defining the columns size on mobile and tablet just add:
 
 ## Lightweight
 
-The whole framework weighs just **17K**.
+The whole framework weighs just **17.5K**.
 
 ## Built with
 

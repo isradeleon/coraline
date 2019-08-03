@@ -458,15 +458,28 @@ input.menu-toggle{
     color: #2d3436;
 }
 
-.btn:disabled, .btn.inverted:disabled {
+.btn:disabled{
     opacity: 0.75;
     border: none;
     transition: none;
     background-color: lightgray;
     color: #2d3436;
 }
-.btn:disabled:hover, .btn.inverted:disabled:hover{
+.btn:disabled:hover{
     background-color: lightgray;
+    color: #2d3436;
+    cursor: not-allowed !important;
+}
+.btn.inverted:disabled {
+    opacity: 0.75;
+    border: lightgray 1px solid;
+    transition: none;
+    background-color: transparent;
+    color: #2d3436;
+}
+.btn.inverted:disabled:hover{
+    background-color: transparent;
+    border: lightgray 1px solid;
     color: #2d3436;
     cursor: not-allowed !important;
 }
