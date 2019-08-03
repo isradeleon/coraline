@@ -484,6 +484,21 @@ input.menu-toggle{
     cursor: not-allowed !important;
 }
 
+.btn.large{
+    padding: 0.8rem 1rem;
+    font-size: 1.15rem;
+}
+.btn.large *{
+    font-size: 1.15rem;
+}
+.btn.small{
+    padding: 0.5rem 0.7rem;
+    font-size: 0.9rem;
+}
+.btn.small *{
+    font-size: 0.9rem;
+}
+
 .circular-img{
     border-radius: 100%;
     background-repeat: no-repeat;
