@@ -2,16 +2,16 @@
 
 Lightweight HTML, CSS and JS framework for responsive WEB design. SocialiteUI is open source, and available for free.
 
+[![npm](https://img.shields.io/npm/v/socialiteui.svg?color=ff7675)](https://www.npmjs.com/package/socialiteui)
+[![npm](https://img.shields.io/npm/dm/socialiteui.svg?color=6c5ce7)](https://www.npmjs.com/package/socialiteui)
+[![license](https://img.shields.io/github/license/isradeleon/socialiteui.svg?color=0984e3)](LICENSE)
+[![maintained](https://img.shields.io/maintenance/yes/2019.svg?color=1dd1a1)](https://www.npmjs.com/package/socialiteui)
+
 <p align="center">
     <a href="https://socialiteui.com">
         <img src="https://github.com/Isradeleon/socialiteui/blob/master/logo.ico" alt="SocialiteUI framework" style="width: 100%;">
     </a>
 </p>
-
-[![npm](https://img.shields.io/npm/v/socialiteui.svg?color=ff7675)](https://www.npmjs.com/package/socialiteui)
-[![npm](https://img.shields.io/npm/dm/socialiteui.svg?color=6c5ce7)](https://www.npmjs.com/package/socialiteui)
-[![license](https://img.shields.io/github/license/isradeleon/socialiteui.svg?color=0984e3)](LICENSE)
-[![maintained](https://img.shields.io/maintenance/yes/2019.svg?color=1dd1a1)](https://www.npmjs.com/package/socialiteui)
 
 ## Easy to install
 
