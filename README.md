@@ -37,23 +37,23 @@ The framework includes the next list of components:
 
 [**Staggered grid view**](https://socialiteui.com/staggered.html)  
 
-![](example/staggered.png)
+![](https://raw.githubusercontent.com/Isradeleon/socialiteui-docs/master/example/staggered.png)
 
 [**Sidebar**](https://socialiteui.com/sidebar.html)  
 
-![](example/sidebar.gif)
+![](https://raw.githubusercontent.com/Isradeleon/socialiteui-docs/master/example/sidebar.gif)
 
 [**Navbar**](https://socialiteui.com/navbar.html)  
 
-![](example/navbar.gif)
+![](https://raw.githubusercontent.com/Isradeleon/socialiteui-docs/master/example/navbar.gif)
 
 [**Card**](https://socialiteui.com/card.html)  
 
-![](example/card.png)
+![](https://raw.githubusercontent.com/Isradeleon/socialiteui-docs/master/example/card.png)
 
 [**Comment**](https://socialiteui.com/comment.html)  
 
-![](example/comment.png)
+![](https://raw.githubusercontent.com/Isradeleon/socialiteui-docs/master/example/comment.png)
 
 
 ## Grid system
