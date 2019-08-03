@@ -2,7 +2,7 @@
   "name": "socialiteui",
   "version": "0.4.8",
   "description": "Responsive and lightweight HTML, CSS and JS framework",
-  "main": "main.js",
+  "main": "base.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -32,5 +32,12 @@
     "nunjucks": "^3.2.0",
     "postcss": "^7.0.17",
     "terser": "^4.1.2"
-  }
+  },
+  "files":[
+    "socialiteui-v0.4.8",
+    "base.css",
+    "base.js,",
+    "LICENSE",
+    "README.md"
+  ]
 }
