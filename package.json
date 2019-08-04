@@ -1,6 +1,6 @@
 {
   "name": "socialiteui",
-  "version": "0.4.8",
+  "version": "0.4.9",
   "description": "Responsive and lightweight HTML, CSS and JS framework",
   "main": "base.scss",
   "scripts": {
@@ -36,7 +36,7 @@
     "terser": "^4.1.2"
   },
   "files": [
-    "socialiteui-v0.4.8",
+    "socialiteui-v0.4.9",
     "base.scss",
     "base.css",
     "base.js,",
