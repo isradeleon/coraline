@@ -538,6 +538,26 @@ input.menu-toggle{
     font-size: 0.9rem;
 }
 
+/* INPUTS */
+input[type='text'], input[type='password'], 
+input[type='email'], input[type='tel'], 
+textarea{
+    border: 1px solid #eaeaea;
+    padding: 0.7rem 0.8rem;
+    box-shadow: inset 0px 0px 6px rgba(35, 35, 35, .02);
+    margin: 0.3rem;
+    font-family: $font-family;
+}
+input[type='text']:focus, input[type='password']:focus, 
+input[type='email']:focus, input[type='tel']:focus, 
+textarea:focus{
+    border: 1px solid #dadada;
+    /* box-shadow: inset 0px 0px 6px rgba(35, 35, 35, .05); */
+}
+textarea{
+    resize: vertical;
+}
+
 .circular-img{
     border-radius: 100%;
     background-repeat: no-repeat;
