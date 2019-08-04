@@ -2,6 +2,7 @@
 
 Lightweight HTML, CSS and JS framework for responsive WEB design. SocialiteUI is open source, and available for free.
 
+[![release](https://img.shields.io/github/release/isradeleon/socialiteui.svg?color=1dd1a1)](https://github.com/Isradeleon/socialiteui/releases)
 [![npm](https://img.shields.io/npm/v/socialiteui.svg?color=ff7675)](https://www.npmjs.com/package/socialiteui)
 [![npm](https://img.shields.io/npm/dm/socialiteui.svg?color=6c5ce7)](https://www.npmjs.com/package/socialiteui)
 [![license](https://img.shields.io/github/license/isradeleon/socialiteui.svg?color=0984e3)](LICENSE)
@@ -92,6 +93,7 @@ The whole framework weighs just **17.5K**.
 * [Autoprefixer](https://github.com/postcss/autoprefixer) for better browser support
 * [CSSO](https://github.com/css/csso) CSS compressor
 * [Terser](https://github.com/terser-js/terser) JS compressor
+* [Sass](https://sass-lang.com/) Syntactically Awesome Style Sheets
 
 ## Browser Support
 
@@ -106,7 +108,7 @@ The framework is compatible with recent versions of:
 
 ## Documentation
 
-Currently working to improve the [documentation](https://socialiteui.com). You'll find the documentation inside the website folder. The docs are generated using [Nunjucks](https://github.com/mozilla/nunjucks) and saved to **../socialiteui-docs/**.
+Currently working to improve the [documentation](https://socialiteui.com). You'll find the documentation inside the website folder in this repository. The docs are generated using [Nunjucks](https://github.com/mozilla/nunjucks) and saved to **../socialiteui-docs/**.
 
 ## License
 

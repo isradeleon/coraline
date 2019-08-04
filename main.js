@@ -4,6 +4,23 @@ var fs = require('fs');
 var env = new nunjucks.Environment(new nunjucks.FileSystemLoader('website'));
 
 /**
+ * SOCIALITEUI FRAMEWORK BINARY
+ */
+var frameworkBinary = '../socialiteui-v0.4.8';
+if (!fs.existsSync(frameworkBinary)){
+  fs.mkdirSync(frameworkBinary);
+}
+var frameworkSources = frameworkBinary+'/socialiteui-v0.4.8';
+if (!fs.existsSync(frameworkSources)){
+  fs.mkdirSync(frameworkSources);
+}
+fs.copyFileSync('README.md', frameworkBinary+'/README.md');
+fs.copyFileSync('LICENSE', frameworkBinary+'/LICENSE');
+fs.copyFileSync('base.scss', frameworkBinary+'/base.scss');
+fs.copyFileSync('base.css', frameworkBinary+'/base.css');
+fs.copyFileSync('base.js', frameworkBinary+'/base.js');
+
+/**
  * SOCIALITEUI.COM DOCUMENTATION
  */
 var docsPath = '../socialiteui-docs';
@@ -94,6 +111,8 @@ var jsResult = Terser.minify(baseJs);
 if(!jsResult.error){
   fs.writeFileSync('socialiteui-v0.4.8/socialiteui.min.js', jsResult.code);
   fs.writeFileSync(docsSourcesPath+'/socialiteui.min.js', jsResult.code);
+  fs.writeFileSync(docsSourcesPath+'/socialiteui.min.js', jsResult.code);
+  fs.writeFileSync(frameworkSources+'/socialiteui.min.js', jsResult.code);
 }else{
   console.log('JS ERROR')
   console.log(jsResult.error)
@@ -132,6 +151,7 @@ postcss([ autoprefixer ]).process(baseCss,{from: undefined}).then(result => {
     var minifiedCss = csso.minify(result.css).css;
     fs.writeFileSync('socialiteui-v0.4.8/socialiteui.min.css', minifiedCss);
     fs.writeFileSync(docsSourcesPath+'/socialiteui.min.css', minifiedCss);
+    fs.writeFileSync(frameworkSources+'/socialiteui.min.css', minifiedCss);
     
     console.log('Website is ready!')
 })
