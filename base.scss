@@ -2,14 +2,41 @@
     SocialiteUI v0.4.8
 */
 
+@function contrast-color($n) {
+    $color-brightness: round((red($n) * 299) + (green($n) * 587) + (blue($n) * 114) / 1000);
+    $light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff) * 114) / 1000);
+
+    @if abs($color-brightness) < ($light-color/2){
+        @return white;
+    }
+    @else {
+        @return black;
+    }
+}
+
 $brand: #ff7675 !default;
+$contrast-brand: contrast-color($brand) !default;
+
 $primary: #6c5ce7 !default;
+$contrast-primary: contrast-color($primary) !default;
+
 $secondary: #0984e3 !default;
+$contrast-secondary: contrast-color($secondary) !default;
+
 $info: #74b9ff !default;
+$contrast-info: contrast-color($info) !default;
+
 $success: #1dd1a1 !default;
+$contrast-success: contrast-color($success) !default;
+
 $danger: #ee5253 !default;
+$contrast-danger: contrast-color($danger) !default;
+
 $warning: #f7b731 !default;
+$contrast-warning: contrast-color($warning) !default;
+
 $black: #2d3436 !default;
+$contrast-black: contrast-color($black) !default;
 
 $font-family: sans-serif !default;
 $font-weight: 300 !default;
@@ -290,35 +317,35 @@ input.menu-toggle{
 
 .btn.brand{
     background-color: $brand;
-    color: white;
+    color: $contrast-brand; 
 }
 .btn.info{
     background-color: $info;
-    color: white;
+    color: $contrast-info; 
 }
 .btn.secondary{
     background-color: $secondary;
-    color: white;
+    color: $contrast-secondary; 
 }
 .btn.success{
     background-color: $success;
-    color: white;
+    color: $contrast-success; 
 }
 .btn.danger{
     background-color: $danger;
-    color: white;
+    color: $contrast-danger; 
 }
 .btn.primary{
     background-color: $primary;
-    color: white;
+    color: $contrast-primary; 
 }
 .btn.warning{
     background-color: $warning;
-    color: white;
+    color: $contrast-warning; 
 }
 .btn.dark{
     background-color: $black;
-    color: white;
+    color: $contrast-black; 
 }
 
 .btn.inverted, .btn.inverted *{
@@ -336,10 +363,10 @@ input.menu-toggle{
 }
 .btn.brand.inverted:hover{
     background-color: $brand;
-    color: white;
+    color: $contrast-brand;
 }
 .btn.brand.inverted:hover *{
-    color: white;
+    color: $contrast-brand;
 }
 
 .btn.info.inverted{
@@ -352,10 +379,10 @@ input.menu-toggle{
 }
 .btn.info.inverted:hover{
     background-color: $info;
-    color: white;
+    color: $contrast-info;
 }
 .btn.info.inverted:hover *{
-    color: white;
+    color: $contrast-info;
 }
 
 .btn.secondary.inverted{
@@ -368,10 +395,10 @@ input.menu-toggle{
 }
 .btn.secondary.inverted:hover{
     background-color: $secondary;
-    color: white;
+    color: $contrast-secondary;
 }
 .btn.secondary.inverted:hover *{
-    color: white;
+    color: $contrast-secondary;
 }
 
 .btn.success.inverted{
@@ -384,10 +411,10 @@ input.menu-toggle{
 }
 .btn.success.inverted:hover{
     background-color: $success;
-    color: white;
+    color: $contrast-success;
 }
 .btn.success.inverted:hover *{
-    color: white;
+    color: $contrast-success;
 }
 
 .btn.danger.inverted{
@@ -400,10 +427,10 @@ input.menu-toggle{
 }
 .btn.danger.inverted:hover{
     background-color: $danger;
-    color: white;
+    color: $contrast-danger;
 }
 .btn.danger.inverted:hover *{
-    color: white;
+    color: $contrast-danger;
 }
 
 .btn.primary.inverted{
@@ -416,10 +443,10 @@ input.menu-toggle{
 }
 .btn.primary.inverted:hover{
     background-color: $primary;
-    color: white;
+    color: $contrast-primary;
 }
 .btn.primary.inverted:hover *{
-    color: white;
+    color: $contrast-primary;
 }
 
 .btn.warning.inverted{
@@ -432,35 +459,35 @@ input.menu-toggle{
 }
 .btn.warning.inverted:hover{
     background-color: $warning;
-    color: white;
+    color: $contrast-warning;
 }
 .btn.warning.inverted:hover *{
-    color: white;
+    color: $contrast-warning;
 }
 
 .btn.dark.inverted{
     background-color: transparent;
     color: $black;
     border: 1px solid $black;
-}  
+}
 .btn.dark.inverted *{
     color: $black;
 }
 .btn.dark.inverted:hover{
     background-color: $black;
-    color: white;
+    color: $contrast-black;
 }
 .btn.dark.inverted:hover *{
-    color: white;
+    color: $contrast-black;
 }
 
 .btn.inverted{
     background-color: $black;
-    color: white;
+    color: $contrast-black;
     border: 1px solid transparent;
 }
 .btn.inverted *{
-    color: white;
+    color: $contrast-black;
 }
 .btn.inverted:hover{
     background-color: transparent;
@@ -480,7 +507,7 @@ input.menu-toggle{
 .btn:disabled:hover{
     background-color: lightgray;
     color: $black;
-    cursor: not-allowed !important;
+    cursor: not-allowed;
 }
 .btn.inverted:disabled {
     opacity: 0.75;
@@ -493,7 +520,7 @@ input.menu-toggle{
     background-color: transparent;
     border: lightgray 1px solid;
     color: $black;
-    cursor: not-allowed !important;
+    cursor: not-allowed;
 }
 
 .btn.large{

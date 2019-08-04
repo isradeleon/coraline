@@ -103,7 +103,7 @@ if(!jsResult.error){
  * NODE SASS
  */
 var sass = require('node-sass');
-var scss_content = fs.readFileSync('base.scss').toString()
+var scss_content = fs.readFileSync('main.scss').toString()
 
 var sassResult = sass.renderSync({
     data: scss_content

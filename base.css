@@ -434,7 +434,7 @@ input.menu-toggle {
 .btn:disabled:hover {
   background-color: lightgray;
   color: #2d3436;
-  cursor: not-allowed !important; }
+  cursor: not-allowed; }
 
 .btn.inverted:disabled {
   opacity: 0.75;
@@ -447,7 +447,7 @@ input.menu-toggle {
   background-color: transparent;
   border: lightgray 1px solid;
   color: #2d3436;
-  cursor: not-allowed !important; }
+  cursor: not-allowed; }
 
 .btn.large {
   padding: 0.8rem 1rem;
