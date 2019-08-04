@@ -61,7 +61,7 @@
     
             <div class="grid">
                 <div class="col-6">
-                    <h1>A lightweight framework for HTML, CSS and JS. SocialiteUI is open source, responsive and available for free.</h1>
+                    <h1>A lightweight, responsive framework for HTML, CSS and JS. SocialiteUI is open source and available for free.</h1>
                     <div>
 
                         <div>
@@ -147,10 +147,11 @@
                     </a>
                 </div>
                 <div class="col-3 tablet-6 text-center">
-                    <a class="link full-width">
-                        <p class="text-size-5 text-darkgray">
-                            <i class="fa fa-cloud-download-alt"></i>
-                            <br>Easy to install
+                    <a href="#customizable" class="link full-width">
+                        <p class="text-size-5">
+                            <i class="fa fa-cogs"></i>
+                            <br>Customizable
+                            <br><span class="text-size-s text-gray">Using Sass</span>
                         </p>
                     </a>
                 </div>
@@ -174,7 +175,7 @@
 
     <div class="site-section white" id="responsive">
         <div class="container text-center below-navbar">
-            <h2 class="">
+            <h2>
                 <i class="fa fa-mobile"></i> 
                 <i class="fa fa-tablet"></i> 
                 <i class="fa fa-laptop-code"></i> 
@@ -246,6 +247,7 @@
                     <button class="btn info radius">btn info radius</button><br>
                     <button class="btn success rounded">btn success rounded</button><br>
                     <button class="btn danger inverted">btn danger inverted</button><br>
+                    <button disabled class="btn rounded">btn disabled</button>
                 </div>
 
                 <div class="col-4">
@@ -257,6 +259,47 @@
                     <p class="text-size-6">text-size-6</p>
                 </div>
             </div>
+
+        </div>
+    </div>
+
+    <div class="site-section white" id="customizable">
+        <div class="container below-navbar">
+            <div class="grid">
+                <div class="col-6">
+                    <h2>
+                        <i class="fa fa-cogs"></i> Customizable
+                    </h2>
+                    <p>You may want to change the framework colors so they'll fit better with the style 
+                    of your application and your brand. This is possible with Sass.</p>
+                    <p>Just define the color variables before you import the base.scss file. These new colors 
+                    will also affect the helper classes.</p>
+                    <p class="text-size-s text-info"><i class="fa fa-info-circle"></i> More Sass variables will be added in the future.</p>
+                </div>
+                <div class="col-6">
+<pre class="prettyprint lang-sass">
+// Set your brand color
+$brand: #ff7675;
+
+// Define the rest of the colors
+$primary: #6c5ce7;
+$secondary: #0984e3;
+$info: #74b9ff;
+$success: #1dd1a1;
+$danger: #ee5253;
+$warning: #f7b731;
+$black: #2d3436;
+
+// Set the font family
+$font-family: Helvetica;
+$font-weight: 400;
+
+// Import SocialiteUI Sass file
+@import "base.scss";
+</pre>
+                </div>
+            </div>
+
 
         </div>
     </div>

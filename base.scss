@@ -9,15 +9,14 @@ $info: #74b9ff !default;
 $success: #1dd1a1 !default;
 $danger: #ee5253 !default;
 $warning: #f7b731 !default;
-
-$black: #2d3436;
+$black: #2d3436 !default;
 
 $font-family: sans-serif !default;
 $font-weight: 300 !default;
 
 *{
     font-size: 1rem;
-    color: #2d3436;
+    color: $black;
     font-weight: $font-weight;
     box-sizing: border-box;
     line-height: 1.3;
@@ -159,7 +158,7 @@ input.menu-toggle{
 .burger-btn>.burger-icon, 
 .burger-btn>.burger-icon:after, 
 .burger-btn>.burger-icon:before{
-    background-color: #2d3436;
+    background-color: $black;
     border-radius: 5px;
     content: '';
     display: block;
@@ -318,7 +317,7 @@ input.menu-toggle{
     color: white;
 }
 .btn.dark{
-    background-color: #2d3436;
+    background-color: $black;
     color: white;
 }
 
@@ -441,14 +440,14 @@ input.menu-toggle{
 
 .btn.dark.inverted{
     background-color: transparent;
-    color: #2d3436;
-    border: 1px solid #2d3436;
+    color: $black;
+    border: 1px solid $black;
 }  
 .btn.dark.inverted *{
-    color: #2d3436;
+    color: $black;
 }
 .btn.dark.inverted:hover{
-    background-color: #2d3436;
+    background-color: $black;
     color: white;
 }
 .btn.dark.inverted:hover *{
@@ -456,7 +455,7 @@ input.menu-toggle{
 }
 
 .btn.inverted{
-    background-color: #2d3436;
+    background-color: $black;
     color: white;
     border: 1px solid transparent;
 }
@@ -465,10 +464,10 @@ input.menu-toggle{
 }
 .btn.inverted:hover{
     background-color: transparent;
-    color: #2d3436;
+    color: $black;
 }
 .btn.inverted:hover *{
-    color: #2d3436;
+    color: $black;
 }
 
 .btn:disabled{
@@ -476,11 +475,11 @@ input.menu-toggle{
     border: none;
     transition: none;
     background-color: lightgray;
-    color: #2d3436;
+    color: $black;
 }
 .btn:disabled:hover{
     background-color: lightgray;
-    color: #2d3436;
+    color: $black;
     cursor: not-allowed !important;
 }
 .btn.inverted:disabled {
@@ -488,12 +487,12 @@ input.menu-toggle{
     border: lightgray 1px solid;
     transition: none;
     background-color: transparent;
-    color: #2d3436;
+    color: $black;
 }
 .btn.inverted:disabled:hover{
     background-color: transparent;
     border: lightgray 1px solid;
-    color: #2d3436;
+    color: $black;
     cursor: not-allowed !important;
 }
 
