@@ -891,6 +891,11 @@ textarea {
 .site-section.secondary * {
   color: white; }
 
+/* FOOTER */
+footer {
+  background-color: #fafafa;
+  min-height: 10vh; }
+
 /* HELPERS*/
 .text-brand, .text-brand * {
   color: #ff7675; }
