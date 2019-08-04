@@ -100,9 +100,20 @@ if(!jsResult.error){
 }
 
 /**
+ * NODE SASS
+ */
+var sass = require('node-sass');
+var scss_content = fs.readFileSync('base.scss').toString()
+
+var sassResult = sass.renderSync({
+    data: scss_content
+});
+
+/**
  * BASE CSS CODE
  */
-var baseCss = fs.readFileSync('base.css')
+var baseCss = sassResult.css;
+fs.writeFileSync('base.css', baseCss);
 
 // CSS minifier
 var csso = require('csso');
