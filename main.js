@@ -40,34 +40,34 @@ const documentation = [
    * COMPONENTS
    */
   {
-    title: 'Card', 
+    title: 'Card • A flexible component for displaying content', 
     canonical: '/card.html',
     njk: 'components/card.njk.html',
     description: 'Card: A flexible UI component for displaying visual and text content',
     current: 'card'
   },
   {
-    title: 'Comment', 
+    title: 'Comment • A flexible social interface component', 
     canonical: '/comment.html',
     njk: 'components/comment.njk.html',
     description: 'Comment: A flexible social interface component for displaying visual and text content',
     current: 'comment'
   },
   {
-    title: 'Navbar', 
+    title: 'Navbar • A CSS only and fully responsive navbar', 
     canonical: '/navbar.html',
     njk: 'components/navbar.njk.html',
     description: 'Navbar: A CSS only, fully responsive and easy to implement navbar menu',
     current: 'navbar'
   },
   {
-    title: 'Sidebar', 
+    title: 'Sidebar • A responsive sidebar built with CSS and JS', 
     canonical: '/sidebar.html',
     njk: 'components/sidebar.njk.html',
     description: 'Sidebar: A responsive and easy to implement sidebar menu built with CSS and JS',
     current: 'sidebar'
   },
-  { title: 'Staggered grid', 
+  { title: 'Staggered grid • A responsive, left to right staggered grid', 
     canonical: '/staggered.html',
     njk: 'components/staggered.njk.html',
     description: 'Staggered grid view: A responsive, left to right staggered grid built with CSS and JS',
@@ -77,7 +77,7 @@ const documentation = [
    * GRID SYSTEM
    */
   {
-    title: 'Grid system', 
+    title: 'Grid system • A simple and easy to learn grid system', 
     canonical: '/grid-system.html',
     njk: 'grid-system.njk.html',
     description: 'Grid system: A simple and easy to learn grid system, that is adaptable to all screens',
@@ -86,7 +86,7 @@ const documentation = [
   /**
    * ELEMENTS
    */
-  { title: 'Button', 
+  { title: 'Button • A customizable element through CSS classes', 
     canonical: '/button.html',
     njk: 'elements/button.njk.html',
     description: 'Button: A useful element with multiple ways to customize through CSS classes',
