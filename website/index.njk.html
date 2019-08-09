@@ -2,13 +2,12 @@
 
 {% block css %}
 <style>
-    #npmInput{
+    /* #npmInput{
         border: none;
         display: inline-block;
         color: #2d3436;
         background: transparent;
         pointer-events: none;
-        /* font-family: monospace; */
         max-width: 300px;
         border: none;
     }
@@ -17,7 +16,7 @@
         opacity: 1;
         -webkit-text-fill-color: #2d3436;
         opacity: 1;
-    }
+    } */
 
     #responsive .grid>.col,
     #responsive .grid>*[class*='col-'] {
@@ -60,14 +59,14 @@
         <div class="container below-navbar">
     
             <div class="grid">
-                <div class="col-6">
+                <div class="col-6 vertical-center">
+
                     <h1>Lightweight HTML, CSS and JS component library. SocialiteUI is open source and available for free.</h1>
                     <div>
 
                         <div style="display: flex; align-items: center; flex-wrap: wrap;">
                             <a style="flex-shrink: 0;" class="btn brand inverted radius" 
-                            href="https://github.com/Isradeleon/socialiteui/releases/download/0.4.9/socialiteui-v0.4.9.zip">Download current version 0.4.9</a>
-
+                            href="https://github.com/Isradeleon/socialiteui/releases/download/0.4.9/socialiteui-v0.4.9.zip">Download current version (0.4.9)</a>
                         </div>
                         
                         <br>
@@ -77,13 +76,17 @@
                         </div>
 
                         <br>
-
+                        
                         <div>
-                            <a class="github-button"
-                            data-size="large"
-                            data-show-count="true"
-                            href="https://github.com/isradeleon/socialiteui" 
-                            aria-label="Star isradeleon/socialiteui on GitHub">Star on Github</a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Isradeleon/socialiteui">
+                                <img src="https://img.shields.io/github/release/isradeleon/socialiteui.svg?color=1dd1a1" alt="">
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.npmjs.com/package/socialiteui">
+                                <img src="https://img.shields.io/npm/v/socialiteui.svg?color=ff7675" alt="">
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.npmjs.com/package/socialiteui">
+                                <img src="https://img.shields.io/npm/dm/socialiteui.svg?color=6c5ce7" alt="">
+                            </a>
                         </div>
                         
                         <!-- <span id="npm" class="btn">
@@ -91,6 +94,7 @@
                             <span id="copy">(Copy)</span>
                         </span> -->
                     </div>
+
                 </div>
     
                 <div class="col-6">
@@ -108,10 +112,10 @@
                             </div>
                         </div>
             
-                        <!-- <img src="https://picsum.photos/600/650" alt=""> -->
+                        <img src="https://picsum.photos/600/400" alt="Random picsum.photos image">
                         
-                        <p class="card-content text-size-6">
-                            Hi! This is a card component example! As you can see, it has a circular image, and some user actions too
+                        <p class="card-content">
+                            Hey! This is a card component example!
                         </p>
                         
                         <div class="user-actions evenly">
@@ -171,6 +175,17 @@
                     </a>
                 </div>
             </div>
+
+            <br>
+
+            <!-- <div class="text-center">
+                <h6>Support this open source project!</h6>
+                <a class="github-button" 
+                data-size="large"
+                data-show-count="true"
+                href="https://github.com/isradeleon/socialiteui" 
+                aria-label="Star isradeleon/socialiteui on GitHub">Star</a>
+            </div> -->
 
             <!-- <br>
 

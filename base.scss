@@ -87,7 +87,10 @@ hr{
     border: 0; border-top: 1px solid #eaeaea;
     margin: 1rem 0; padding: 0;
 }
-
+a{
+    text-decoration: none;
+    color: $secondary;
+}
 img{
     vertical-align: middle;
 }
@@ -113,7 +116,7 @@ img{
 }
 
 .container, .container-fluid {
-    max-width: 1140px;
+    max-width: 1128px;
 }
 @media (min-width: 1452px) {
     .container, .container-fluid {
@@ -290,6 +293,7 @@ input.menu-toggle{
     transition: all .1s ease-in-out;
     background-color: transparent;
     user-select: none;
+    color: $black;
 }
 .link, .link *, .btn, .btn *{
     font-size: 1rem;
@@ -808,7 +812,7 @@ textarea{
     flex-flow: row wrap;
 }
 .grid>.col, .grid>*[class*='col-']{
-    padding: 1%;
+    padding: 1.1%;
 }
 .grid>.col{flex: 1;}
 .grid>*[class*='col-'],
@@ -1193,6 +1197,12 @@ footer{
 .full-width{
     width: 100%;
     max-width: 100%;
+}
+
+.vertical-center{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
 }
 
 .box-shadow-1{
