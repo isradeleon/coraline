@@ -8,7 +8,7 @@ Lightweight HTML, CSS and JS component library. SocialiteUI comes with some powe
 [![license](https://img.shields.io/github/license/isradeleon/socialiteui.svg?color=0984e3)](LICENSE)
 [![maintained](https://img.shields.io/maintenance/yes/2019.svg?color=1dd1a1)](https://www.npmjs.com/package/socialiteui)  
 
-:star: Give us a star on github!
+:star: Give us a star on Github!
 
 ## Easy to install
 
