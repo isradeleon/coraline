@@ -558,6 +558,7 @@ textarea{
     resize: vertical;
 }
 
+/* CIRCULAR IMG */
 .circular-img{
     border-radius: 100%;
     background-repeat: no-repeat;
@@ -565,7 +566,73 @@ textarea{
     background-color: #eaeaea;
     width: 45px;
     height: 45px;
+    display: inline-block;
 }
+.circular-img.profile{
+    height: 120px;
+    width: 120px;
+}
+.circular-img.x-large{
+    height: 85px;
+    width: 85px;
+}
+.circular-img.large{
+    height: 60px;
+    width: 60px;
+}
+.circular-img.small{
+    height: 30px;
+    width: 30px;
+}
+
+/* TAGS */
+.tags>span{
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    background-color: #eaeaea;
+}
+.tags>span.brand{
+    background-color: $brand;
+    color: $contrast-brand; 
+}
+.tags>span.info{
+    background-color: $info;
+    color: $contrast-info; 
+}
+.tags>span.secondary{
+    background-color: $secondary;
+    color: $contrast-secondary; 
+}
+.tags>span.success{
+    background-color: $success;
+    color: $contrast-success; 
+}
+.tags>span.danger{
+    background-color: $danger;
+    color: $contrast-danger; 
+}
+.tags>span.primary{
+    background-color: $primary;
+    color: $contrast-primary; 
+}
+.tags>span.warning{
+    background-color: $warning;
+    color: $contrast-warning; 
+}
+.tags>span.dark{
+    background-color: $black;
+    color: $contrast-black; 
+}
+
+.tags>span.small{
+    padding: 0.3rem 0.9rem;
+    font-size: 0.8rem;
+}
+.tags>span.small *{
+    font-size: 0.8rem;
+}
+
 
 /* USER ACTIONS */
 .user-actions{
@@ -1129,14 +1196,20 @@ footer{
 }
 
 .box-shadow-1{
-    box-shadow: 0px 1px 3px rgba(0, 0 , 0, 0.13);
+    box-shadow: 0px 1px 3px rgba(0, 0 , 0, 0.2);
 }
 .box-shadow-2{
-    box-shadow: 0px 1px 6px rgba(0, 0 , 0, 0.13);
+    box-shadow: 0px 1px 6px rgba(0, 0 , 0, 0.2);
 }
 .box-shadow-3{
-    box-shadow: 0px 1px 9px rgba(0, 0 , 0, 0.13);
+    box-shadow: 0px 1px 9px rgba(0, 0 , 0, 0.2);
 }
 .box-shadow-4{
-    box-shadow: 0px 1px 12px rgba(0, 0 , 0, 0.13);
+    box-shadow: 0px 1px 12px rgba(0, 0 , 0, 0.2);
+}
+.box-shadow-5{
+    box-shadow: 0px 1px 15px rgba(0, 0 , 0, 0.2);
+}
+.box-shadow-6{
+    box-shadow: 0px 1px 18px rgba(0, 0 , 0, 0.2);
 }
