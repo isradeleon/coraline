@@ -1,6 +1,6 @@
 # [SocialiteUI](https://socialiteui.com) &nbsp; [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fsocialiteui.com&via=isradeleon&text=An%20alternative%20CSS%20framework%20for%20responsive%20WEB%20design&hashtags=responsive%2Cdesign%2Cframework%2Ccss%2Csocialiteui)
 
-Lightweight HTML, CSS and JS framework. SocialiteUI includes some powerful components and multiple class helpers. It is also open source, and available for free.
+Lightweight HTML, CSS and JS component library. SocialiteUI comes with some powerful frontend components and multiple class helpers.
 
 [![release](https://img.shields.io/github/release/isradeleon/socialiteui.svg?color=1dd1a1)](https://github.com/Isradeleon/socialiteui/releases)
 [![npm](https://img.shields.io/npm/v/socialiteui.svg?color=ff7675)](https://www.npmjs.com/package/socialiteui)

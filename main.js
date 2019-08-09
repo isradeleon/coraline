@@ -40,6 +40,10 @@ const documentation = [
    * COMPONENTS
    */
   {
+    /**
+     * A responsive and lightweight CSS framework
+     * HTML, CSS & JS frontend component library
+     */
     title: 'Card • A flexible component for displaying content', 
     canonical: '/card.html',
     njk: 'components/card.njk.html',
