@@ -1,6 +1,6 @@
 # [SocialiteUI](https://socialiteui.com) &nbsp; [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fsocialiteui.com&via=isradeleon&text=An%20alternative%20CSS%20framework%20for%20responsive%20WEB%20design&hashtags=responsive%2Cdesign%2Cframework%2Ccss%2Csocialiteui)
 
-Lightweight HTML, CSS and JS framework for responsive WEB design. SocialiteUI is open source, and available for free.
+Lightweight HTML, CSS and JS framework. SocialiteUI includes some powerful components and multiple class helpers. It is also open source, and available for free.
 
 [![release](https://img.shields.io/github/release/isradeleon/socialiteui.svg?color=1dd1a1)](https://github.com/Isradeleon/socialiteui/releases)
 [![npm](https://img.shields.io/npm/v/socialiteui.svg?color=ff7675)](https://www.npmjs.com/package/socialiteui)
@@ -32,7 +32,7 @@ npm install socialiteui
 
 ## Components
 
-The framework includes the next list of components:
+The framework includes the following list of components:
 
 [**Staggered grid view**](https://socialiteui.com/staggered.html)  
 
@@ -70,7 +70,7 @@ The framework comes with a legible and easy to learn [grid system](https://socia
 </div>
 ```
 
-And for defining the columns size on mobile and tablet just add:
+For defining the columns size on mobile and tablet just add:
 
 ```html
 <div class="grid">
@@ -78,6 +78,19 @@ And for defining the columns size on mobile and tablet just add:
         ...
     </div>
     <div class="col-6 tablet-12 mobile-6">
+        ...
+    </div>
+</div>
+```
+
+And same on large screen devices:
+
+```html
+<div class="grid">
+    <div class="col-12 large-6">
+        ...
+    </div>
+    <div class="col-12 large-6">
         ...
     </div>
 </div>
