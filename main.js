@@ -21,7 +21,7 @@ fs.copyFileSync('base.css', frameworkBinary+'/base.css');
 fs.copyFileSync('base.js', frameworkBinary+'/base.js');
 
 /**
- * SOCIALITEUI.COM DOCUMENTATION
+ * coralinecss.com DOCUMENTATION
  */
 var docsPath = '../socialiteui-docs';
 if (!fs.existsSync(docsPath)){

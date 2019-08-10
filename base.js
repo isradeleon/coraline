@@ -1,7 +1,7 @@
 (function() {
     
-    if (typeof socialiteUIScriptExecuted !== 'undefined') return;
-    socialiteUIScriptExecuted = true;
+    if (typeof coralineScriptExecuted !== 'undefined') return;
+    coralineScriptExecuted = true;
     /* console.log('run') */
 
     /**
