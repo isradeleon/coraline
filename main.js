@@ -1,16 +1,16 @@
 var nunjucks = require('nunjucks')
 var fs = require('fs'); 
 
-var env = new nunjucks.Environment(new nunjucks.FileSystemLoader('website'));
+var env = new nunjucks.Environment(new nunjucks.FileSystemLoader('../coraline-docs/website'));
 
 /**
- * SOCIALITEUI FRAMEWORK BINARY
+ * CORALINE FRAMEWORK BINARY
  */
-var frameworkBinary = '../socialiteui-v0.4.9';
+var frameworkBinary = '../coralinecss';
 if (!fs.existsSync(frameworkBinary)){
   fs.mkdirSync(frameworkBinary);
 }
-var frameworkSources = frameworkBinary+'/socialiteui-v0.4.9';
+var frameworkSources = frameworkBinary+'/coraline-v0.5.0';
 if (!fs.existsSync(frameworkSources)){
   fs.mkdirSync(frameworkSources);
 }
@@ -23,11 +23,11 @@ fs.copyFileSync('base.js', frameworkBinary+'/base.js');
 /**
  * coralinecss.com DOCUMENTATION
  */
-var docsPath = '../socialiteui-docs';
+var docsPath = '../coraline-docs';
 if (!fs.existsSync(docsPath)){
   fs.mkdirSync(docsPath);
 }
-var docsSourcesPath = docsPath+'/socialiteui-v0.4.9';
+var docsSourcesPath = docsPath+'/coraline-v0.5.0';
 if (!fs.existsSync(docsSourcesPath)){
   fs.mkdirSync(docsSourcesPath);
 }
@@ -113,10 +113,9 @@ var baseJs = fs.readFileSync('base.js').toString();
 var Terser = require("terser");
 var jsResult = Terser.minify(baseJs);
 if(!jsResult.error){
-  fs.writeFileSync('socialiteui-v0.4.9/socialiteui.min.js', jsResult.code);
-  fs.writeFileSync(docsSourcesPath+'/socialiteui.min.js', jsResult.code);
-  fs.writeFileSync(docsSourcesPath+'/socialiteui.min.js', jsResult.code);
-  fs.writeFileSync(frameworkSources+'/socialiteui.min.js', jsResult.code);
+  fs.writeFileSync('coraline-v0.5.0/coraline.min.js', jsResult.code);
+  fs.writeFileSync(docsSourcesPath+'/coraline.min.js', jsResult.code);
+  fs.writeFileSync(frameworkSources+'/coraline.min.js', jsResult.code);
 }else{
   console.log('JS ERROR')
   console.log(jsResult.error)
@@ -153,9 +152,9 @@ postcss([ autoprefixer ]).process(baseCss,{from: undefined}).then(result => {
     })
     
     var minifiedCss = csso.minify(result.css).css;
-    fs.writeFileSync('socialiteui-v0.4.9/socialiteui.min.css', minifiedCss);
-    fs.writeFileSync(docsSourcesPath+'/socialiteui.min.css', minifiedCss);
-    fs.writeFileSync(frameworkSources+'/socialiteui.min.css', minifiedCss);
+    fs.writeFileSync('coraline-v0.5.0/coraline.min.css', minifiedCss);
+    fs.writeFileSync(docsSourcesPath+'/coraline.min.css', minifiedCss);
+    fs.writeFileSync(frameworkSources+'/coraline.min.css', minifiedCss);
     
     console.log('Website is ready!')
 })

@@ -3,31 +3,31 @@
 Lightweight HTML, CSS and JS component library. Coraline comes with some powerful frontend components and multiple class helpers.
 
 [![release](https://img.shields.io/github/release/isradeleon/coraline.svg?color=1dd1a1)](https://github.com/Isradeleon/coraline/releases)
-[![npm](https://img.shields.io/npm/v/socialiteui.svg?color=ff7675)](https://www.npmjs.com/package/socialiteui)
-[![npm](https://img.shields.io/npm/dm/socialiteui.svg?color=6c5ce7)](https://www.npmjs.com/package/socialiteui)
+[![npm](https://img.shields.io/npm/v/coralinecss.svg?color=ff7675)](https://www.npmjs.com/package/coralinecss)
+[![npm](https://img.shields.io/npm/dm/coralinecss.svg?color=6c5ce7)](https://www.npmjs.com/package/coralinecss)
 [![license](https://img.shields.io/github/license/isradeleon/coraline.svg?color=0984e3)](LICENSE)
-[![maintained](https://img.shields.io/maintenance/yes/2019.svg?color=1dd1a1)](https://www.npmjs.com/package/socialiteui)  
+[![maintained](https://img.shields.io/maintenance/yes/2019.svg?color=1dd1a1)](https://www.npmjs.com/package/coralinecss)  
 
 :star: Give us a star on Github!
 
 ## Easy to install
 
-You may just install the framework from npm or download the current version from [here](https://github.com/Isradeleon/coraline/releases/download/0.4.9/socialiteui-v0.4.9.zip). Then just import the minified CSS and JS files into your project.
+You may just install the framework from npm or download the current version from [here](https://github.com/Isradeleon/coraline/releases/download/0.5.0/coraline-v0.5.0.zip). Then just import the minified CSS and JS files into your project.
 
 ### NPM
 
 ```sh
-npm install socialiteui
+npm install coralinecss
 ```
 
 **Here is a code snippet:**
 
 ```html
 <!-- Import the styles -->
-<link rel="stylesheet" href="socialiteui-v0.4.9/socialiteui.min.css">
+<link rel="stylesheet" href="coraline-v0.5.0/coraline.min.css">
 
 <!-- Staggered grid and sidebar functionality -->
-<script src="socialiteui-v0.4.9/socialiteui.min.js"></script>
+<script src="coraline-v0.5.0/coraline.min.js"></script>
 ```
 
 ## Components
@@ -36,23 +36,23 @@ The framework includes the following list of components:
 
 [**Staggered grid view**](https://coralinecss.com/staggered.html)  
 
-![](https://raw.githubusercontent.com/Isradeleon/socialiteui-docs/master/example/staggered.png)
+![](https://raw.githubusercontent.com/Isradeleon/coraline-docs/master/example/staggered.png)
 
 [**Sidebar**](https://coralinecss.com/sidebar.html)  
 
-![](https://raw.githubusercontent.com/Isradeleon/socialiteui-docs/master/example/sidebar.gif)
+![](https://raw.githubusercontent.com/Isradeleon/coraline-docs/master/example/sidebar.gif)
 
 [**Navbar**](https://coralinecss.com/navbar.html)  
 
-![](https://raw.githubusercontent.com/Isradeleon/socialiteui-docs/master/example/navbar.gif)
+![](https://raw.githubusercontent.com/Isradeleon/coraline-docs/master/example/navbar.gif)
 
 [**Card**](https://coralinecss.com/card.html)  
 
-![](https://raw.githubusercontent.com/Isradeleon/socialiteui-docs/master/example/card.png)
+![](https://raw.githubusercontent.com/Isradeleon/coraline-docs/master/example/card.png)
 
 [**Comment**](https://coralinecss.com/comment.html)  
 
-![](https://raw.githubusercontent.com/Isradeleon/socialiteui-docs/master/example/comment.png)
+![](https://raw.githubusercontent.com/Isradeleon/coraline-docs/master/example/comment.png)
 
 
 ## Grid system
@@ -121,7 +121,7 @@ The framework is compatible with recent versions of:
 
 ## Documentation
 
-Currently working to improve the [documentation](https://coralinecss.com). You'll find the documentation inside the website folder in this repository. The docs are generated using [Nunjucks](https://github.com/mozilla/nunjucks) and saved to **../socialiteui-docs/**.
+Currently working to improve the [documentation](https://coralinecss.com). You'll find the documentation inside the website folder in this repository. The docs are generated using [Nunjucks](https://github.com/mozilla/nunjucks) and saved to **../coraline-docs/**.
 
 ## License
 
