@@ -1,18 +1,18 @@
-# [SocialiteUI](https://socialiteui.com) &nbsp; [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fsocialiteui.com&via=isradeleon&text=An%20alternative%20CSS%20framework%20for%20responsive%20WEB%20design&hashtags=responsive%2Cdesign%2Cframework%2Ccss%2Csocialiteui)
+# [Coraline](https://coralinecss.com) &nbsp; [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fcoralinecss.com&via=isradeleon&text=An%20alternative%20CSS%20framework%20for%20responsive%20WEB%20design&hashtags=responsive%2Cdesign%2Cframework%2Ccss)
 
-Lightweight HTML, CSS and JS component library. SocialiteUI comes with some powerful frontend components and multiple class helpers.
+Lightweight HTML, CSS and JS component library. Coraline comes with some powerful frontend components and multiple class helpers.
 
-[![release](https://img.shields.io/github/release/isradeleon/socialiteui.svg?color=1dd1a1)](https://github.com/Isradeleon/socialiteui/releases)
+[![release](https://img.shields.io/github/release/isradeleon/coraline.svg?color=1dd1a1)](https://github.com/Isradeleon/coraline/releases)
 [![npm](https://img.shields.io/npm/v/socialiteui.svg?color=ff7675)](https://www.npmjs.com/package/socialiteui)
 [![npm](https://img.shields.io/npm/dm/socialiteui.svg?color=6c5ce7)](https://www.npmjs.com/package/socialiteui)
-[![license](https://img.shields.io/github/license/isradeleon/socialiteui.svg?color=0984e3)](LICENSE)
+[![license](https://img.shields.io/github/license/isradeleon/coraline.svg?color=0984e3)](LICENSE)
 [![maintained](https://img.shields.io/maintenance/yes/2019.svg?color=1dd1a1)](https://www.npmjs.com/package/socialiteui)  
 
 :star: Give us a star on Github!
 
 ## Easy to install
 
-You may just install the framework from npm or download the current version from [here](https://github.com/Isradeleon/socialiteui/releases/download/0.4.9/socialiteui-v0.4.9.zip). Then just import the minified CSS and JS files into your project.
+You may just install the framework from npm or download the current version from [here](https://github.com/Isradeleon/coraline/releases/download/0.4.9/socialiteui-v0.4.9.zip). Then just import the minified CSS and JS files into your project.
 
 ### NPM
 
@@ -34,30 +34,30 @@ npm install socialiteui
 
 The framework includes the following list of components:
 
-[**Staggered grid view**](https://socialiteui.com/staggered.html)  
+[**Staggered grid view**](https://coralinecss.com/staggered.html)  
 
 ![](https://raw.githubusercontent.com/Isradeleon/socialiteui-docs/master/example/staggered.png)
 
-[**Sidebar**](https://socialiteui.com/sidebar.html)  
+[**Sidebar**](https://coralinecss.com/sidebar.html)  
 
 ![](https://raw.githubusercontent.com/Isradeleon/socialiteui-docs/master/example/sidebar.gif)
 
-[**Navbar**](https://socialiteui.com/navbar.html)  
+[**Navbar**](https://coralinecss.com/navbar.html)  
 
 ![](https://raw.githubusercontent.com/Isradeleon/socialiteui-docs/master/example/navbar.gif)
 
-[**Card**](https://socialiteui.com/card.html)  
+[**Card**](https://coralinecss.com/card.html)  
 
 ![](https://raw.githubusercontent.com/Isradeleon/socialiteui-docs/master/example/card.png)
 
-[**Comment**](https://socialiteui.com/comment.html)  
+[**Comment**](https://coralinecss.com/comment.html)  
 
 ![](https://raw.githubusercontent.com/Isradeleon/socialiteui-docs/master/example/comment.png)
 
 
 ## Grid system
 
-The framework comes with a legible and easy to learn [grid system](https://socialiteui.com/grid-system.html). Here is a little code sample:
+The framework comes with a legible and easy to learn [grid system](https://coralinecss.com/grid-system.html). Here is a little code sample:
 
 ```html
 <div class="grid">
@@ -121,7 +121,7 @@ The framework is compatible with recent versions of:
 
 ## Documentation
 
-Currently working to improve the [documentation](https://socialiteui.com). You'll find the documentation inside the website folder in this repository. The docs are generated using [Nunjucks](https://github.com/mozilla/nunjucks) and saved to **../socialiteui-docs/**.
+Currently working to improve the [documentation](https://coralinecss.com). You'll find the documentation inside the website folder in this repository. The docs are generated using [Nunjucks](https://github.com/mozilla/nunjucks) and saved to **../socialiteui-docs/**.
 
 ## License
 
