@@ -2,7 +2,7 @@
 
 Lightweight HTML, CSS and JS component library. Coraline comes with some powerful frontend components and multiple class helpers.
 
-[![release](https://img.shields.io/github/release/isradeleon/coraline.svg?color=1dd1a1)](https://github.com/Isradeleon/coraline/releases)
+[![release](https://img.shields.io/github/release/isradeleon/coraline.svg?color=1dd1a1)](https://github.com/isradeleon/coraline/releases)
 [![npm](https://img.shields.io/npm/v/coralinecss.svg?color=ff7675)](https://www.npmjs.com/package/coralinecss)
 [![npm](https://img.shields.io/npm/dm/coralinecss.svg?color=6c5ce7)](https://www.npmjs.com/package/coralinecss)
 [![license](https://img.shields.io/github/license/isradeleon/coraline.svg?color=0984e3)](LICENSE)
@@ -12,7 +12,7 @@ Lightweight HTML, CSS and JS component library. Coraline comes with some powerfu
 
 ## Easy to install
 
-You may just install the framework from npm or download the current version from [here](https://github.com/Isradeleon/coraline/releases/download/0.5.0/coralinecss.zip). Then just import the minified CSS and JS files into your project.
+You may just install the framework from npm or download the current version from [here](https://github.com/isradeleon/coraline/releases/download/0.5.0/coralinecss.zip). Then just import the minified CSS and JS files into your project.
 
 ### NPM
 
@@ -36,23 +36,23 @@ The framework includes the following list of components:
 
 [**Staggered grid view**](https://coralinecss.com/staggered.html)  
 
-![](https://raw.githubusercontent.com/Isradeleon/coraline-docs/master/example/staggered.png)
+![](https://raw.githubusercontent.com/isradeleon/coraline-docs/master/example/staggered.png)
 
 [**Sidebar**](https://coralinecss.com/sidebar.html)  
 
-![](https://raw.githubusercontent.com/Isradeleon/coraline-docs/master/example/sidebar.gif)
+![](https://raw.githubusercontent.com/isradeleon/coraline-docs/master/example/sidebar.gif)
 
 [**Navbar**](https://coralinecss.com/navbar.html)  
 
-![](https://raw.githubusercontent.com/Isradeleon/coraline-docs/master/example/navbar.gif)
+![](https://raw.githubusercontent.com/isradeleon/coraline-docs/master/example/navbar.gif)
 
 [**Card**](https://coralinecss.com/card.html)  
 
-![](https://raw.githubusercontent.com/Isradeleon/coraline-docs/master/example/card.png)
+![](https://raw.githubusercontent.com/isradeleon/coraline-docs/master/example/card.png)
 
 [**Comment**](https://coralinecss.com/comment.html)  
 
-![](https://raw.githubusercontent.com/Isradeleon/coraline-docs/master/example/comment.png)
+![](https://raw.githubusercontent.com/isradeleon/coraline-docs/master/example/comment.png)
 
 
 ## Grid system

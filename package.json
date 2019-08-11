@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Isradeleon/coraline.git"
+    "url": "git+https://github.com/isradeleon/coraline.git"
   },
   "keywords": [
     "framework",
@@ -24,7 +24,7 @@
   "author": "isradln",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Isradeleon/coraline/issues"
+    "url": "https://github.com/isradeleon/coraline/issues"
   },
   "homepage": "https://coralinecss.com",
   "devDependencies": {
