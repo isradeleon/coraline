@@ -121,7 +121,7 @@ The framework is compatible with recent versions of:
 
 ## Documentation
 
-Currently working to improve the [documentation](https://coralinecss.com). You'll find the documentation inside the website folder in this repository. The docs are generated using [Nunjucks](https://github.com/mozilla/nunjucks) and saved to **../coraline-docs/**.
+Currently working to improve the [documentation](https://coralinecss.com). The docs are generated using [Nunjucks](https://github.com/mozilla/nunjucks) and saved to **../coraline-docs/**.
 
 ## License
 
