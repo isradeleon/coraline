@@ -15,28 +15,36 @@
 }
 
 $brand: #ff7675 !default;
-$contrast-brand: contrast-color($brand) !default;
+//$contrast-brand: contrast-color($brand) !default;
+$contrast-brand: white !default;
 
 $primary: #6c5ce7 !default;
-$contrast-primary: contrast-color($primary) !default;
+//$contrast-primary: contrast-color($primary) !default;
+$contrast-primary: white !default;
 
 $secondary: #0984e3 !default;
-$contrast-secondary: contrast-color($secondary) !default;
+//$contrast-secondary: contrast-color($secondary) !default;
+$contrast-secondary: white !default;
 
 $info: #74b9ff !default;
-$contrast-info: contrast-color($info) !default;
+//$contrast-info: contrast-color($info) !default;
+$contrast-info: white !default;
 
 $success: #1dd1a1 !default;
-$contrast-success: contrast-color($success) !default;
+//$contrast-success: contrast-color($success) !default;
+$contrast-success: white !default;
 
 $danger: #ee5253 !default;
-$contrast-danger: contrast-color($danger) !default;
+//$contrast-danger: contrast-color($danger) !default;
+$contrast-danger: white !default;
 
 $warning: #f7b731 !default;
-$contrast-warning: contrast-color($warning) !default;
+//$contrast-warning: contrast-color($warning) !default;
+$contrast-warning: white !default;
 
 $black: #2d3436 !default;
-$contrast-black: contrast-color($black) !default;
+//$contrast-black: contrast-color($black) !default;
+$contrast-black: white !default;
 
 $font-family: sans-serif !default;
 $font-weight: 300 !default;
@@ -697,7 +705,7 @@ textarea{
     margin-top: 0.1rem; margin-bottom: 0.2rem;
 }
 .card-data > p, .card-data > p *{
-    font-weight: 400;
+    font-weight: bold;
     font-size: 0.9rem;
 }
 .card-data > small{
@@ -730,7 +738,7 @@ textarea{
     margin-top: 0.1rem; margin-bottom: 0;
 }
 .comment-data > p, .comment-data > p *{
-    font-weight: 400;
+    font-weight: bold;
     font-size: 0.9rem;
 }
 

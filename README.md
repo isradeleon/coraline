@@ -12,7 +12,7 @@ Lightweight HTML, CSS and JS component library. Coraline comes with some powerfu
 
 ## Easy to install
 
-You may just install the framework from npm or download the current version from [here](https://github.com/Isradeleon/coraline/releases/download/0.5.0/coraline-v0.5.0.zip). Then just import the minified CSS and JS files into your project.
+You may just install the framework from npm or download the current version from [here](https://github.com/Isradeleon/coraline/releases/download/0.5.0/coralinecss.zip). Then just import the minified CSS and JS files into your project.
 
 ### NPM
 

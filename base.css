@@ -1,3 +1,11 @@
+/* $contrast-brand: white;
+$contrast-primary: white;
+$contrast-secondary: white;
+$contrast-info: white;
+$contrast-success: white;
+$contrast-danger: white;
+$contrast-warning: white; */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 /*
     Coraline v0.5.0
 */
@@ -11,7 +19,7 @@
   scrollbar-color: lightgray #fafafa; }
 
 body {
-  font-family: sans-serif;
+  font-family: "Montserrat";
   margin: 0; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -476,7 +484,7 @@ textarea {
   padding: 0.7rem 0.8rem;
   box-shadow: inset 0px 0px 6px rgba(35, 35, 35, 0.02);
   margin: 0.3rem;
-  font-family: sans-serif; }
+  font-family: "Montserrat"; }
 
 input[type='text']:focus, input[type='password']:focus,
 input[type='email']:focus, input[type='tel']:focus,
@@ -617,7 +625,7 @@ textarea {
   margin-bottom: 0.2rem; }
 
 .card-data > p, .card-data > p * {
-  font-weight: 400;
+  font-weight: bold;
   font-size: 0.9rem; }
 
 .card-data > small {
@@ -649,7 +657,7 @@ textarea {
   margin-bottom: 0; }
 
 .comment-data > p, .comment-data > p * {
-  font-weight: 400;
+  font-weight: bold;
   font-size: 0.9rem; }
 
 .comment-data small, .comment-data small * {
