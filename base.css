@@ -3,10 +3,10 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 body {
+  font-family: "Montserrat", Helvetica, sans-serif;
   margin: 0; }
 
 * {
-  font-family: "Montserrat", Helvetica, sans-serif;
   font-weight: 300;
   font-size: 1rem;
   color: #2d3436;
@@ -518,49 +518,50 @@ textarea {
   width: 30px; }
 
 /* TAGS */
-.tags > span {
+.tags > span, :not(.prettyprint) > .tag {
   display: inline-block;
   padding: 0.4rem 1rem;
   font-size: 0.9rem;
+  color: #2d3436;
   background-color: #eaeaea; }
 
-.tags > span.brand {
+:not(.prettyprint) > .tag.brand, .tags > span.brand {
   background-color: #ff7675;
   color: white; }
 
-.tags > span.info {
+:not(.prettyprint) > .tag.info, .tags > span.info {
   background-color: #74b9ff;
   color: white; }
 
-.tags > span.secondary {
+:not(.prettyprint) > .tag.secondary, .tags > span.secondary {
   background-color: #0984e3;
   color: white; }
 
-.tags > span.success {
+:not(.prettyprint) > .tag.success, .tags > span.success {
   background-color: #1dd1a1;
   color: white; }
 
-.tags > span.danger {
+:not(.prettyprint) > .tag.danger, .tags > span.danger {
   background-color: #ee5253;
   color: white; }
 
-.tags > span.primary {
+:not(.prettyprint) > .tag.primary, .tags > span.primary {
   background-color: #6c5ce7;
   color: white; }
 
-.tags > span.warning {
+:not(.prettyprint) > .tag.warning, .tags > span.warning {
   background-color: #f7b731;
   color: white; }
 
-.tags > span.dark {
+:not(.prettyprint) > .tag.dark, .tags > span.dark {
   background-color: #2d3436;
   color: white; }
 
-.tags > span.small {
+:not(.prettyprint) > .tag.small, .tags > span.small {
   padding: 0.3rem 0.9rem;
   font-size: 0.8rem; }
 
-.tags > span.small * {
+:not(.prettyprint) > .tag.small, .tags > span.small * {
   font-size: 0.8rem; }
 
 /* USER ACTIONS */

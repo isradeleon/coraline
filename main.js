@@ -44,7 +44,7 @@ const documentation = [
      * A responsive and lightweight CSS framework
      * HTML, CSS & JS frontend component library
      */
-    title: 'Card • A flexible component for displaying content', 
+    title: 'Card • Flexible component for displaying content', 
     canonical: '/card.html',
     njk: 'components/card.njk.html',
     description: 'Card: A flexible UI component for displaying visual and text content',
@@ -65,7 +65,7 @@ const documentation = [
     current: 'navbar'
   },
   {
-    title: 'Sidebar • A responsive sidebar built with CSS and JS', 
+    title: 'Sidebar • Responsive sidebar built with CSS and JS', 
     canonical: '/sidebar.html',
     njk: 'components/sidebar.njk.html',
     description: 'Sidebar: A responsive and easy to implement sidebar menu built with CSS and JS',
@@ -81,7 +81,7 @@ const documentation = [
    * GRID SYSTEM
    */
   {
-    title: 'Grid system • A simple and easy to learn grid system', 
+    title: 'Grid system • Simple and easy to learn grid system', 
     canonical: '/grid-system.html',
     njk: 'grid-system.njk.html',
     description: 'Grid system: A simple and easy to learn grid system, that is adaptable to all screens',
@@ -95,6 +95,12 @@ const documentation = [
     njk: 'elements/button.njk.html',
     description: 'Button: A useful element with multiple ways to customize through CSS classes',
     current: 'button'
+  },
+  { title: 'Tags • Small, nice element that is also customizable', 
+    canonical: '/tags.html',
+    njk: 'elements/tags.njk.html',
+    description: 'Tags: A small, nice element with multiple ways to customize through CSS classes',
+    current: 'tags'
   },
 ];
 

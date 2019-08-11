@@ -51,10 +51,10 @@ $font-family: 'Montserrat', Helvetica, sans-serif !default;
 $font-weight: 300 !default;
 
 body{
+    font-family: $font-family;
     margin: 0;
 }
 *{
-    font-family: $font-family;
     font-weight: $font-weight;
     font-size: 1rem;
     color: $black;
@@ -602,50 +602,51 @@ textarea{
 }
 
 /* TAGS */
-.tags>span{
+.tags>span, :not(.prettyprint) > .tag{
     display: inline-block;
     padding: 0.4rem 1rem;
     font-size: 0.9rem;
+    color: $black;
     background-color: #eaeaea;
 }
-.tags>span.brand{
+:not(.prettyprint) > .tag.brand, .tags>span.brand{
     background-color: $brand;
     color: $contrast-brand; 
 }
-.tags>span.info{
+:not(.prettyprint) > .tag.info, .tags>span.info{
     background-color: $info;
     color: $contrast-info; 
 }
-.tags>span.secondary{
+:not(.prettyprint) > .tag.secondary, .tags>span.secondary{
     background-color: $secondary;
     color: $contrast-secondary; 
 }
-.tags>span.success{
+:not(.prettyprint) > .tag.success, .tags>span.success{
     background-color: $success;
     color: $contrast-success; 
 }
-.tags>span.danger{
+:not(.prettyprint) > .tag.danger, .tags>span.danger{
     background-color: $danger;
     color: $contrast-danger; 
 }
-.tags>span.primary{
+:not(.prettyprint) > .tag.primary, .tags>span.primary{
     background-color: $primary;
     color: $contrast-primary; 
 }
-.tags>span.warning{
+:not(.prettyprint) > .tag.warning, .tags>span.warning{
     background-color: $warning;
     color: $contrast-warning; 
 }
-.tags>span.dark{
+:not(.prettyprint) > .tag.dark, .tags>span.dark{
     background-color: $black;
     color: $contrast-black; 
 }
 
-.tags>span.small{
+:not(.prettyprint) > .tag.small, .tags>span.small{
     padding: 0.3rem 0.9rem;
     font-size: 0.8rem;
 }
-.tags>span.small *{
+:not(.prettyprint) > .tag.small, .tags>span.small *{
     font-size: 0.8rem;
 }
 
