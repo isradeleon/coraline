@@ -46,21 +46,22 @@ $black: #2d3436 !default;
 //$contrast-black: contrast-color($black) !default;
 $contrast-black: white !default;
 
-$font-family: sans-serif !default;
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+$font-family: 'Montserrat', Helvetica, sans-serif !default;
 $font-weight: 300 !default;
 
+body{
+    margin: 0;
+}
 *{
+    font-family: $font-family;
+    font-weight: $font-weight;
     font-size: 1rem;
     color: $black;
-    font-weight: $font-weight;
     box-sizing: border-box;
     line-height: 1.3;
     scrollbar-width: thin;
     scrollbar-color: lightgray #fafafa;
-}
-body{
-    font-family: $font-family;
-    margin: 0;
 }
 h1,h2,h3,h4,h5,h6{
     margin-top: 1rem;
