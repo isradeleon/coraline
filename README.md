@@ -1,6 +1,6 @@
 # [Coraline](https://coralinecss.com) &nbsp; [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fcoralinecss.com&via=isradeleon&text=An%20alternative%20CSS%20framework%20for%20responsive%20WEB%20design&hashtags=responsive%2Cdesign%2Cframework%2Ccss)
 
-Lightweight HTML, CSS and JS component library. Coraline comes with some powerful frontend components and multiple class helpers.
+HTML, CSS and JS frontend component library. Coraline comes with some powerful components and multiple class helpers.
 
 [![release](https://img.shields.io/github/release/isradeleon/coraline.svg?color=1dd1a1)](https://github.com/isradeleon/coraline/releases)
 [![npm](https://img.shields.io/npm/v/coralinecss.svg?color=ff7675)](https://www.npmjs.com/package/coralinecss)
@@ -32,7 +32,7 @@ npm install coralinecss
 
 ## Components
 
-The framework includes the following list of components:
+Coraline includes the following list of components:
 
 [**Staggered grid view**](https://coralinecss.com/staggered.html)  
 
@@ -57,7 +57,7 @@ The framework includes the following list of components:
 
 ## Grid system
 
-The framework comes with a legible and easy to learn [grid system](https://coralinecss.com/grid-system.html). Here is a little code sample:
+A [grid system](https://coralinecss.com/grid-system.html) designed for being simple, legible and easy to learn. Here is a little code sample:
 
 ```html
 <div class="grid">
@@ -98,7 +98,7 @@ And same on large screen devices:
 
 ## Lightweight
 
-The whole framework weighs just **19.3K**.
+The whole framework weighs just **19.3K** minified.
 
 ## Built with
 
@@ -110,7 +110,7 @@ The whole framework weighs just **19.3K**.
 
 ## Browser Support
 
-The framework is compatible with recent versions of:
+Coraline is compatible with recent versions of:
 
 * Firefox
 * Chrome
