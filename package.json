@@ -1,7 +1,7 @@
 {
   "name": "coralinecss",
   "version": "0.5.1",
-  "description": "Responsive and lightweight HTML, CSS and JS framework",
+  "description": "HTML, CSS and JS frontend component library",
   "main": "base.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,10 +14,10 @@
     "framework",
     "responsive",
     "lightweight",
+    "frontend",
     "css",
     "js",
     "design",
-    "social",
     "flexbox",
     "sass"
   ],
