@@ -102,6 +102,12 @@ const documentation = [
     description: 'Tags: A small, nice element with multiple ways to customize through CSS classes',
     current: 'tags'
   },
+  { title: 'Circular img • Element for showing circular images', 
+    canonical: '/circular-img.html',
+    njk: 'elements/circular-img.njk.html',
+    description: 'Circular img: Circular img element that is also customizable through CSS classes',
+    current: 'circular-img'
+  },
 ];
 
 for (let index = 0; index < documentation.length; index++) {
