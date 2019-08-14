@@ -580,11 +580,11 @@ textarea {
   justify-content: center; }
 
 .user-actions.evenly {
-  justify-content: space-evenly; }
-
-.user-actions.equal {
   justify-content: space-around; }
 
+/* .user-actions.evenly{
+    justify-content: space-evenly;
+} */
 .user-actions > .left {
   margin-right: auto; }
 
