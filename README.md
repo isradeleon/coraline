@@ -98,7 +98,7 @@ And same on large screen devices:
 
 ## Lightweight
 
-The whole framework weighs just **17.5K**.
+The whole framework weighs just **19.3K**.
 
 ## Built with
 
