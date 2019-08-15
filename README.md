@@ -6,7 +6,8 @@ HTML, CSS and JS frontend component library. Coraline comes with some powerful c
 [![npm](https://img.shields.io/npm/v/coralinecss.svg?color=ff7675)](https://www.npmjs.com/package/coralinecss)
 [![npm](https://img.shields.io/npm/dm/coralinecss.svg?color=6c5ce7)](https://www.npmjs.com/package/coralinecss)
 [![license](https://img.shields.io/github/license/isradeleon/coraline.svg?color=0984e3)](LICENSE)
-[![maintained](https://img.shields.io/maintenance/yes/2019.svg?color=1dd1a1)](https://www.npmjs.com/package/coralinecss)  
+[![maintained](https://img.shields.io/maintenance/yes/2019.svg?color=1dd1a1)](https://www.npmjs.com/package/coralinecss)
+[![Chat: https://gitter.im/coralinecss/community](https://badges.gitter.im/coralinecss/community.svg)](https://gitter.im/coralinecss/community)  
 
 :star: Give us a star on Github!
 
