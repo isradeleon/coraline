@@ -1236,3 +1236,9 @@ footer{
 .box-shadow-6{
     box-shadow: 0px 1px 21px rgba(0, 0 , 0, 0.18);
 }
+
+/* FLEXBOX HELPERS */
+.flexbox{
+    display: flex;
+    flex: 1 0 auto;
+}

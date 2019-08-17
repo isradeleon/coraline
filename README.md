@@ -34,26 +34,11 @@ npm install coralinecss
 
 Coraline includes the following list of components:
 
-[**Staggered grid view**](https://coralinecss.com/staggered.html)  
-
-![](https://raw.githubusercontent.com/isradeleon/coraline-docs/master/example/staggered.png)
-
-[**Sidebar**](https://coralinecss.com/sidebar.html)  
-
-![](https://raw.githubusercontent.com/isradeleon/coraline-docs/master/example/sidebar.gif)
-
-[**Navbar**](https://coralinecss.com/navbar.html)  
-
-![](https://raw.githubusercontent.com/isradeleon/coraline-docs/master/example/navbar.gif)
-
-[**Card**](https://coralinecss.com/card.html)  
-
-![](https://raw.githubusercontent.com/isradeleon/coraline-docs/master/example/card.png)
-
-[**Comment**](https://coralinecss.com/comment.html)  
-
-![](https://raw.githubusercontent.com/isradeleon/coraline-docs/master/example/comment.png)
-
+* [Staggered grid view](https://coralinecss.com/staggered.html)
+* [Sidebar](https://coralinecss.com/sidebar.html)
+* [Navbar](https://coralinecss.com/navbar.html)
+* [Card](https://coralinecss.com/card.html)
+* [Comment](https://coralinecss.com/comment.html)
 
 ## Grid system
 
