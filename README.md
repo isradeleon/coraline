@@ -10,6 +10,18 @@ HTML, CSS and JS frontend component library. Coraline comes with some powerful c
 
 :star: Give us a star on Github!
 
+## Quick start
+
+You may use the CDN from [statically.io](https://statically.io/) for a quick 
+start:
+
+```html
+<!-- From CDN -->
+<link rel="stylesheet" href="https://cdn.statically.io/gh/isradeleon/coraline/0.5.2/coraline-v0.5.2/coraline.min.css">
+
+<script src="https://cdn.statically.io/gh/isradeleon/coraline/0.5.2/coraline-v0.5.2/coraline.min.js"></script>
+```
+
 ## Easy to install
 
 You may just install the framework from npm or download the current version from [here](https://github.com/isradeleon/coraline/releases/download/0.5.2/coralinecss.zip). Then just import the minified CSS and JS files into your project.
