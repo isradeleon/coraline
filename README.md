@@ -12,8 +12,7 @@ HTML, CSS and JS frontend component library. Coraline comes with some powerful c
 
 ## Quick start
 
-You may use the CDN from [statically.io](https://statically.io/) for a quick 
-start:
+You may use the CDN for a quick start:
 
 ```html
 <!-- Styles -->
