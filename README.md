@@ -40,6 +40,14 @@ Coraline includes the following list of components:
 * [Card](https://coralinecss.com/card.html)
 * [Comment](https://coralinecss.com/comment.html)
 
+## Elements
+
+Coraline includes the following list of elements:
+
+* [Button](https://coralinecss.com/button.html)
+* [Tags](https://coralinecss.com/tags.html)
+* [Circular img](https://coralinecss.com/circular-img.html)
+
 ## Grid system
 
 A [grid system](https://coralinecss.com/grid-system.html) designed for being simple, legible and easy to learn. Here is a little code sample:
