@@ -10,7 +10,7 @@ var frameworkBinary = '../coralinecss';
 if (!fs.existsSync(frameworkBinary)){
   fs.mkdirSync(frameworkBinary);
 }
-var frameworkSources = frameworkBinary+'/coraline-v0.5.1';
+var frameworkSources = frameworkBinary+'/coraline-v0.5.2';
 if (!fs.existsSync(frameworkSources)){
   fs.mkdirSync(frameworkSources);
 }
@@ -27,7 +27,7 @@ var docsPath = '../coraline-docs';
 if (!fs.existsSync(docsPath)){
   fs.mkdirSync(docsPath);
 }
-var docsSourcesPath = docsPath+'/coraline-v0.5.1';
+var docsSourcesPath = docsPath+'/coraline-v0.5.2';
 if (!fs.existsSync(docsSourcesPath)){
   fs.mkdirSync(docsSourcesPath);
 }
@@ -130,7 +130,7 @@ var baseJs = fs.readFileSync('base.js').toString();
 var Terser = require("terser");
 var jsResult = Terser.minify(baseJs);
 if(!jsResult.error){
-  fs.writeFileSync('coraline-v0.5.1/coraline.min.js', jsResult.code);
+  fs.writeFileSync('coraline-v0.5.2/coraline.min.js', jsResult.code);
   fs.writeFileSync(docsSourcesPath+'/coraline.min.js', jsResult.code);
   fs.writeFileSync(frameworkSources+'/coraline.min.js', jsResult.code);
 }else{
@@ -169,7 +169,7 @@ postcss([ autoprefixer ]).process(baseCss,{from: undefined}).then(result => {
     })
     
     var minifiedCss = csso.minify(result.css).css;
-    fs.writeFileSync('coraline-v0.5.1/coraline.min.css', minifiedCss);
+    fs.writeFileSync('coraline-v0.5.2/coraline.min.css', minifiedCss);
     fs.writeFileSync(docsSourcesPath+'/coraline.min.css', minifiedCss);
     fs.writeFileSync(frameworkSources+'/coraline.min.css', minifiedCss);
     

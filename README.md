@@ -12,7 +12,7 @@ HTML, CSS and JS frontend component library. Coraline comes with some powerful c
 
 ## Easy to install
 
-You may just install the framework from npm or download the current version from [here](https://github.com/isradeleon/coraline/releases/download/0.5.1/coralinecss.zip). Then just import the minified CSS and JS files into your project.
+You may just install the framework from npm or download the current version from [here](https://github.com/isradeleon/coraline/releases/download/0.5.2/coralinecss.zip). Then just import the minified CSS and JS files into your project.
 
 ### NPM
 
@@ -24,10 +24,10 @@ npm install coralinecss
 
 ```html
 <!-- Import the styles -->
-<link rel="stylesheet" href="coraline-v0.5.1/coraline.min.css">
+<link rel="stylesheet" href="coraline-v0.5.2/coraline.min.css">
 
 <!-- Staggered grid and sidebar functionality -->
-<script src="coraline-v0.5.1/coraline.min.js"></script>
+<script src="coraline-v0.5.2/coraline.min.js"></script>
 ```
 
 ## Components
