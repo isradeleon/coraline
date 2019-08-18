@@ -16,9 +16,10 @@ You may use the CDN from [statically.io](https://statically.io/) for a quick
 start:
 
 ```html
-<!-- From CDN -->
+<!-- Styles -->
 <link rel="stylesheet" href="https://cdn.statically.io/gh/isradeleon/coraline/0.5.2/coraline-v0.5.2/coraline.min.css">
 
+<!-- Staggered grid and sidebar -->
 <script src="https://cdn.statically.io/gh/isradeleon/coraline/0.5.2/coraline-v0.5.2/coraline.min.js"></script>
 ```
 
