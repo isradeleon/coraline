@@ -36,6 +36,11 @@ var index = env.render('index.njk.html')
 fs.writeFileSync(docsPath+'/index.html', index);
 
 const documentation = [
+  {
+    canonical: '/getting-started.html',
+    njk: 'getting-started.njk.html',
+    current: 'getting-started'
+  },
   /**
    * COMPONENTS
    */

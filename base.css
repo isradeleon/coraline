@@ -87,12 +87,6 @@ img {
 .below-navbar {
   padding-top: 65px; }
 
-.below-title {
-  margin-top: 0; }
-
-.main-title {
-  font-size: 3rem; }
-
 /* SCROLLBAR */
 ::-webkit-scrollbar {
   width: 5px;
@@ -1036,6 +1030,12 @@ footer {
 
 .text-size-xs, .text-size-xs * {
   font-size: 0.8rem; }
+
+.below-title {
+  margin-top: 0; }
+
+.main-title {
+  font-size: 3rem; }
 
 .hidden {
   display: none; }
