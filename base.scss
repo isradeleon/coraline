@@ -329,32 +329,56 @@ input.menu-toggle{
     background-color: $brand;
     color: $contrast-brand; 
 }
+.btn.brand *{
+    color: $contrast-brand; 
+}
 .btn.info{
     background-color: $info;
+    color: $contrast-info; 
+}
+.btn.info *{
     color: $contrast-info; 
 }
 .btn.secondary{
     background-color: $secondary;
     color: $contrast-secondary; 
 }
+.btn.secondary *{
+    color: $contrast-secondary; 
+}
 .btn.success{
     background-color: $success;
+    color: $contrast-success; 
+}
+.btn.success *{
     color: $contrast-success; 
 }
 .btn.danger{
     background-color: $danger;
     color: $contrast-danger; 
 }
+.btn.danger *{
+    color: $contrast-danger; 
+}
 .btn.primary{
     background-color: $primary;
+    color: $contrast-primary; 
+}
+.btn.primary *{
     color: $contrast-primary; 
 }
 .btn.warning{
     background-color: $warning;
     color: $contrast-warning; 
 }
+.btn.warning *{
+    color: $contrast-warning; 
+}
 .btn.dark{
     background-color: $black;
+    color: $contrast-black; 
+}
+.btn.dark *{
     color: $contrast-black; 
 }
 

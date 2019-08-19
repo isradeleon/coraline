@@ -260,32 +260,56 @@ input.menu-toggle {
   background-color: #ff7675;
   color: white; }
 
+.btn.brand * {
+  color: white; }
+
 .btn.info {
   background-color: #74b9ff;
+  color: white; }
+
+.btn.info * {
   color: white; }
 
 .btn.secondary {
   background-color: #0984e3;
   color: white; }
 
+.btn.secondary * {
+  color: white; }
+
 .btn.success {
   background-color: #1dd1a1;
+  color: white; }
+
+.btn.success * {
   color: white; }
 
 .btn.danger {
   background-color: #ee5253;
   color: white; }
 
+.btn.danger * {
+  color: white; }
+
 .btn.primary {
   background-color: #6c5ce7;
+  color: white; }
+
+.btn.primary * {
   color: white; }
 
 .btn.warning {
   background-color: #f7b731;
   color: white; }
 
+.btn.warning * {
+  color: white; }
+
 .btn.dark {
   background-color: #2d3436;
+  color: white; }
+
+.btn.dark * {
   color: white; }
 
 .btn.inverted, .btn.inverted * {
