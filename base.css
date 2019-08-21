@@ -700,7 +700,8 @@ textarea {
   flex-flow: row wrap; }
 
 .staggered > .staggered-item > * {
-  display: block; }
+  display: block;
+  width: 100%; }
 
 .staggered > .staggered-item {
   width: 25%;
