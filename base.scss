@@ -1108,10 +1108,10 @@ textarea{
 
 /* SECTIONS */
 .site-section{
+    position: relative;
     display: flex;
     padding: 15px 0;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     min-height: 100vh;
     background-color: #fafafa;
