@@ -1,6 +1,6 @@
 # [Coraline](https://coralinecss.com) &nbsp; [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fcoralinecss.com&via=isradeleon&text=An%20alternative%20CSS%20framework%20for%20responsive%20WEB%20design&hashtags=responsive%2Cdesign%2Cframework%2Ccss) [![Chat: https://gitter.im/coralinecss/community](https://img.shields.io/gitter/room/coralinecss/community.svg?color=0984e3)](https://gitter.im/coralinecss/community)
 
-HTML, CSS and JS frontend component library. Coraline comes with some powerful components and multiple class helpers.
+CSS and JS frontend component library. Coraline comes with some powerful components and multiple class helpers.
 
 [![release](https://img.shields.io/github/release/isradeleon/coraline.svg?color=1dd1a1)](https://github.com/isradeleon/coraline/releases)
 [![npm](https://img.shields.io/npm/v/coralinecss.svg?color=ff7675)](https://www.npmjs.com/package/coralinecss)
