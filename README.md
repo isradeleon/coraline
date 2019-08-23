@@ -24,7 +24,7 @@ You may use the CDN for a quick start:
 
 ## Easy to install
 
-You may just install the framework from npm or download the current version from [here](https://github.com/isradeleon/coraline/releases/download/0.5.3/coralinecss.zip). Then just import the minified CSS and JS files into your project.
+You may just install the framework from npm or [download the current version here](https://github.com/isradeleon/coraline/releases/download/0.5.3/coralinecss.zip). Then just import the minified CSS and JS files into your project.
 
 ### NPM
 
