@@ -1,5 +1,5 @@
 /*
-    Coraline v0.5.2
+    Coraline v0.5.3
 */
 
 @function contrast-color($n) {
@@ -1119,24 +1119,6 @@ textarea{
 }
 .site-section.white{
     background-color: white;
-}
-.site-section.primary{
-    background-color: $primary;
-}
-.site-section.primary *{
-    color: white;
-}
-.site-section.brand{
-    background-color: $brand;
-}
-.site-section.brand *{
-    color: white;
-}
-.site-section.secondary{
-    background-color: $secondary;
-}
-.site-section.secondary *{
-    color: white;
 }
 
 /* FOOTER */

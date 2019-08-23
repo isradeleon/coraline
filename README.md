@@ -16,15 +16,15 @@ You may use the CDN for a quick start:
 
 ```html
 <!-- Styles -->
-<link rel="stylesheet" href="https://cdn.statically.io/gh/isradeleon/coraline/0.5.2/coraline-v0.5.2/coraline.min.css">
+<link rel="stylesheet" href="https://cdn.statically.io/gh/isradeleon/coraline/0.5.3/coraline-v0.5.3/coraline.min.css">
 
 <!-- Staggered grid and sidebar -->
-<script src="https://cdn.statically.io/gh/isradeleon/coraline/0.5.2/coraline-v0.5.2/coraline.min.js"></script>
+<script src="https://cdn.statically.io/gh/isradeleon/coraline/0.5.3/coraline-v0.5.3/coraline.min.js"></script>
 ```
 
 ## Easy to install
 
-You may just install the framework from npm or download the current version from [here](https://github.com/isradeleon/coraline/releases/download/0.5.2/coralinecss.zip). Then just import the minified CSS and JS files into your project.
+You may just install the framework from npm or download the current version from [here](https://github.com/isradeleon/coraline/releases/download/0.5.3/coralinecss.zip). Then just import the minified CSS and JS files into your project.
 
 ### NPM
 
@@ -36,10 +36,10 @@ npm install coralinecss
 
 ```html
 <!-- Import the styles -->
-<link rel="stylesheet" href="coraline-v0.5.2/coraline.min.css">
+<link rel="stylesheet" href="coraline-v0.5.3/coraline.min.css">
 
 <!-- Staggered grid and sidebar functionality -->
-<script src="coraline-v0.5.2/coraline.min.js"></script>
+<script src="coraline-v0.5.3/coraline.min.js"></script>
 ```
 
 ## Components

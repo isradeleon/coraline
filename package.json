@@ -1,6 +1,6 @@
 {
   "name": "coralinecss",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Lightweight HTML, CSS and JS frontend component library",
   "main": "base.scss",
   "scripts": {
@@ -36,7 +36,7 @@
     "terser": "^4.1.2"
   },
   "files": [
-    "coraline-v0.5.2",
+    "coraline-v0.5.3",
     "base.scss",
     "base.css",
     "base.js",
