@@ -68,19 +68,6 @@ const documentation = [
     description: 'Navbar: A CSS only, fully responsive and easy to implement navbar menu',
     current: 'navbar'
   },
-  /* {
-    title: 'Sidebar • Responsive sidebar built with CSS and JS', 
-    canonical: '/sidebar.html',
-    njk: 'components/sidebar.njk.html',
-    description: 'Sidebar: A responsive and easy to implement sidebar menu built with CSS and JS',
-    current: 'sidebar'
-  },
-  { title: 'Staggered grid • A responsive, left to right staggered grid', 
-    canonical: '/staggered.html',
-    njk: 'components/staggered.njk.html',
-    description: 'Staggered grid view: A responsive, left to right staggered grid built with CSS and JS',
-    current: 'staggered'
-  }, */
   /**
    * GRID SYSTEM
    */

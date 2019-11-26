@@ -1,6 +1,6 @@
 # [Coraline](https://coralinecss.com) &nbsp; [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fcoralinecss.com&via=isradeleon&text=An%20alternative%20CSS%20framework%20for%20responsive%20WEB%20design&hashtags=responsive%2Cdesign%2Cframework%2Ccss)
 
-CSS and JS frontend component library. Coraline comes with some powerful components and multiple class helpers.
+An alternative CSS only framework. Coraline comes with multiple components and class helpers.
 
 [![release](https://img.shields.io/github/release/isradeleon/coraline.svg?color=1dd1a1)](https://github.com/isradeleon/coraline/releases)
 [![npm](https://img.shields.io/npm/v/coralinecss.svg?color=ff7675)](https://www.npmjs.com/package/coralinecss)
@@ -8,23 +8,20 @@ CSS and JS frontend component library. Coraline comes with some powerful compone
 [![license](https://img.shields.io/github/license/isradeleon/coraline.svg?color=0984e3)](LICENSE)
 [![maintained](https://img.shields.io/maintenance/yes/2019.svg?color=1dd1a1)](https://www.npmjs.com/package/coralinecss)  
 
-:star: Give us a star on Github!
+:star: Give me a star if you like this project :D
 
 ## Quick start
 
 You may use the CDN for a quick start:
 
 ```html
-<!-- Styles -->
+<!-- import the styles from cdn -->
 <link rel="stylesheet" href="https://cdn.statically.io/gh/isradeleon/coraline/0.5.3/coraline-v0.5.3/coraline.min.css">
-
-<!-- Staggered grid and sidebar -->
-<script src="https://cdn.statically.io/gh/isradeleon/coraline/0.5.3/coraline-v0.5.3/coraline.min.js"></script>
 ```
 
 ## Easy to install
 
-You may just install the framework from npm or [download the current version here](https://github.com/isradeleon/coraline/releases/download/0.5.3/coralinecss.zip). Then just import the minified CSS and JS files into your project.
+You may just install the framework from npm or [download the current version here](https://github.com/isradeleon/coraline/releases/download/0.5.3/coralinecss.zip). Then just import the minified CSS file into your project.
 
 ### NPM
 
@@ -35,19 +32,14 @@ npm install coralinecss
 **Here is a code snippet:**
 
 ```html
-<!-- Import the styles -->
+<!-- import the styles -->
 <link rel="stylesheet" href="coraline-v0.5.3/coraline.min.css">
-
-<!-- Staggered grid and sidebar functionality -->
-<script src="coraline-v0.5.3/coraline.min.js"></script>
 ```
 
 ## Components
 
 Coraline includes the following list of components:
 
-* [Staggered grid view](https://coralinecss.com/staggered.html)
-* [Sidebar](https://coralinecss.com/sidebar.html)
 * [Navbar](https://coralinecss.com/navbar.html)
 * [Card](https://coralinecss.com/card.html)
 * [Comment](https://coralinecss.com/comment.html)
@@ -110,7 +102,6 @@ The whole framework is just **19.3K** size minified.
 * [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) Flexible Box Module
 * [Autoprefixer](https://github.com/postcss/autoprefixer) for better browser support
 * [CSSO](https://github.com/css/csso) CSS compressor
-* [Terser](https://github.com/terser-js/terser) JS compressor
 * [Sass](https://sass-lang.com/) Syntactically Awesome Style Sheets
 
 ## Browser Support
