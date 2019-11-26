@@ -45,8 +45,7 @@ const documentation = [
    */
   {
     /**
-     * A responsive and lightweight CSS framework
-     * HTML, CSS & JS frontend component library
+     * Alternative CSS only framework
      */
     title: 'Card • Flexible component for displaying content', 
     canonical: '/card.html',
