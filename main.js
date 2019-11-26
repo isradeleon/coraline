@@ -18,7 +18,6 @@ fs.copyFileSync('README.md', frameworkBinary+'/README.md');
 fs.copyFileSync('LICENSE', frameworkBinary+'/LICENSE');
 fs.copyFileSync('base.scss', frameworkBinary+'/base.scss');
 fs.copyFileSync('base.css', frameworkBinary+'/base.css');
-fs.copyFileSync('base.js', frameworkBinary+'/base.js');
 
 /**
  * coralinecss.com DOCUMENTATION
@@ -69,7 +68,7 @@ const documentation = [
     description: 'Navbar: A CSS only, fully responsive and easy to implement navbar menu',
     current: 'navbar'
   },
-  {
+  /* {
     title: 'Sidebar • Responsive sidebar built with CSS and JS', 
     canonical: '/sidebar.html',
     njk: 'components/sidebar.njk.html',
@@ -81,7 +80,7 @@ const documentation = [
     njk: 'components/staggered.njk.html',
     description: 'Staggered grid view: A responsive, left to right staggered grid built with CSS and JS',
     current: 'staggered'
-  },
+  }, */
   /**
    * GRID SYSTEM
    */
@@ -119,23 +118,6 @@ for (let index = 0; index < documentation.length; index++) {
   let element = documentation[index];
   var rendered = env.render(element.njk, element)
   fs.writeFileSync(docsPath+element.canonical, rendered);
-}
-
-/**
- * BASE JS CODE
- */
-var baseJs = fs.readFileSync('base.js').toString();
-
-// JS minifier
-var Terser = require("terser");
-var jsResult = Terser.minify(baseJs);
-if(!jsResult.error){
-  fs.writeFileSync('coraline-v0.5.3/coraline.min.js', jsResult.code);
-  fs.writeFileSync(docsSourcesPath+'/coraline.min.js', jsResult.code);
-  fs.writeFileSync(frameworkSources+'/coraline.min.js', jsResult.code);
-}else{
-  console.log('JS ERROR')
-  console.log(jsResult.error)
 }
 
 /**
