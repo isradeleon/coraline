@@ -12,7 +12,7 @@ An alternative CSS only framework. Coraline comes with multiple components and c
 
 ## Quick start
 
-You may use the CDN for a quick start:
+You can use the CDN for a quick start:
 
 ```html
 <!-- import the styles from cdn -->
@@ -21,7 +21,7 @@ You may use the CDN for a quick start:
 
 ## Easy to install
 
-You may just install the framework from npm or [download the current version here](https://github.com/isradeleon/coraline/releases/download/0.5.3/coralinecss.zip). Then just import the minified CSS file into your project.
+You can install the framework from npm or [download the current version here](https://github.com/isradeleon/coraline/releases/download/0.5.3/coralinecss.zip). Then just import the minified CSS file into your project.
 
 ### NPM
 
