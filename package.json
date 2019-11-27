@@ -1,7 +1,7 @@
 {
   "name": "coralinecss",
-  "version": "0.5.3",
-  "description": "CSS and JS framework based on Flexbox",
+  "version": "0.6.0",
+  "description": "An alternative CSS only framework based on Flexbox",
   "main": "base.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,12 +11,11 @@
     "url": "git+https://github.com/isradeleon/coraline.git"
   },
   "keywords": [
+    "css",
+    "css-only",
     "framework",
     "responsive",
     "lightweight",
-    "frontend",
-    "css",
-    "js",
     "design",
     "flexbox",
     "sass"
@@ -32,14 +31,12 @@
     "csso": "^3.5.1",
     "node-sass": "^4.12.0",
     "nunjucks": "^3.2.0",
-    "postcss": "^7.0.17",
-    "terser": "^4.1.2"
+    "postcss": "^7.0.17"
   },
   "files": [
-    "coraline-v0.5.3",
+    "coraline-v0.6.0",
     "base.scss",
     "base.css",
-    "base.js",
     "LICENSE",
     "README.md"
   ]
