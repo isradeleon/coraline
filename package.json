@@ -1,7 +1,7 @@
 {
   "name": "coralinecss",
   "version": "0.6.0",
-  "description": "An alternative CSS only framework based on Flexbox",
+  "description": "Alternative CSS only framework based on Flexbox",
   "main": "base.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +16,6 @@
     "framework",
     "responsive",
     "lightweight",
-    "design",
     "flexbox",
     "sass"
   ],
