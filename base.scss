@@ -207,6 +207,9 @@ input.menu-toggle{
     top: -8px;
     width: 100%;
 }
+.burger-btn.to-end{
+    margin-left: auto;
+}
 
 /* checked arrow left */
 .burger-btn.arrow-left.active > .burger-icon:before {

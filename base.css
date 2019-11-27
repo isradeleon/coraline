@@ -155,6 +155,9 @@ input.menu-toggle {
   top: -8px;
   width: 100%; }
 
+.burger-btn.to-end {
+  margin-left: auto; }
+
 /* checked arrow left */
 .burger-btn.arrow-left.active > .burger-icon:before {
   transform: translateY(-16px) translateX(-7px) rotate(-40deg) scaleX(0.6); }
