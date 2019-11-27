@@ -296,7 +296,7 @@ input.menu-toggle{
     border: 0px;
     outline: 0;
     text-decoration: none;
-    padding: 0.7rem 0.9rem;
+    padding: 0.6rem 0.9rem;
     display: inline-block;
     position: relative;
     transition: all .1s ease-in-out;
@@ -560,15 +560,11 @@ input.menu-toggle{
     cursor: not-allowed;
 }
 
-.btn.large{
-    padding: 0.8rem 1rem;
-    font-size: 1.15rem;
-}
-.btn.large *{
+.btn.large, .btn.large *{
     font-size: 1.15rem;
 }
 .btn.small{
-    padding: 0.5rem 0.7rem;
+    padding: 0.4rem 0.7rem;
     font-size: 0.9rem;
 }
 .btn.small *{
