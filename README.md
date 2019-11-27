@@ -16,12 +16,12 @@ You can use the CDN for a quick start:
 
 ```html
 <!-- import the styles from cdn -->
-<link rel="stylesheet" href="https://cdn.statically.io/gh/isradeleon/coraline/0.5.3/coraline-v0.5.3/coraline.min.css">
+<link rel="stylesheet" href="https://cdn.statically.io/gh/isradeleon/coraline/0.6.0/coraline-v0.6.0/coraline.min.css">
 ```
 
 ## Easy to install
 
-You can install the framework from npm or [download the current version here](https://github.com/isradeleon/coraline/releases/download/0.5.3/coralinecss.zip). Then just import the minified CSS file into your project.
+You can install the framework from npm or [download the current version here](https://github.com/isradeleon/coraline/releases/download/0.6.0/coralinecss.zip). Then just import the minified CSS file into your project.
 
 ### NPM
 
@@ -33,7 +33,7 @@ npm install coralinecss
 
 ```html
 <!-- import the styles -->
-<link rel="stylesheet" href="coraline-v0.5.3/coraline.min.css">
+<link rel="stylesheet" href="coraline-v0.6.0/coraline.min.css">
 ```
 
 ## Components
