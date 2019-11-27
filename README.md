@@ -95,7 +95,7 @@ And same on large screen devices:
 
 ## Lightweight
 
-The whole framework is just **19.3K** size minified.
+The whole framework is just **15K** size minified.
 
 ## Built with
 

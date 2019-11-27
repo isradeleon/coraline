@@ -61,7 +61,7 @@ body{
     box-sizing: border-box;
     line-height: 1.3;
     scrollbar-width: thin;
-    scrollbar-color: lightgray #fafafa;
+    scrollbar-color: lightgray #ececec;
 }
 h1,h2,h3,h4,h5,h6{
     margin-top: 1rem;
@@ -143,7 +143,7 @@ img{
     height: 5px;
 }
 ::-webkit-scrollbar-track {
-    background: #fafafa; 
+    background: #ececec; 
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
@@ -974,7 +974,7 @@ textarea{
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    background-color: #fafafa;
+    background-color: #ececec;
 }
 .site-section.white{
     background-color: white;
@@ -983,7 +983,7 @@ textarea{
 /* FOOTER */
 footer{
     position: relative;
-    background-color: #fafafa;
+    background-color: #ececec;
     min-height: 10vh;
 }
 
