@@ -10,7 +10,7 @@ var frameworkBinary = '../coralinecss';
 if (!fs.existsSync(frameworkBinary)){
   fs.mkdirSync(frameworkBinary);
 }
-var frameworkSources = frameworkBinary+'/coraline-v0.6.1';
+var frameworkSources = frameworkBinary+'/coraline-v0.6.2';
 if (!fs.existsSync(frameworkSources)){
   fs.mkdirSync(frameworkSources);
 }
@@ -26,7 +26,7 @@ var docsPath = '../coraline-docs';
 if (!fs.existsSync(docsPath)){
   fs.mkdirSync(docsPath);
 }
-var docsSourcesPath = docsPath+'/coraline-v0.6.1';
+var docsSourcesPath = docsPath+'/coraline-v0.6.2';
 if (!fs.existsSync(docsSourcesPath)){
   fs.mkdirSync(docsSourcesPath);
 }
@@ -137,7 +137,7 @@ postcss([ autoprefixer ]).process(baseCss,{from: undefined}).then(result => {
     })
     
     var minifiedCss = csso.minify(result.css).css;
-    fs.writeFileSync('coraline-v0.6.1/coraline.min.css', minifiedCss);
+    fs.writeFileSync('coraline-v0.6.2/coraline.min.css', minifiedCss);
     fs.writeFileSync(docsSourcesPath+'/coraline.min.css', minifiedCss);
     fs.writeFileSync(frameworkSources+'/coraline.min.css', minifiedCss);
     

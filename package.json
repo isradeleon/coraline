@@ -1,6 +1,6 @@
 {
   "name": "coralinecss",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Alternative CSS only framework based on Flexbox",
   "main": "base.scss",
   "scripts": {
@@ -33,7 +33,7 @@
     "postcss": "^7.0.17"
   },
   "files": [
-    "coraline-v0.6.1",
+    "coraline-v0.6.2",
     "base.scss",
     "base.css",
     "LICENSE",
