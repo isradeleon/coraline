@@ -184,6 +184,13 @@ input.menu-toggle {
   display: none; }
 
 @media (max-width: 991px) {
+  .navbar .navbar-content .dropdown-content {
+    width: 100%;
+    display: block;
+    position: relative;
+    box-shadow: none; }
+  .navbar .navbar-content .dropdown:hover {
+    background: none; }
   .navbar:not(.with-sidebar) .navbar-content {
     width: 100%;
     /* height: 100%; */
@@ -199,10 +206,10 @@ input.menu-toggle {
     opacity: 0;
     border-bottom: 1px solid #eaeaea;
     box-shadow: 0px 3px 3px rgba(200, 200, 200, 0.4); }
-  .navbar:not(.with-sidebar) .navbar-content > .navbar-end {
+  .navbar:not(.with-sidebar) .navbar-content > .navbar-end:not(.dropdown) {
     width: 100%;
     display: block; }
-  .navbar:not(.with-sidebar) .navbar-content > *, .navbar:not(.with-sidebar) .navbar-end > * {
+  .navbar:not(.with-sidebar) .navbar-content > *, .navbar:not(.with-sidebar) .navbar-end:not(.dropdown) > * {
     width: 100%;
     display: block;
     margin-left: 0; }
@@ -223,8 +230,31 @@ input.menu-toggle {
   .navbar {
     padding: 0 0.5rem; } }
 
-/* BUTTONS/LINKS */
-.link, .btn {
+/* DROPDOWN */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.18);
+  z-index: 1;
+  left: 0;
+  margin-top: 0.6rem; }
+
+.dropdown-content.right, .dropdown.navbar-end .dropdown-content {
+  right: 0;
+  left: auto; }
+
+.dropdown-content > .link {
+  width: 100%;
+  padding: 0.7rem .9rem; }
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column; }
+
+/* BUTTONS/LINKS/DROPDOWNS */
+.link, .btn, .dropdown {
   border: 0px;
   outline: 0;
   text-decoration: none;
@@ -254,7 +284,7 @@ input.menu-toggle {
   border: none;
   outline: 0; }
 
-.link:hover, .btn:hover {
+.link:hover, .btn:hover, .dropdown:hover {
   background: rgba(200, 200, 200, 0.2);
   opacity: 0.9;
   cursor: pointer; }
@@ -831,13 +861,21 @@ textarea {
   .grid > .mobile-12 {
     width: 100%; } }
 
+/* PARALLAX */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 /* SECTIONS */
 .site-section {
   position: relative;
   display: flex;
-  padding: 15px 0;
+  padding: 15px;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background-color: #ececec; }
 
