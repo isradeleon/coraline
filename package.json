@@ -30,7 +30,7 @@
     "csso": "^3.5.1",
     "node-sass": "^4.12.0",
     "nunjucks": "^3.2.0",
-    "postcss": "^7.0.17"
+    "postcss": "^8.2.10"
   },
   "files": [
     "coraline-v0.6.2",
